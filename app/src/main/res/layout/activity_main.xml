@@ -75,13 +75,24 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/workOutGif"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="174dp"
+        android:layout_height="158dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="44dp"
         android:src="@drawable/narrow_grip_push_ups"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="142dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/workOutGif"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/apple" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

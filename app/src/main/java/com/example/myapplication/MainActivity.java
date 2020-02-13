@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int num1 = Integer.parseInt(firstNumEditText.getText().toString());
                 int num2 = Integer.parseInt(secondNumEditText.getText().toString());
-                int result = num1 +num2;
+                int result = num1 + num2;
 
                 resultTextView.setText(result + "");
             }
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
-                startIntent.putExtra("org.example.myapplication.SOMETHING", "SOMETHING1");
+                startIntent.putExtra("org.example.myapplication.SOMETHING", "SOMETHING");
                 startActivity(startIntent);
             }
         });
@@ -65,10 +66,22 @@ public class MainActivity extends AppCompatActivity {
         workOutGif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
-                startIntent.putExtra("org.example.myapplication.SOMETHING", "WORKOUT");
+                Intent startIntent = new Intent(getApplicationContext(), WorkoutActivity.class);
+//                startIntent.putExtra("org.example.myapplication.SOMETHING", "WORKOUT");
                 startActivity(startIntent);
             }
         });
+
+        ImageView apple = (ImageView) findViewById(R.id.apple);
+        apple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
+                startIntent.putExtra("org.example.myapplication.SOMETHING", "FRUIT");
+                startActivity(startIntent);
+            }
+        });
+
     }
+
 }
