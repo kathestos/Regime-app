@@ -1,8 +1,11 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,34 +34,59 @@ public class WorkoutActivity extends AppCompatActivity {
         adapter = new MainAdapter(this, listGroup, listItem);
         expandableListView.setAdapter(adapter);
         initListData();
+
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v,
+                                        int groupPosition, int childPosition, long id) {
+
+//                ShowItem(CatList.get(childPosition).getId());
+//                String text = Integer.toString(parent.getChildAt(childPosition).get());
+
+                ImageView img = (ImageView) findViewById(R.id.img1);
+                TextView txt = (TextView) findViewById(R.id.txt1);
+                if (childPosition == 0) {
+                    img.setImageResource(R.drawable.narrow_grip_push_ups);
+                    txt.setText(getString(R.string.zagrijavanje));
+                }
+                if (childPosition == 1) {
+                    img.setImageResource(R.drawable.apple);
+                    txt.setText(getString(R.string.rastezanje));
+                }
+
+
+//                Toast.makeText(getApplicationContext(), getString(R.string.zagrijavanje), Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
     }
 
     private void initListData() {
-        listGroup.add(getString(R.string.group1));
-        listGroup.add(getString(R.string.group2));
-        listGroup.add(getString(R.string.group3));
-        listGroup.add(getString(R.string.group4));
-        listGroup.add(getString(R.string.group5));
+        listGroup.add(getString(R.string.zagrijavanje));
+        listGroup.add(getString(R.string.set1));
+        listGroup.add(getString(R.string.set2));
+        listGroup.add(getString(R.string.set3));
+        listGroup.add(getString(R.string.rastezanje));
 
         String[] array;
         List<String> list1 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.group1);
+        array = getResources().getStringArray(R.array.zagrijavanje);
         for (String item : array)
             list1.add(item);
         List<String> list2 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.group2);
+        array = getResources().getStringArray(R.array.set1);
         for (String item : array)
             list2.add(item);
         List<String> list3 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.group3);
+        array = getResources().getStringArray(R.array.set2);
         for (String item : array)
             list3.add(item);
         List<String> list4 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.group4);
+        array = getResources().getStringArray(R.array.set3);
         for (String item : array)
             list4.add(item);
         List<String> list5 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.group5);
+        array = getResources().getStringArray(R.array.rastezanje);
         for (String item : array)
             list5.add(item);
 

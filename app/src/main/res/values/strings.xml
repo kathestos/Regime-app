@@ -6,37 +6,40 @@
     <string name="uto_pet">Utorak / Petak</string>
     <string name="sri_sub">Srijeda / Subota</string>
 
-    <string name="group1">Group1</string>
-    <string name="group2">Group2</string>
-    <string name="group3">Group3</string>
-    <string name="group4">Group4</string>
-    <string name="group5">Group5</string>
+    <string name="zagrijavanje">Zagrijavanje</string>
+    <string name="set1">Prvi Set</string>
+    <string name="set2">Drugi Set</string>
+    <string name="set3">Treći Set</string>
+    <string name="rastezanje">Rastezanje</string>
 
-    <string-array name="group1">
-        <item>item1</item>
+    <string-array name="zagrijavanje">
+        <item>zglobovi</item>
+        <item>laktovi</item>
+        <item>ramena</item>
     </string-array>
-    <string-array name="group2">
-        <item>item1</item>
-        <item>item2</item>
+    <string-array name="set1">
+        <item>sklekovi</item>
+        <item>stoj</item>
+        <item>sklekovi s rukama gore</item>
+        <item>dizanje ruku</item>
     </string-array>
-    <string-array name="group3">
-        <item>item1</item>
-        <item>item2</item>
-        <item>item3</item>
+    <string-array name="set2">
+        <item>uski sklekovi</item>
+        <item>uvučeni planche</item>
+        <item>sklekovi s rukama naprijed</item>
+        <item>dizanje ruku</item>
     </string-array>
-    <string-array name="group4">
-        <item>item1</item>
+    <string-array name="set3">
+        <item>široki sklekovi</item>
         <item>item2</item>
-        <item>item3</item>
-        <item>item4</item>
+        <item>sklekovi s rukama iza</item>
+        <item>dizanje ruku</item>
     </string-array>
-    <string-array name="group5">
-        <item>item1</item>
-        <item>item2</item>
-        <item>item3</item>
-        <item>item4</item>
-        <item>item5</item>
+    <string-array name="rastezanje">
+        <item>zglobovi</item>
+        <item>laktovi</item>
+        <item>ramena</item>
     </string-array>
 
-
+<!--čćžđš-->
 </resources>
