@@ -6,6 +6,8 @@
     <string name="uto_pet">Utorak / Petak</string>
     <string name="sri_sub">Srijeda / Subota</string>
 
+    <!-- ******VVVV****** PRSA ******VVVV****** -->
+
     <string name="zagrijavanje">Zagrijavanje</string>
     <string name="set1">Prvi Set</string>
     <string name="set2">Drugi Set</string>
@@ -41,5 +43,83 @@
         <item>ramena</item>
     </string-array>
 
-<!--čćžđš-->
+    <!-- ******AAAA****** PRSA ******AAAA****** -->
+
+    <!-- ******VVVV****** NOGE ******VVVV****** -->
+
+    <string name="zagrijavanje_noge">Zagrijavanje</string>
+    <string name="set1_noge">Prvi Set</string>
+    <string name="set2_noge">Drugi Set</string>
+    <string name="set3_noge">Treći Set</string>
+    <string name="rastezanje_noge">Rastezanje</string>
+
+    <string-array name="zagrijavanje_noge">
+        <item>skip</item>
+        <item>noge iza</item>
+        <item>noge sa strane</item>
+        <item>noge ispred</item>
+        <item>visoki step</item>
+    </string-array>
+    <string-array name="set1_noge">
+        <item>cucnjevi</item>
+        <item>rudari</item>
+        <item>prsti</item>
+    </string-array>
+    <string-array name="set2_noge">
+        <item>noge gore</item>
+        <item>spartan</item>
+        <item>jedna noga</item>
+    </string-array>
+    <string-array name="rastezanje_noge">
+        <item>ispred</item>
+        <item>sastrane</item>
+        <item>spage</item>
+    </string-array>
+
+    <!-- ******AAAA****** NOGE ******AAAA****** -->
+
+    <!-- ******VVVV****** TRBUH ******VVVV****** -->
+
+    <string name="zagrijavanje_trbuh">Zagrijavanje</string>
+    <string name="set1_trbuh">Prvi Set</string>
+    <string name="set2_trbuh">Drugi Set</string>
+    <string name="set3_trbuh">Treći Set</string>
+    <string name="rastezanje_trbuh">Rastezanje</string>
+    <string name="plankovi">Rastezanje</string>
+
+    <string-array name="zagrijavanje_trbuh">
+        <item>penjac</item>
+        <item>penjac unutra</item>
+        <item>penjac sa strane</item>
+    </string-array>
+    <string-array name="set1_trbuh">
+        <item>dodir peta</item>
+        <item>lakat-koljeno</item>
+        <item>ruke sa strane</item>
+    </string-array>
+    <string-array name="set2_trbuh">
+        <item>noge na prsa</item>
+        <item>obje noge gore</item>
+        <item>naizmjenicno noga gore</item>
+    </string-array>
+    <string-array name="set3_trbuh">
+        <item>sklopke</item>
+        <item>pune sklopke</item>
+        <item>noge gore</item>
+    </string-array>
+    <string-array name="rastezanje_trbuh">
+        <item>jedna poza</item>
+        <item>druga poza</item>
+        <item>treca poza</item>
+        <item>cetvrta poza</item>
+    </string-array>
+    <string-array name="plankovi">
+        <item>ravno</item>
+        <item>lijevo</item>
+        <item>desno</item>
+    </string-array>
+
+    <!-- ******AAAA****** TRBUH ******AAAA****** -->
+
+    <!--čćžđš-->
 </resources>

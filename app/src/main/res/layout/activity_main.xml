@@ -56,7 +56,7 @@
 
     <Button
         android:id="@+id/googleBtn"
-        android:layout_width="86dp"
+        android:layout_width="40dp"
         android:layout_height="41dp"
         android:text="Google"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,35 +64,103 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="63dp"
+        android:layout_height="100dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:layout_marginStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/r" />
+        app:srcCompat="@drawable/r3"/>
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/workOutGif"
-        android:layout_width="174dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="106dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="156dp"
         android:src="@drawable/narrow_grip_push_ups"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/legs" />
 
     <ImageView
         android:id="@+id/apple"
-        android:layout_width="142dp"
-        android:layout_height="141dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toEndOf="@+id/workOutGif"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/pushup"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/pushup" />
+
+    <ImageView
+        android:id="@+id/situp"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legs"
+        app:srcCompat="@drawable/situp" />
+
+    <ImageView
+        android:id="@+id/legs"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pushup"
+        app:srcCompat="@drawable/leg" />
+
+    <ImageView
+        android:id="@+id/date"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/apple"
+        app:srcCompat="@drawable/date" />
+
+    <ImageView
+        android:id="@+id/nut"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:srcCompat="@drawable/nut" />
+
+    <ImageView
+        android:id="@+id/seed"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nut"
+        app:srcCompat="@drawable/seed" />
+
+    <ImageView
+        android:id="@+id/berry"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seed"
+        app:srcCompat="@drawable/berry" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

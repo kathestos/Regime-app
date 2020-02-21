@@ -76,6 +76,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView pushupImg = (ImageView) findViewById(R.id.pushup);
+        pushupImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), WorkoutActivity.class);
+//                startIntent.putExtra("org.example.myapplication.SOMETHING", "WORKOUT");
+                startActivity(startIntent);
+            }
+        });
+
+        ImageView legsImg = (ImageView) findViewById(R.id.legs);
+        legsImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), LegsActivity.class);
+//                startIntent.putExtra("org.example.myapplication.SOMETHING", "WORKOUT");
+                startActivity(startIntent);
+            }
+        });
+
+        ImageView situpImg = (ImageView) findViewById(R.id.situp);
+        situpImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), SitupActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
         ImageView apple = (ImageView) findViewById(R.id.apple);
         apple.setOnClickListener(new View.OnClickListener() {
             @Override
