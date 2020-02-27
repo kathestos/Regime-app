@@ -47,11 +47,11 @@ public class SitupActivity extends AppCompatActivity {
                 TextView txt = (TextView) findViewById(R.id.txt1);
                 if (childPosition == 0) {
                     img.setImageResource(R.drawable.narrow_grip_push_ups);
-                    txt.setText(getString(R.string.zagrijavanje));
+                    txt.setText(getString(R.string.zagrijavanje_ruke));
                 }
                 if (childPosition == 1) {
                     img.setImageResource(R.drawable.apple);
-                    txt.setText(getString(R.string.rastezanje));
+                    txt.setText(getString(R.string.rastezanje_ruke));
                 }
 
 
@@ -64,10 +64,10 @@ public class SitupActivity extends AppCompatActivity {
     private void initListData() {
         listGroup.add(getString(R.string.zagrijavanje_trbuh));
         listGroup.add(getString(R.string.set1_trbuh));
-        listGroup.add(getString(R.string.set2_trbuh));
-        listGroup.add(getString(R.string.set3_trbuh));
         listGroup.add(getString(R.string.rastezanje_trbuh));
         listGroup.add(getString(R.string.plankovi));
+        listGroup.add(getString(R.string.set2_trbuh));
+        listGroup.add(getString(R.string.razno_trbuh));
 
         String[] array;
         List<String> list1 = new ArrayList<>();
@@ -79,19 +79,19 @@ public class SitupActivity extends AppCompatActivity {
         for (String item : array)
             list2.add(item);
         List<String> list3 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.set2_trbuh);
+        array = getResources().getStringArray(R.array.rastezanje_trbuh);
         for (String item : array)
             list3.add(item);
         List<String> list4 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.set3_trbuh);
+        array = getResources().getStringArray(R.array.plankovi);
         for (String item : array)
             list4.add(item);
         List<String> list5 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.rastezanje_trbuh);
+        array = getResources().getStringArray(R.array.set2_trbuh);
         for (String item : array)
             list5.add(item);
         List<String> list6 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.plankovi);
+        array = getResources().getStringArray(R.array.razno_trbuh);
         for (String item : array)
             list6.add(item);
 

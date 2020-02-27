@@ -47,11 +47,11 @@ public class LegsActivity extends AppCompatActivity {
                 TextView txt = (TextView) findViewById(R.id.txt1);
                 if (childPosition == 0) {
                     img.setImageResource(R.drawable.narrow_grip_push_ups);
-                    txt.setText(getString(R.string.zagrijavanje));
+                    txt.setText(getString(R.string.zagrijavanje_ruke));
                 }
                 if (childPosition == 1) {
                     img.setImageResource(R.drawable.apple);
-                    txt.setText(getString(R.string.rastezanje));
+                    txt.setText(getString(R.string.rastezanje_ruke));
                 }
 
 
@@ -63,8 +63,10 @@ public class LegsActivity extends AppCompatActivity {
 
     private void initListData() {
         listGroup.add(getString(R.string.zagrijavanje_noge));
+        listGroup.add(getString(R.string.razgibavanje_noge));
         listGroup.add(getString(R.string.set1_noge));
         listGroup.add(getString(R.string.set2_noge));
+        listGroup.add(getString(R.string.set3_noge));
         listGroup.add(getString(R.string.rastezanje_noge));
 
         String[] array;
@@ -73,23 +75,32 @@ public class LegsActivity extends AppCompatActivity {
         for (String item : array)
             list1.add(item);
         List<String> list2 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.set1_noge);
+        array = getResources().getStringArray(R.array.razgibavanje_noge);
         for (String item : array)
             list2.add(item);
         List<String> list3 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.set2_noge);
+        array = getResources().getStringArray(R.array.set1_noge);
         for (String item : array)
             list3.add(item);
+        List<String> list4 = new ArrayList<>();
+        array = getResources().getStringArray(R.array.set2_noge);
+        for (String item : array)
+            list4.add(item);
         List<String> list5 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.rastezanje_noge);
+        array = getResources().getStringArray(R.array.set3_noge);
         for (String item : array)
             list5.add(item);
+        List<String> list6 = new ArrayList<>();
+        array = getResources().getStringArray(R.array.rastezanje_noge);
+        for (String item : array)
+            list6.add(item);
 
         listItem.put(listGroup.get(0), list1);
         listItem.put(listGroup.get(1), list2);
         listItem.put(listGroup.get(2), list3);
-
-        listItem.put(listGroup.get(3), list5);
+        listItem.put(listGroup.get(3), list4);
+        listItem.put(listGroup.get(4), list5);
+        listItem.put(listGroup.get(5), list6);
         adapter.notifyDataSetChanged();
 
     }

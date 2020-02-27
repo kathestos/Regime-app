@@ -47,11 +47,11 @@ public class WorkoutActivity extends AppCompatActivity {
                 TextView txt = (TextView) findViewById(R.id.txt1);
                 if (childPosition == 0) {
                     img.setImageResource(R.drawable.narrow_grip_push_ups);
-                    txt.setText(getString(R.string.zagrijavanje));
+                    txt.setText(getString(R.string.zagrijavanje_ruke));
                 }
                 if (childPosition == 1) {
                     img.setImageResource(R.drawable.apple);
-                    txt.setText(getString(R.string.rastezanje));
+                    txt.setText(getString(R.string.rastezanje_ruke));
                 }
 
 
@@ -62,31 +62,31 @@ public class WorkoutActivity extends AppCompatActivity {
     }
 
     private void initListData() {
-        listGroup.add(getString(R.string.zagrijavanje));
-        listGroup.add(getString(R.string.set1));
-        listGroup.add(getString(R.string.set2));
-        listGroup.add(getString(R.string.set3));
-        listGroup.add(getString(R.string.rastezanje));
+        listGroup.add(getString(R.string.zagrijavanje_ruke));
+        listGroup.add(getString(R.string.set1_prsa));
+        listGroup.add(getString(R.string.set2_prsa));
+        listGroup.add(getString(R.string.set3_prsa));
+        listGroup.add(getString(R.string.rastezanje_ruke));
 
         String[] array;
         List<String> list1 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.zagrijavanje);
+        array = getResources().getStringArray(R.array.zagrijavanje_ruke);
         for (String item : array)
             list1.add(item);
         List<String> list2 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.set1);
+        array = getResources().getStringArray(R.array.set1_prsa);
         for (String item : array)
             list2.add(item);
         List<String> list3 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.set2);
+        array = getResources().getStringArray(R.array.set2_prsa);
         for (String item : array)
             list3.add(item);
         List<String> list4 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.set3);
+        array = getResources().getStringArray(R.array.set3_prsa);
         for (String item : array)
             list4.add(item);
         List<String> list5 = new ArrayList<>();
-        array = getResources().getStringArray(R.array.rastezanje);
+        array = getResources().getStringArray(R.array.rastezanje_ruke);
         for (String item : array)
             list5.add(item);
 

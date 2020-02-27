@@ -8,46 +8,54 @@
 
     <!-- ******VVVV****** PRSA ******VVVV****** -->
 
-    <string name="zagrijavanje">Zagrijavanje</string>
-    <string name="set1">Prvi Set</string>
-    <string name="set2">Drugi Set</string>
-    <string name="set3">Treći Set</string>
-    <string name="rastezanje">Rastezanje</string>
+    <string name="zagrijavanje_ruke">Zagrijavanje</string>
+    <string name="set1_prsa">Prvi Set</string>
+    <string name="set2_prsa">Drugi Set</string>
+    <string name="set3_prsa">Treći Set</string>
+    <string name="rastezanje_ruke">Rastezanje</string>
 
-    <string-array name="zagrijavanje">
+    <string-array name="zagrijavanje_ruke">
         <item>zglobovi</item>
         <item>laktovi</item>
         <item>ramena</item>
     </string-array>
-    <string-array name="set1">
+
+    <string-array name="set1_prsa">
         <item>sklekovi</item>
         <item>stoj</item>
-        <item>sklekovi s rukama gore</item>
+        <item>ruke gore</item>
         <item>dizanje ruku</item>
     </string-array>
-    <string-array name="set2">
+
+    <string-array name="set2_prsa">
         <item>uski sklekovi</item>
         <item>uvučeni planche</item>
-        <item>sklekovi s rukama naprijed</item>
-        <item>dizanje ruku</item>
+        <item>ruke naprijed</item>
+        <item>ruke iza</item>
     </string-array>
-    <string-array name="set3">
+
+    <string-array name="set3_prsa">
         <item>široki sklekovi</item>
-        <item>item2</item>
-        <item>sklekovi s rukama iza</item>
+        <item>hindu</item>
+        <item>ruke iza</item>
         <item>dizanje ruku</item>
     </string-array>
-    <string-array name="rastezanje">
+
+    <string-array name="rastezanje_ruke">
+        <item>adho mukha svanasana</item>
         <item>zglobovi</item>
         <item>laktovi</item>
         <item>ramena</item>
+        <item>u stranu</item>
+        <item>vrat</item>
     </string-array>
 
-    <!-- ******AAAA****** PRSA ******AAAA****** -->
+    <!-- ******^^^^****** PRSA ******^^^^****** -->
 
     <!-- ******VVVV****** NOGE ******VVVV****** -->
 
     <string name="zagrijavanje_noge">Zagrijavanje</string>
+    <string name="razgibavanje_noge">Razgibavanje</string>
     <string name="set1_noge">Prvi Set</string>
     <string name="set2_noge">Drugi Set</string>
     <string name="set3_noge">Treći Set</string>
@@ -59,67 +67,168 @@
         <item>noge sa strane</item>
         <item>noge ispred</item>
         <item>visoki step</item>
+        <item>skokovi</item>
     </string-array>
+
+    <string-array name="razgibavanje_noge">
+        <item>bokovi</item>
+        <item>koljena</item>
+        <item>zglobovi</item>
+    </string-array>
+
     <string-array name="set1_noge">
-        <item>cucnjevi</item>
+        <item>čučnjevi</item>
         <item>rudari</item>
         <item>prsti</item>
+        <item>utkatasana</item>
     </string-array>
+
     <string-array name="set2_noge">
-        <item>noge gore</item>
         <item>spartan</item>
         <item>jedna noga</item>
+        <item>noga gore</item>
+        <item>virabhadrasana II</item>
     </string-array>
+
+    <string-array name="set3_noge">
+        <item>čučnjevi ruke gore</item>
+        <item>izmjenični rudari</item>
+    </string-array>
+
     <string-array name="rastezanje_noge">
         <item>ispred</item>
         <item>sastrane</item>
-        <item>spage</item>
+        <item>špage</item>
+        <item>malasana</item>
     </string-array>
 
-    <!-- ******AAAA****** NOGE ******AAAA****** -->
+    <!-- ******^^^^****** NOGE ******^^^^****** -->
 
     <!-- ******VVVV****** TRBUH ******VVVV****** -->
 
     <string name="zagrijavanje_trbuh">Zagrijavanje</string>
     <string name="set1_trbuh">Prvi Set</string>
-    <string name="set2_trbuh">Drugi Set</string>
-    <string name="set3_trbuh">Treći Set</string>
     <string name="rastezanje_trbuh">Rastezanje</string>
-    <string name="plankovi">Rastezanje</string>
+    <string name="plankovi">Plankovi</string>
+    <string name="set2_trbuh">Drugi Set</string>
+    <string name="razno_trbuh">Razno</string>
+
 
     <string-array name="zagrijavanje_trbuh">
-        <item>penjac</item>
-        <item>penjac unutra</item>
-        <item>penjac sa strane</item>
+        <item>penjač</item>
+        <item>penjač unutra</item>
+        <item>penjač sa strane</item>
     </string-array>
+
     <string-array name="set1_trbuh">
         <item>dodir peta</item>
         <item>lakat-koljeno</item>
         <item>ruke sa strane</item>
-    </string-array>
-    <string-array name="set2_trbuh">
         <item>noge na prsa</item>
         <item>obje noge gore</item>
-        <item>naizmjenicno noga gore</item>
-    </string-array>
-    <string-array name="set3_trbuh">
+        <item>naizmjenično noga gore</item>
         <item>sklopke</item>
         <item>pune sklopke</item>
         <item>noge gore</item>
     </string-array>
+
     <string-array name="rastezanje_trbuh">
-        <item>jedna poza</item>
-        <item>druga poza</item>
-        <item>treca poza</item>
-        <item>cetvrta poza</item>
-    </string-array>
-    <string-array name="plankovi">
-        <item>ravno</item>
-        <item>lijevo</item>
-        <item>desno</item>
+        <item>bhujangasana</item>
+        <item>balasana</item>
+        <item>bitilasana</item>
+        <item>marjaryasana</item>
     </string-array>
 
-    <!-- ******AAAA****** TRBUH ******AAAA****** -->
+    <string-array name="plankovi">
+        <item>ravni plank</item>
+        <item>lijevi plank</item>
+        <item>desni plank</item>
+    </string-array>
+
+    <string-array name="set2_trbuh">
+        <item>u stranu</item>
+        <item>ruka-stopalo</item>
+        <item>noge gore - u stranu</item>
+        <item>noge brzo gore dolje</item>
+        <item>noge brzo lijevo desno</item>
+        <item>bicikl</item>
+        <item>trbušnjak</item>
+        <item>ispružene sklopke</item>
+        <item>ruke gore</item>
+    </string-array>
+
+    <string-array name="razno_trbuh">
+        <item>buba</item>
+        <item>ukočeno tijelo</item>
+    </string-array>
+
+    <!-- ******^^^^****** TRBUH ******^^^^****** -->
+
+    <string name="svjeze_voce">Svježe voće</string>
+    <string name="suseno_voce">Sušeno voće</string>
+    <string name="orasasto_voce">Orašasto voće</string>
+    <string name="sjemenke">Sjemenke</string>
+    <string name="bobice">Bobice</string>
+
+    <string-array name="fruits">
+        <item>banane</item>
+        <item>jabuke</item>
+        <item>kruške</item>
+        <item>naranče</item>
+        <item>mandarine</item>
+        <item>klementine</item>
+        <item>ananas</item>
+        <item>grožđe</item>
+        <item>breskve</item>
+        <item>nektarine</item>
+        <item>marelice</item>
+        <item>šljive</item>
+        <item>lubenice</item>
+        <item>dinje</item>
+        <item>jagode</item>
+        <item>smokve</item>
+        <item>datulje</item>
+        <item>mango</item>
+        <item>papaja</item>
+        <item>kaki</item>
+        <item>kivi</item>
+        <item>šipak</item>
+    </string-array>
+
+    <string-array name="dried">
+        <item>datulje</item>
+        <item>marelice</item>
+        <item>šljive</item>
+        <item>smokve</item>
+        <item>grožđice</item>
+        <item>brusnice</item>
+    </string-array>
+
+    <string-array name="nuts">
+        <item>orasi</item>
+        <item>bademi</item>
+        <item>brazilski</item>
+        <item>pistacije</item>
+        <item>pekan</item>
+        <item>lješnjak</item>
+    </string-array>
+
+    <string-array name="seeds">
+        <item>chia</item>
+        <item>konoplja</item>
+        <item>sezam</item>
+        <item>lan</item>
+        <item>bundeva</item>
+        <item>suncokret</item>
+    </string-array>
+
+    <string-array name="bobice">
+        <item>borovnice</item>
+        <item>kupine</item>
+        <item>maline</item>
+        <item>višnje</item>
+        <item>trešnje</item>
+    </string-array>
 
     <!--čćžđš-->
 </resources>
