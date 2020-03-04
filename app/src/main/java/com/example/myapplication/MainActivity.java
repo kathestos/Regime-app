@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         pushupImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), WorkoutActivity.class);
+                Intent startIntent = new Intent(getApplicationContext(), PushupActivity.class);
 //                startIntent.putExtra("org.example.myapplication.SOMETHING", "WORKOUT");
                 startActivity(startIntent);
             }
@@ -70,6 +70,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(getApplicationContext(), NutsActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
+        ImageView seeds = findViewById(R.id.seed);
+        seeds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), SeedsActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
+        ImageView berries = findViewById(R.id.berry);
+        berries.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), BerriesActivity.class);
                 startActivity(startIntent);
             }
         });

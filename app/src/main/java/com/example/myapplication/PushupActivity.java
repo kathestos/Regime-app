@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class WorkoutActivity extends AppCompatActivity {
+public class PushupActivity extends AppCompatActivity {
 
     ExpandableListView expandableListView;
     List<String> listGroup;
@@ -26,7 +26,7 @@ public class WorkoutActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_workout);
+        setContentView(R.layout.activity_pushup);
 
         expandableListView = findViewById(R.id.expandableListView);
         listGroup = new ArrayList<>();

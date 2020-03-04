@@ -11,10 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".NutsActivity"></activity>
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".BerriesActivity" />
+        <activity android:name=".SeedsActivity" />
+        <activity android:name=".NutsActivity" />
         <activity android:name=".DriedActivity" />
         <activity android:name=".FruitActivity" />
-        <activity android:name=".WorkoutActivity" />
+        <activity android:name=".PushupActivity" />
         <activity android:name=".LegsActivity" />
         <activity android:name=".SitupActivity" />
         <activity android:name=".SecondActivity" />

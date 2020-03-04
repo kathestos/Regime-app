@@ -9,18 +9,19 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="63dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="260dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="TODO"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/r3" />
+        app:srcCompat="@drawable/r4" />
 
     <ImageView
         android:id="@+id/pushup"
-        android:layout_width="220dp"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +30,8 @@
 
     <ImageView
         android:id="@+id/legs"
-        android:layout_width="220dp"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,8 +40,8 @@
 
     <ImageView
         android:id="@+id/situp"
-        android:layout_width="220dp"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +50,9 @@
 
     <ImageView
         android:id="@+id/apple"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="290dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="270dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -59,9 +60,9 @@
 
     <ImageView
         android:id="@+id/date"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="290dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="270dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/apple"
@@ -69,9 +70,9 @@
 
     <ImageView
         android:id="@+id/nut"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="290dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="270dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/date"
@@ -79,9 +80,9 @@
 
     <ImageView
         android:id="@+id/seed"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="290dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="270dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nut"
@@ -89,13 +90,63 @@
 
     <ImageView
         android:id="@+id/berry"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="290dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="270dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seed"
         app:srcCompat="@drawable/berry" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/berry"
+        app:srcCompat="@drawable/misc" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/todo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView4"
+        app:srcCompat="@drawable/schedule" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/situp"
+        app:srcCompat="@drawable/fi" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/situp"
+        app:srcCompat="@drawable/cloth" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
