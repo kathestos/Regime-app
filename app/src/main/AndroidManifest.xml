@@ -4,14 +4,14 @@
     package="com.example.myapplication">
 
     <application
-        android:allowBackup="true"
         android:icon="@drawable/r_icon5"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".AiActivity" />
+        <activity android:name=".AboutActivity" />
         <activity android:name=".BerriesActivity" />
         <activity android:name=".SeedsActivity" />
         <activity android:name=".NutsActivity" />
@@ -24,7 +24,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

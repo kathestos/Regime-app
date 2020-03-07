@@ -230,5 +230,22 @@
         <item>trešnje</item>
     </string-array>
 
+    <!--DESCRIPTIONS-->
+    <string name="logo_desc">Režim Logo</string>
+    <string name="pushup_desc">Sklekovi</string>
+    <string name="legs_desc">Noge</string>
+    <string name="situp_desc">Trbušnjaci</string>
+    <string name="fruit_desc">Voće</string>
+    <string name="dried_desc">Sušeno voće</string>
+    <string name="nuts_desc">Orasi</string>
+    <string name="seed_desc">Sjemenke</string>
+    <string name="berry_desc">Bobice</string>
+    <string name="misc_desc">Razna hrana</string>
+    <string name="phi_desc">Filozofija</string>
+    <string name="clothes_desc">Odjeća</string>
+    <string name="todo_desc">Todo</string>
+    <string name="sched_desc">Raspored</string>
+
+
     <!--čćžđš-->
 </resources>

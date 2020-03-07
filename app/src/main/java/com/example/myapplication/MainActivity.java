@@ -8,6 +8,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,10 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         setContentView(R.layout.activity_main);
 
-        ImageView pushupImg = (ImageView) findViewById(R.id.pushup);
+        ImageView pushupImg = findViewById(R.id.pushup);
         pushupImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView legsImg = (ImageView) findViewById(R.id.legs);
+        ImageView legsImg = findViewById(R.id.legs);
         legsImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView situpImg = (ImageView) findViewById(R.id.situp);
+        ImageView situpImg = findViewById(R.id.situp);
         situpImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView apple = (ImageView) findViewById(R.id.apple);
+        ImageView apple = findViewById(R.id.apple);
         apple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
