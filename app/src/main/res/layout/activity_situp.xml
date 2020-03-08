@@ -9,19 +9,21 @@
 
     <TextView
         android:id="@+id/workoutTitle"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
         android:text="@string/sri_sub"
-        android:textSize="25sp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp" />
+        android:layout_width="390dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
 
     <ExpandableListView
         android:id="@+id/expandableListView"
         android:layout_width="400dp"
-        android:layout_height="570dp"
+        android:layout_height="580dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"/>
 
     <ImageView

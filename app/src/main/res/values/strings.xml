@@ -2,9 +2,9 @@
 
     <string name="app_name">Režim</string>
 
-    <string name="pon_cet">Ponedjeljak / Četvrtak</string>
-    <string name="uto_pet">Utorak / Petak</string>
-    <string name="sri_sub">Srijeda / Subota</string>
+    <string name="pon_cet">Ponedjeljak / Četvrtak - Prsa / Ruke</string>
+    <string name="uto_pet">Utorak / Petak - Noge</string>
+    <string name="sri_sub">Srijeda / Subota - Trbuh</string>
 
     <!-- ******VVVV****** PRSA ******VVVV****** -->
 
