@@ -104,6 +104,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView misc = findViewById(R.id.misc);
+        misc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), MiscActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
+        ImageView phi = findViewById(R.id.phi);
+        phi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), PhilosophyActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
+        ImageView cloth = findViewById(R.id.clothes);
+        cloth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), ClothesActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 
 }

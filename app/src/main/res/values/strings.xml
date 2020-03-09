@@ -169,6 +169,12 @@
     <string name="orasasto_voce">Orašasto voće</string>
     <string name="sjemenke">Sjemenke</string>
     <string name="bobice">Bobice</string>
+    <string name="misc">Razno</string>
+
+    <string name="phi">Filozofija</string>
+    <string name="clothes">Odjeća</string>
+    <string name="todo">To Do</string>
+    <string name="schedule">Raspored</string>
 
     <string-array name="fruits">
         <item>banane</item>
@@ -230,6 +236,23 @@
         <item>trešnje</item>
     </string-array>
 
+    <string-array name="misc">
+        <item>začini</item>
+        <item>čajevi</item>
+        <item>bilje</item>
+    </string-array>
+
+    <string-array name="philosophy">
+        <item>minimalizam</item>
+        <item>asketizam</item>
+        <item>stoicizam</item>
+        <item>nihilizam</item>
+        <item>post</item>
+        <item>kalorijska restrikcija</item>
+        <item>meditacija</item>
+        <item>tok</item>
+    </string-array>
+
     <!--DESCRIPTIONS-->
     <string name="logo_desc">Režim Logo</string>
     <string name="pushup_desc">Sklekovi</string>
@@ -246,6 +269,48 @@
     <string name="todo_desc">Todo</string>
     <string name="sched_desc">Raspored</string>
 
+    <!--CLOTHES-->
+    <string name="odjeca">Odjeća</string>
+    <string name="obuca">Obuća</string>
+    <string name="svecano">Svečano</string>
+    <string name="razno">Razno</string>
+
+    <string-array name="odjeca">
+        <item>3 majce kratkih rukava</item>
+        <item>3 majce dugih rukava</item>
+        <item>2 deblje majce</item>
+        <item>3 jakne</item>
+        <item>2 podhlaća</item>
+        <item>3 kratke hlaće</item>
+        <item>3 duge hlaće</item>
+    </string-array>
+
+    <string-array name="obuca">
+        <item>cipele za posao</item>
+        <item>tenisice za posao</item>
+        <item>tenisice za trčanje</item>
+        <item>gojzerice</item>
+        <item>crocs</item>
+    </string-array>
+
+    <string-array name="svecano">
+        <item>hlaće</item>
+        <item>košulja</item>
+        <item>prsluk</item>
+        <item>sako</item>
+        <item>kravata</item>
+    </string-array>
+
+    <string-array name="razno">
+        <item>kapa, šal, rukavice</item>
+        <item>3 debele čarape</item>
+        <item>3 tanke čarape</item>
+        <item>čarape za doma</item>
+        <item>3 gaća</item>
+        <item>kupaće gaće</item>
+        <item>šešir za sunce</item>
+        <item>ručnik, krpa</item>
+    </string-array>
 
     <!--čćžđš-->
 </resources>
