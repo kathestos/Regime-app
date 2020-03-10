@@ -312,5 +312,55 @@
         <item>ručnik, krpa</item>
     </string-array>
 
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+
+    <string-array name="todo">
+        <item>Pisanje knjige</item>
+        <item>Učenje njemačkog</item>
+    </string-array>
+
+    <string name="svaki_dan">Svaki Dan</string>
+    <string name="dvaput_tjedno">Dvaput tjedno</string>
+    <string name="jednom_tjedno">Jednom tjedno</string>
+    <string name="svaka_dva_tjedna">Svaka dva tjedna</string>
+    <string name="svaka_tri_tjedna">Svaka tri tjedna</string>
+    <string name="jednom_mjesecno">Jednom mjesečno</string>
+    <string name="svaka_tri_mjeseca">Svaka tri mjeseca</string>
+    <string name="jednom_godisnje">Jednom godišnje</string>
+
+    <string-array name="svaki_dan">
+        <item>pranje zubi</item>
+    </string-array>
+
+    <string-array name="dvaput_tjedno">
+        <item>tuširanje</item>
+    </string-array>
+
+    <string-array name="jednom_tjedno">
+        <item>brkovi</item>
+    </string-array>
+
+    <string-array name="svaka_dva_tjedna">
+        <item>pranje odjeće</item>
+    </string-array>
+
+    <string-array name="svaka_tri_tjedna">
+        <item>nokti ruke</item>
+    </string-array>
+
+    <string-array name="jednom_mjesecno">
+        <item>spremanje</item>
+        <item>brada</item>
+    </string-array>
+
+    <string-array name="svaka_tri_mjeseca">
+        <item>kosa</item>
+        <item>nokti noge</item>
+    </string-array>
+
+    <string-array name="jednom_godisnje">
+        <item>optimizacija imovine</item>
+    </string-array>
+
     <!--čćžđš-->
 </resources>

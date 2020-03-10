@@ -131,6 +131,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView todo = findViewById(R.id.todo);
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), TodoActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
+        ImageView schedule = findViewById(R.id.schedule);
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), ScheduleActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 
 }
