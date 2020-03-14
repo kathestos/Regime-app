@@ -18,6 +18,7 @@
         <item>zglobovi</item>
         <item>laktovi</item>
         <item>ramena</item>
+        <item>ruke</item>
     </string-array>
 
     <string-array name="set1_prsa">
@@ -49,6 +50,11 @@
         <item>u stranu</item>
         <item>vrat</item>
     </string-array>
+
+    <string name="text_zglobovi">Zagrijavanje zglobova:\n- kružno\n- gore-dolje\n- lijevo-desno\n- rotacija</string>
+    <string name="text_laktovi">Zagrijavanje laktova:\n- kružno</string>
+    <string name="text_ramena">Zagrijavanje ramena:\n- kružno</string>
+    <string name="text_ruke">Zagrijavanje ruka:\n- kružno usko prema cijelim krugovima</string>
 
     <!-- ******^^^^****** PRSA ******^^^^****** -->
 
@@ -237,6 +243,7 @@
     </string-array>
 
     <string-array name="misc">
+<!--        dodati peršin, origano (ostalo?) kad se klikne -->
         <item>začini</item>
         <item>čajevi</item>
         <item>bilje</item>
@@ -287,7 +294,7 @@
 
     <string-array name="obuca">
         <item>cipele za posao</item>
-        <item>tenisice za posao</item>
+        <item>tenisice za grad</item>
         <item>tenisice za trčanje</item>
         <item>gojzerice</item>
         <item>crocs</item>
@@ -355,11 +362,11 @@
 
     <string-array name="jednom_mjesecno">
         <item>spremanje</item>
-        <item>brada</item>
+        <item>kosa</item>
     </string-array>
 
     <string-array name="svaka_tri_mjeseca">
-        <item>kosa</item>
+        <item>brada</item>
         <item>nokti noge</item>
     </string-array>
 

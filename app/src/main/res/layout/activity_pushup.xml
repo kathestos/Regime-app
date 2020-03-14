@@ -10,12 +10,12 @@
         android:id="@+id/workoutTitle"
         android:layout_width="390dp"
         android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:gravity="center"
         android:text="@string/pon_cet"
-        android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"/>
+        android:textSize="20sp" />
 
     <ExpandableListView
         android:id="@+id/expandableListView"
@@ -25,25 +25,24 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp" />
 
-    <ImageView
-        android:id="@+id/img1"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_pushup"
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_below="@+id/expandableListView"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@color/colorPrimaryDark" />
+        android:src="@drawable/new_pushup" />
 
-    <ImageView
-        android:id="@+id/txt1"
+    <TextView
+        android:id="@+id/text"
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_below="@+id/expandableListView"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/img1"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-        android:textSize="12sp"
-        app:srcCompat="@color/colorPrimaryDark" />
+        android:layout_toEndOf="@+id/gif_pushup"
+        android:text="@string/lorem"
+        android:textSize="12sp" />
 
 </RelativeLayout>

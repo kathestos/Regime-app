@@ -23,7 +23,6 @@ public class FruitActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fruit);
 
         final ListView listView = findViewById(R.id.fruit_list);
-
         String[] values = getResources().getStringArray(R.array.fruits);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
