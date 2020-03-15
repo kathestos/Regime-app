@@ -52,7 +52,7 @@ public class ScheduleActivity extends AppCompatActivity {
                     txt.setText(getString(R.string.zagrijavanje_ruke));
                 }
                 if (childPosition == 1) {
-                    img.setImageResource(R.drawable.apple);
+                    img.setImageResource(R.drawable.new_apple);
                     txt.setText(getString(R.string.rastezanje_ruke));
                 }
 

@@ -5,8 +5,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -33,10 +34,26 @@ public class FruitActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                String itemValue = (String) listView.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(),
-                        "Position :" + position + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
-                        .show();
+
+                ImageView imageView = findViewById(R.id.fruit_img);
+                TextView textView = findViewById(R.id.fruit_txt);
+                if (position == 0) {
+                    imageView.setImageResource(R.drawable.banana);
+                    textView.setText(R.string.banane_txt);
+                }
+                if (position == 1) {
+                    imageView.setImageResource(R.drawable.jabuka);
+                    textView.setText(R.string.jabuke_txt);
+                }
+                if (position == 2) {
+                    imageView.setImageResource(R.drawable.kruska);
+                    textView.setText(R.string.kruske_txt);
+                }
+
+                //String itemValue = (String) listView.getItemAtPosition(position);
+                //Toast.makeText(getApplicationContext(),
+                 //       "Position :" + position + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
+                //        .show();
             }
         });
     }
