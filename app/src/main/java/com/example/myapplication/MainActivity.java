@@ -149,6 +149,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView skills = findViewById(R.id.skill);
+        skills.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), SkillActivity.class);
+                startActivity(startIntent);
+            }
+        });
+
     }
 
 }

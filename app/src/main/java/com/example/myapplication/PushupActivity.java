@@ -72,6 +72,7 @@ public class PushupActivity extends AppCompatActivity {
         listGroup.add(getString(R.string.set2_prsa));
         listGroup.add(getString(R.string.set3_prsa));
         listGroup.add(getString(R.string.rastezanje_ruke));
+        listGroup.add(getString(R.string.varijacije_prsa));
 
         String[] array;
         array = getResources().getStringArray(R.array.zagrijavanje_ruke);
@@ -84,12 +85,15 @@ public class PushupActivity extends AppCompatActivity {
         List<String> list4 = new ArrayList<>(Arrays.asList(array));
         array = getResources().getStringArray(R.array.rastezanje_ruke);
         List<String> list5 = new ArrayList<>(Arrays.asList(array));
+        array = getResources().getStringArray(R.array.varijacije_prsa);
+        List<String> list6 = new ArrayList<>(Arrays.asList(array));
 
         listItem.put(listGroup.get(0), list1);
         listItem.put(listGroup.get(1), list2);
         listItem.put(listGroup.get(2), list3);
         listItem.put(listGroup.get(3), list4);
         listItem.put(listGroup.get(4), list5);
+        listItem.put(listGroup.get(5), list6);
         adapter.notifyDataSetChanged();
 
     }

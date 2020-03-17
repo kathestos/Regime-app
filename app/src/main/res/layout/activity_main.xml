@@ -8,14 +8,25 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="257dp"
+        android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:contentDescription="@string/logo_desc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/new_r" />
+        app:srcCompat="@drawable/invert_r" />
+
+    <ImageView
+        android:id="@+id/skill"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/skill_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/skill" />
 
     <ImageView
         android:id="@+id/pushup"

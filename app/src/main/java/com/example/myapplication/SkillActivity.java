@@ -13,8 +13,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
-public class LegsActivity extends AppCompatActivity {
+public class SkillActivity extends AppCompatActivity {
 
     ExpandableListView expandableListView;
     List<String> listGroup;
@@ -26,8 +27,8 @@ public class LegsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
-        setContentView(R.layout.activity_legs);
+        Objects.requireNonNull(getSupportActionBar()).hide();
+        setContentView(R.layout.activity_skill);
 
         expandableListView = findViewById(R.id.expandableListView);
         listGroup = new ArrayList<>();
@@ -40,12 +41,8 @@ public class LegsActivity extends AppCompatActivity {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-
-//                ShowItem(CatList.get(childPosition).getId());
-//                String text = Integer.toString(parent.getChildAt(childPosition).get());
-
-                ImageView img = (ImageView) findViewById(R.id.img1);
-                TextView txt = (TextView) findViewById(R.id.txt1);
+                ImageView img = findViewById(R.id.img1);
+                TextView txt = findViewById(R.id.txt1);
                 if (childPosition == 0) {
                     img.setImageResource(R.drawable.narrow_grip_push_ups);
                     txt.setText(getString(R.string.zagrijavanje_ruke));
@@ -54,46 +51,35 @@ public class LegsActivity extends AppCompatActivity {
                     img.setImageResource(R.drawable.new_apple);
                     txt.setText(getString(R.string.rastezanje_ruke));
                 }
-//                Toast.makeText(getApplicationContext(), getString(R.string.zagrijavanje), Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
     }
 
     private void initListData() {
-        listGroup.add(getString(R.string.zagrijavanje_noge));
-        listGroup.add(getString(R.string.razgibavanje_noge));
-        listGroup.add(getString(R.string.set1_noge));
-        listGroup.add(getString(R.string.set2_noge));
-        listGroup.add(getString(R.string.set3_noge));
-        listGroup.add(getString(R.string.rastezanje_noge));
-        listGroup.add(getString(R.string.varijacije_noge));
+        listGroup.add(getString(R.string.osjetila));
+        listGroup.add(getString(R.string.meditacije));
+        listGroup.add(getString(R.string.sjedenje_na_podu));
+        listGroup.add(getString(R.string.disanje));
+        listGroup.add(getString(R.string.mentalne));
 
         String[] array;
-        array = getResources().getStringArray(R.array.zagrijavanje_noge);
+        array = getResources().getStringArray(R.array.osjetila);
         List<String> list1 = new ArrayList<>(Arrays.asList(array));
-        array = getResources().getStringArray(R.array.razgibavanje_noge);
+        array = getResources().getStringArray(R.array.meditacije);
         List<String> list2 = new ArrayList<>(Arrays.asList(array));
-        array = getResources().getStringArray(R.array.set1_noge);
+        array = getResources().getStringArray(R.array.sjedenje_na_podu);
         List<String> list3 = new ArrayList<>(Arrays.asList(array));
-        array = getResources().getStringArray(R.array.set2_noge);
+        array = getResources().getStringArray(R.array.disanje);
         List<String> list4 = new ArrayList<>(Arrays.asList(array));
-        array = getResources().getStringArray(R.array.set3_noge);
+        array = getResources().getStringArray(R.array.mentalne);
         List<String> list5 = new ArrayList<>(Arrays.asList(array));
-        array = getResources().getStringArray(R.array.rastezanje_noge);
-        List<String> list6 = new ArrayList<>(Arrays.asList(array));
-        array = getResources().getStringArray(R.array.varijacije_noge);
-        List<String> list7 = new ArrayList<>(Arrays.asList(array));
 
         listItem.put(listGroup.get(0), list1);
         listItem.put(listGroup.get(1), list2);
         listItem.put(listGroup.get(2), list3);
         listItem.put(listGroup.get(3), list4);
         listItem.put(listGroup.get(4), list5);
-        listItem.put(listGroup.get(5), list6);
-        listItem.put(listGroup.get(6), list7);
         adapter.notifyDataSetChanged();
-
     }
-
 }

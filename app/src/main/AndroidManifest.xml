@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:icon="@drawable/r_icon5"
@@ -11,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ScheduleActivity"></activity>
+        <activity android:name=".SkillActivity"></activity>
+        <activity android:name=".ScheduleActivity" />
         <activity android:name=".TodoActivity" />
         <activity android:name=".ClothesActivity" />
         <activity android:name=".PhilosophyActivity" />
