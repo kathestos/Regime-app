@@ -1,48 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="10dp"
     android:paddingLeft="10dp"
-    android:paddingRight="10dp"
     android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
     tools:context=".AiActivity">
 
     <com.example.myapplication.views.DrawView
         android:id="@+id/draw"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="500dp"
         />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+    <Button
+        android:id="@+id/btn_class"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="520dp"
+        android:text="Detect" />
 
-        <Button
-            android:id="@+id/btn_clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Clear"
-            />
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="520dp"
+        android:text="Clear" />
 
-        <Button
-            android:id="@+id/btn_class"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Detect"
-            />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/ai_text"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="600dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="600dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="100sp" />
 
     <TextView
         android:id="@+id/tfRes"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:paddingLeft="10dp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-</LinearLayout>
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="800dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="12sp" />
+
+</RelativeLayout>

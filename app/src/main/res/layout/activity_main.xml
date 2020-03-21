@@ -15,7 +15,7 @@
         android:contentDescription="@string/logo_desc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/invert_r" />
+        app:srcCompat="@drawable/invert_r2" />
 
     <ImageView
         android:id="@+id/skill"

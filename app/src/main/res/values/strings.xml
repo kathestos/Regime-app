@@ -426,11 +426,11 @@
     </string-array>
 
 <!--    SKILLZ   -->
-    <string name="osjetila">Svaki Dan</string>
-    <string name="meditacije">Dvaput tjedno</string>
-    <string name="sjedenje_na_podu">Jednom tjedno</string>
-    <string name="disanje">Svaka dva tjedna</string>
-    <string name="mentalne">Svaka tri tjedna</string>
+    <string name="osjetila">Osjetila</string>
+    <string name="meditacije">Meditacije</string>
+    <string name="sjedenje_na_podu">Sjedenje na podu</string>
+    <string name="disanje">Disanje</string>
+    <string name="mentalne">Mentalne</string>
 
     <string-array name="osjetila">
         <item>vid</item>
