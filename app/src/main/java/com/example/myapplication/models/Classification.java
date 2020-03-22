@@ -1,10 +1,7 @@
 package com.example.myapplication.models;
 
 public class Classification {
-
-    //conf is the output
     private float conf;
-    //input label
     private String label;
 
     Classification() {

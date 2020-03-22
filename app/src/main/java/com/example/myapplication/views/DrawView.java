@@ -10,6 +10,7 @@ import android.graphics.PointF;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
+
 import androidx.annotation.Nullable;
 
 public class DrawView extends View {
@@ -17,7 +18,6 @@ public class DrawView extends View {
     private Paint mPaint = new Paint();
     private com.example.myapplication.views.DrawModel mModel;
 
-    // 28x28 pixel Bitmap
     private Bitmap mOffscreenBitmap;
     private Canvas mOffscreenCanvas;
 
@@ -26,7 +26,7 @@ public class DrawView extends View {
     private int mDrawnLineSize = 0;
     private boolean mSetuped = false;
 
-    private float mTmpPoints[] = new float[2];
+    private float[] mTmpPoints = new float[2];
 
     public DrawView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -36,8 +36,6 @@ public class DrawView extends View {
         this.mModel = model;
     }
 
-    //reset the view, so empty the drawing (set everything to white and redraw the 28x28
-    //rectangle
     public void reset() {
         mDrawnLineSize = 0;
         if (mOffscreenBitmap != null) {
@@ -48,26 +46,18 @@ public class DrawView extends View {
         }
     }
 
-    //create the view, for a given length and width
     private void setup() {
         mSetuped = true;
-
-        // View size
         float width = getWidth();
         float height = getHeight();
-
-        // Model (bitmap) size
         float modelWidth = mModel.getWidth();
         float modelHeight = mModel.getHeight();
-
         float scaleW = width / modelWidth;
         float scaleH = height / modelHeight;
-
         float scale = scaleW;
         if (scale > scaleH) {
             scale = scaleH;
         }
-
         float newCx = modelWidth * scale / 2;
         float newCy = modelHeight * scale / 2;
         float dx = width / 2 - newCx;
@@ -80,8 +70,6 @@ public class DrawView extends View {
     }
 
     @Override
-    //when the user begins drawing, initialize
-    //the model renderer class and draw it on the canvas
     public void onDraw(Canvas canvas) {
         if (mModel == null) {
             return;
@@ -97,17 +85,11 @@ public class DrawView extends View {
         if (startIndex < 0) {
             startIndex = 0;
         }
-
         com.example.myapplication.views.DrawRenderer.renderModel(mOffscreenCanvas, mModel, mPaint, startIndex);
         canvas.drawBitmap(mOffscreenBitmap, mMatrix, mPaint);
-
         mDrawnLineSize = mModel.getLineSize();
     }
 
-    /**
-     * Convert screen position to local pos (pos in bitmap)
-     */
-    //calculates the position of the finger
     public void calcPos(float x, float y, PointF out) {
         mTmpPoints[0] = x;
         mTmpPoints[1] = y;
@@ -124,7 +106,6 @@ public class DrawView extends View {
         releaseBitmap();
     }
 
-    //to draw the canvas we need the bitmap
     private void createBitmap() {
         if (mOffscreenBitmap != null) {
             mOffscreenBitmap.recycle();
@@ -143,27 +124,19 @@ public class DrawView extends View {
         reset();
     }
 
-    /**
-     * Get 28x28 pixel data for tensorflow input.
-     */
     public float[] getPixelData() {
         if (mOffscreenBitmap == null) {
             return null;
         }
-
         int width = mOffscreenBitmap.getWidth();
         int height = mOffscreenBitmap.getHeight();
-
-        // Get 28x28 pixel data from bitmap
         int[] pixels = new int[width * height];
         mOffscreenBitmap.getPixels(pixels, 0, width, 0, 0, width, height);
-
         float[] retPixels = new float[pixels.length];
         for (int i = 0; i < pixels.length; ++i) {
-            // Set 0 for white and 255 for black pixel
             int pix = pixels[i];
             int b = pix & 0xff;
-            retPixels[i] = (float)((0xff - b)/255.0);
+            retPixels[i] = (float) ((0xff - b) / 255.0);
         }
         return retPixels;
     }

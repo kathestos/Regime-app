@@ -61,6 +61,13 @@ public class ScheduleActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        TextView txt = findViewById(R.id.sched_txt);
+        String[] sched = getResources().getStringArray(R.array.raspored);
+        List<String> list_sched = new ArrayList<>(Arrays.asList(sched));
+        StringBuilder text_all = new StringBuilder();
+        list_sched.forEach((x) -> text_all.append(x).append("\n"));
+        txt.setText(text_all);
     }
 
     private void initListData() {

@@ -64,6 +64,8 @@
     <string name="text_ramena">Zagrijavanje ramena:\n- kružno</string>
     <string name="text_ruke">Zagrijavanje ruka:\n- kružno usko prema cijelim krugovima</string>
 
+    <string name="default_txt">Default Text</string>
+
     <!-- ******^^^^****** PRSA ******^^^^****** -->
 
     <!-- ******VVVV****** NOGE ******VVVV****** -->
@@ -455,6 +457,7 @@
         <item>lotus</item>
         <item>seiza</item>
         <item>polovično</item>
+        <item>čučanje(nužda)</item>
     </string-array>
 
     <string-array name="disanje">
@@ -464,6 +467,23 @@
     <string-array name="mentalne">
         <item>čitanje</item>
         <item>pisanje</item>
+    </string-array>
+
+    <string-array name="raspored">
+        <item>29.3. brkovi, nokti ruke, spremanje, kosa</item>
+        <item>5.4. brkovi, pranje odjeće</item>
+        <item>12.4. brkovi</item>
+        <item>19.4. brkovi, pranje odjeće, nokti ruke</item>
+        <item>26.4. brkovi, spremanje, kosa</item>
+        <item>3.5. brkovi, pranje odjeće</item>
+        <item>10.5. brkovi, nokti ruke</item>
+        <item>17.5. brkovi, pranje odjeće</item>
+        <item>24.5. brkovi</item>
+        <item>31.5. brkovi, pranje odjeće, nokti ruke, spremanje, kosa</item>
+        <item>7.6. brkovi</item>
+        <item>14.6. brkovi, pranje odjeće</item>
+        <item>21.6. brkovi, nokti ruke, brada, nokti noge</item>
+        <item>28.6. brkovi, pranje odjeće, spremanje, kosa</item>
     </string-array>
 
     <!--čćžđš-->
