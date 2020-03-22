@@ -1,10 +1,9 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
+import android.text.method.ScrollingMovementMethod;
 import android.view.WindowManager;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,32 +36,15 @@ public class ScheduleActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
-
-//                ShowItem(CatList.get(childPosition).getId());
-//                String text = Integer.toString(parent.getChildAt(childPosition).get());
-
-                ImageView img = (ImageView) findViewById(R.id.img1);
-                TextView txt = (TextView) findViewById(R.id.txt1);
-                if (childPosition == 0) {
-                    img.setImageResource(R.drawable.narrow_grip_push_ups);
-                    txt.setText(getString(R.string.zagrijavanje_ruke));
-                }
-                if (childPosition == 1) {
-                    img.setImageResource(R.drawable.new_apple);
-                    txt.setText(getString(R.string.rastezanje_ruke));
-                }
-
-
-//                Toast.makeText(getApplicationContext(), getString(R.string.zagrijavanje), Toast.LENGTH_SHORT).show();
-                return true;
-            }
+        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
+            TextView txt = findViewById(R.id.sched_txt);
+            String text = Objects.requireNonNull(listItem.get(listGroup.get(groupPosition))).get(childPosition);
+            txt.setText(text);
+            return true;
         });
 
         TextView txt = findViewById(R.id.sched_txt);
+        txt.setMovementMethod(new ScrollingMovementMethod());
         String[] sched = getResources().getStringArray(R.array.raspored);
         List<String> list_sched = new ArrayList<>(Arrays.asList(sched));
         StringBuilder text_all = new StringBuilder();
@@ -107,7 +89,5 @@ public class ScheduleActivity extends AppCompatActivity {
         listItem.put(listGroup.get(6), list7);
         listItem.put(listGroup.get(7), list8);
         adapter.notifyDataSetChanged();
-
     }
-
 }
