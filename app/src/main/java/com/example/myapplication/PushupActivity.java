@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
@@ -38,119 +37,90 @@ public class PushupActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
+        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
 
-                GifImageView gif = findViewById(R.id.gif_pushup);
-                TextView txt = findViewById(R.id.text);
-                if (childPosition == 0 && groupPosition == 0) {
-                    gif.setImageResource(R.drawable.gif_zglob);
-                    txt.setText(getString(R.string.text_zglobovi));
-                }
-                else if (childPosition == 1 && groupPosition == 0) {
-                    gif.setImageResource(R.drawable.gif_lakat);
-                    txt.setText(getString(R.string.text_laktovi));
-                }
-                else if (childPosition == 2 && groupPosition == 0) {
-                    gif.setImageResource(R.drawable.gif_rame);
-                    txt.setText(getString(R.string.text_ramena));
-                }
-                else if (childPosition == 3 && groupPosition == 0) {
-                    gif.setImageResource(R.drawable.gif_ruka);
-                    txt.setText(getString(R.string.text_ruke));
-                }
-                else if (childPosition == 0 && groupPosition == 1) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 1 && groupPosition == 1) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 2 && groupPosition == 1) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 3 && groupPosition == 1) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 0 && groupPosition == 2) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 1 && groupPosition == 2) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 2 && groupPosition == 2) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 3 && groupPosition == 2) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 0 && groupPosition == 3) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 1 && groupPosition == 3) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 2 && groupPosition == 3) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 3 && groupPosition == 3) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 0 && groupPosition == 4) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 1 && groupPosition == 4) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 2 && groupPosition == 4) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 3 && groupPosition == 4) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 4 && groupPosition == 4) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 5 && groupPosition == 4) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 0 && groupPosition == 5) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 1 && groupPosition == 5) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 2 && groupPosition == 5) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                else if (childPosition == 3 && groupPosition == 5) {
-                    gif.setImageResource(R.drawable.gif_ph);
-                    txt.setText(getString(R.string.default_txt));
-                }
-                return true;
+            GifImageView gif = findViewById(R.id.gif_pushup);
+            TextView txt = findViewById(R.id.text);
+            if (childPosition == 0 && groupPosition == 0) {
+                gif.setImageResource(R.drawable.gif_zglob);
+                txt.setText(getString(R.string.text_zglobovi));
+            } else if (childPosition == 1 && groupPosition == 0) {
+                gif.setImageResource(R.drawable.gif_lakat);
+                txt.setText(getString(R.string.text_laktovi));
+            } else if (childPosition == 2 && groupPosition == 0) {
+                gif.setImageResource(R.drawable.gif_rame);
+                txt.setText(getString(R.string.text_ramena));
+            } else if (childPosition == 3 && groupPosition == 0) {
+                gif.setImageResource(R.drawable.gif_ruka);
+                txt.setText(getString(R.string.text_ruke));
+            } else if (childPosition == 0 && groupPosition == 1) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 1 && groupPosition == 1) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 2 && groupPosition == 1) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 3 && groupPosition == 1) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 0 && groupPosition == 2) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 1 && groupPosition == 2) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 2 && groupPosition == 2) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 3 && groupPosition == 2) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 0 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 1 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 2 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 3 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 0 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 1 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 2 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 3 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 5 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 0 && groupPosition == 5) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 1 && groupPosition == 5) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 2 && groupPosition == 5) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 3 && groupPosition == 5) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
             }
+            return true;
         });
     }
 
