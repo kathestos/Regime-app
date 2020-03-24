@@ -111,13 +111,17 @@
 
     <string-array name="set3_noge">
         <item>čučnjevi ruke gore</item>
-        <item>izmjenični rudari</item>
+        <item>rudari iza</item>
+        <item>noga u stranu</item>
+        <item>držanje noge</item>
     </string-array>
 
     <string-array name="rastezanje_noge">
-        <item>ispred</item>
         <item>sastrane</item>
-        <item>špage</item>
+        <item>ispred</item>
+        <item>ženska špaga</item>
+        <item>muška špaga</item>
+        <item>dodir stopala</item>
         <item>malasana</item>
     </string-array>
 

@@ -32,7 +32,8 @@
         android:layout_below="@+id/fruit_list"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/new_apple" />
+        app:srcCompat="@drawable/new_apple"
+        android:contentDescription="@string/fruit_desc" />
 
     <TextView
         android:id="@+id/fruit_txt"
@@ -43,7 +44,6 @@
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/fruit_img"
         android:text="@string/lorem"
-        android:textSize="12sp"
-        app:srcCompat="@color/colorPrimaryDark"/>
+        android:textSize="12sp" />
 
 </RelativeLayout>

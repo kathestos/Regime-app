@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,40 +8,41 @@
 
     <TextView
         android:id="@+id/fruit_title"
-        android:text="@string/sjemenke"
         android:layout_width="390dp"
         android:layout_height="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:textSize="20sp"/>
+        android:text="@string/sjemenke"
+        android:textSize="20sp" />
 
     <ListView
         android:id="@+id/fruit_list"
         android:layout_width="400dp"
         android:layout_height="580dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp" />
 
     <ImageView
-        android:id="@+id/img1"
+        android:id="@+id/fruit_img"
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_below="@+id/fruit_list"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:contentDescription="@string/seed_desc"
         app:srcCompat="@drawable/new_seed" />
 
     <TextView
-        android:id="@+id/txt1"
+        android:id="@+id/fruit_txt"
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_below="@+id/fruit_list"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/img1"
+        android:layout_toEndOf="@+id/fruit_img"
         android:text="@string/lorem"
         android:textSize="12sp" />
 
