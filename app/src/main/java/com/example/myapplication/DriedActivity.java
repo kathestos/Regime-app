@@ -33,28 +33,28 @@ public class DriedActivity extends AppCompatActivity {
             ImageView imageView = findViewById(R.id.fruit_img);
             TextView textView = findViewById(R.id.fruit_txt);
             if (position == 0) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                imageView.setImageResource(R.drawable.datulje);
+                textView.setText(R.string.datulje_suhe_txt);
             }
             if (position == 1) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                imageView.setImageResource(R.drawable.marelice);
+                textView.setText(R.string.marelice_suhe_txt);
             }
             if (position == 2) {
                 imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.sljive_suhe_txt);
             }
             if (position == 3) {
                 imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.smokve_suhe_txt);
             }
             if (position == 4) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                imageView.setImageResource(R.drawable.grozdice);
+                textView.setText(R.string.grozdice_txt);
             }
             if (position == 5) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                imageView.setImageResource(R.drawable.brusnice);
+                textView.setText(R.string.brusnice_txt);
             }
         });
     }

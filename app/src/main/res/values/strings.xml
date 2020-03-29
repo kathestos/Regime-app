@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyFractions">
 
     <string name="app_name">Režim</string>
 
@@ -237,7 +237,7 @@
         <item>šipak</item>
     </string-array>
 
-    <string name="banane_txt" tools:ignore="TypographyFractions">Banana info:\n- kalorije: 89\n- uh/ms/pr: 93/3/4\n- voda: 75%</string>
+    <string name="banane_txt">Banana info:\n- kalorije: 89\n- uh/ms/pr: 93/3/4\n- voda: 75%</string>
     <string name="jabuke_txt">Jabuka info:\n- kalorije: 52\n- uh/ms/pr: 95/3/2\n- voda: 86%</string>
     <string name="kruske_txt">Kruška info:\n- kalorije: 58\n- uh/ms/pr: 96/2/2\n- voda: 84%</string>
     <string name="narance_txt">Naranča info:\n- kalorije: 47\n- uh/ms/pr: 91/2/7\n- voda: 87%</string>
@@ -269,8 +269,12 @@
         <item>brusnice</item>
     </string-array>
 
-    <string name="datulje_suhe_txt">Datulja info:\n- kalorije: 282\n- uh/ms/pr: 98/0/2\n- voda: 21%</string>
-    <string name="marelice_suhe_txt">Datulja info:\n- kalorije: 241\n- uh/ms/pr: 93/2/5\n- voda: 31%</string>
+    <string name="datulje_suhe_txt">Sušena datulja info:\n- kalorije: 282\n- uh/ms/pr: 98/0/2\n- voda: 21%</string>
+    <string name="marelice_suhe_txt">Sušena marelica info:\n- kalorije: 241\n- uh/ms/pr: 93/2/5\n- voda: 31%</string>
+    <string name="sljive_suhe_txt">Sušena šljiva info:\n- kalorije: 240\n- uh/ms/pr: 96/1/3\n- voda: 31%</string>
+    <string name="smokve_suhe_txt">Sušena smokva info:\n- kalorije: 249\n- uh/ms/pr: 93/3/4\n- voda: 30%</string>
+    <string name="grozdice_txt">Grožđice info:\n- kalorije: 299\n- uh/ms/pr: 96/1/3\n- voda: 15%</string>
+    <string name="brusnice_txt">Brusnice info:\n- kalorije: 308\n- uh/ms/pr: 96/4/0\n- voda: 16%</string>
 
     <string-array name="nuts">
         <item>orasi</item>
@@ -279,7 +283,16 @@
         <item>pistacije</item>
         <item>pekan</item>
         <item>lješnjak</item>
+        <item>makadamia</item>
     </string-array>
+
+    <string name="orasi_txt">Orasi info:\n- kalorije: 654\n- uh/ms/pr: 9/83/8\n- voda:4%</string>
+    <string name="bademi_txt">Bademi info:\n- kalorije: 575\n- uh/ms/pr: 15/72/13\n- voda: 5%</string>
+    <string name="brazilski_txt">Brazilski orasi info:\n- kalorije: 656\n- uh/ms/pr: 7/85/8\n- voda: 3%</string>
+    <string name="pistacije_txt">Pistacije info:\n- kalorije: 571\n- uh/ms/pr: 20/67/13\n- voda: 2%</string>
+    <string name="pekan_txt">Pekan info:\n- kalorije: 691\n- uh/ms/pr: 8/87/5\n- voda: 3%</string>
+    <string name="lješnjak_txt">Lješnjak info:\n- kalorije: 628\n- uh/ms/pr: 11/81/8\n- voda: 5%</string>
+    <string name="makadamia_txt">Makadamia info:\n- kalorije: 718\n- uh/ms/pr: 8/88/4\n- voda: 1%</string>
 
     <string-array name="seeds">
         <item>chia</item>
@@ -288,6 +301,7 @@
         <item>lan</item>
         <item>bundeva</item>
         <item>suncokret</item>
+        <item>goji</item>
     </string-array>
 
     <string-array name="bobice">

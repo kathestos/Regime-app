@@ -34,27 +34,31 @@ public class NutsActivity extends AppCompatActivity {
             TextView textView = findViewById(R.id.fruit_txt);
             if (position == 0) {
                 imageView.setImageResource(R.drawable.orah);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.orasi_txt);
             }
             if (position == 1) {
                 imageView.setImageResource(R.drawable.badem);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.bademi_txt);
             }
             if (position == 2) {
                 imageView.setImageResource(R.drawable.brazilski);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.brazilski_txt);
             }
             if (position == 3) {
                 imageView.setImageResource(R.drawable.pistacija);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.pistacije_txt);
             }
             if (position == 4) {
                 imageView.setImageResource(R.drawable.pecan);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.pekan_txt);
             }
             if (position == 5) {
                 imageView.setImageResource(R.drawable.ljesnjak);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.lješnjak_txt);
+            }
+            if (position == 6) {
+                imageView.setImageResource(R.drawable.jpg_ph);
+                textView.setText(R.string.makadamia_txt);
             }
         });
     }

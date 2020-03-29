@@ -45,15 +45,19 @@ public class SeedsActivity extends AppCompatActivity {
                 textView.setText(R.string.default_txt);
             }
             if (position == 3) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.lan);
                 textView.setText(R.string.default_txt);
             }
             if (position == 4) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.bundeva);
                 textView.setText(R.string.default_txt);
             }
             if (position == 5) {
                 imageView.setImageResource(R.drawable.suncokret);
+                textView.setText(R.string.default_txt);
+            }
+            if (position == 6) {
+                imageView.setImageResource(R.drawable.goji);
                 textView.setText(R.string.default_txt);
             }
         });

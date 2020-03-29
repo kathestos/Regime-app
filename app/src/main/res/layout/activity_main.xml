@@ -136,7 +136,7 @@
         android:contentDescription="@string/phi_desc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/situp"
-        app:srcCompat="@drawable/new_phi" />
+        app:srcCompat="@drawable/fi" />
 
     <ImageView
         android:id="@+id/clothes"
