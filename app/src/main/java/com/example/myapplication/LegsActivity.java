@@ -41,85 +41,91 @@ public class LegsActivity extends AppCompatActivity {
             GifImageView gif = findViewById(R.id.gif_legs);
             TextView txt = findViewById(R.id.text);
             if (childPosition == 0 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.step);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.noge_iza);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 2 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.noge_strana);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.noge_ispred);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 4 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.visoki_step);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 5 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.skok);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 6 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.van_unutra);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 7 && groupPosition == 0) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.naprijed_nazad);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 1) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.bokovi);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 1) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.koljena);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 2 && groupPosition == 1) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.zglob_noga);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 2) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.cucanj);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 2) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.rudar);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 2 && groupPosition == 2) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.prsti);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 2) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.joga6);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 3) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.spartan);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 3) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.jedna_noga);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 2 && groupPosition == 3) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.noga_gore);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 3) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.warrior);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.cucanj_ruke_gore);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.rudar_iza);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 2 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.noga_strana);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 3 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.drzanje_noge);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 5) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.istezanje_strana);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 5) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.istezanje_naprijed);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 2 && groupPosition == 5) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.zenska_spaga);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 5) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.muska_spaga);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 6) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.do_dolje);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 6) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.joga5);
                 txt.setText(getString(R.string.default_txt));
             }
             return true;

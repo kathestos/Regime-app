@@ -55,6 +55,8 @@
     <string-array name="varijacije_prsa"> <!--  TODO text da se misici stalno uce, nikad ne naviknu-->
         <item>pod kutem</item>
         <item>pozicija ruku</item>
+        <item>strijelci</item><!--  prebacivanje ravnoteze  -->
+        <item>kretanja</item><!--  hodanje, guster, u stranu, dodiri rukama (prsa)  -->
         <item>intenzitet</item>
         <item>kombinacije</item>
     </string-array>
@@ -284,6 +286,7 @@
         <item>pekan</item>
         <item>lješnjak</item>
         <item>makadamia</item>
+        <item>pinjol</item>
     </string-array>
 
     <string name="orasi_txt">Orasi info:\n- kalorije: 654\n- uh/ms/pr: 9/83/8\n- voda:4%</string>
@@ -293,6 +296,7 @@
     <string name="pekan_txt">Pekan info:\n- kalorije: 691\n- uh/ms/pr: 8/87/5\n- voda: 3%</string>
     <string name="lješnjak_txt">Lješnjak info:\n- kalorije: 628\n- uh/ms/pr: 11/81/8\n- voda: 5%</string>
     <string name="makadamia_txt">Makadamia info:\n- kalorije: 718\n- uh/ms/pr: 8/88/4\n- voda: 1%</string>
+    <string name="pinjol_txt">Pinjol info:\n- kalorije: 673\n- uh/ms/pr: 8/85/7\n- voda: 2%</string>
 
     <string-array name="seeds">
         <item>chia</item>
@@ -304,6 +308,14 @@
         <item>goji</item>
     </string-array>
 
+    <string name="chia_txt">Chia info:\n- kalorije: 490\n- uh/ms/pr: 36/53/11\n- voda: 5%</string>
+    <string name="konoplja_txt">Konoplja info:\n- kalorije: 553\n- uh/ms/pr: 6/74/20\n- voda: 5%</string>
+    <string name="sezam_txt">Sezam info:\n- kalorije: 565\n- uh/ms/pr: 19/71/10\n- voda: 3%</string>
+    <string name="lan_txt">Lan info:\n- kalorije: 534\n- uh/ms/pr: 22/66/12\n- voda: 7%</string>
+    <string name="bundeva_txt">Bundeva info:\n- kalorije: 541\n- uh/ms/pr: 13/71/16\n- voda: 7%</string>
+    <string name="suncokret_txt">Suncokret info:\n- kalorije: 584\n- uh/ms/pr: 14/74/12\n- voda: 5%</string>
+    <string name="goji_txt">Goji info:\n- kalorije: 349\n- uh/ms/pr: 82/1/17\n- voda: 7%</string>
+
     <string-array name="bobice">
         <item>borovnice</item>
         <item>kupine</item>
@@ -314,9 +326,11 @@
 
     <string-array name="misc">
         <!--    TODO    dodati peršin, origano (ostalo?) kad se klikne -->
+        <item>kokos</item>
         <item>začini</item>
         <item>čajevi</item>
         <item>bilje</item>
+        <item>voda</item>
     </string-array>
 
     <string-array name="philosophy">
@@ -488,11 +502,10 @@
     </string-array>
 
     <string-array name="raspored">
-        <item>29.3. brkovi, nokti ruke, spremanje, kosa</item>
-        <item>5.4. brkovi, pranje odjeće</item>
-        <item>12.4. brkovi</item>
-        <item>19.4. brkovi, pranje odjeće, nokti ruke</item>
-        <item>26.4. brkovi, spremanje, kosa</item>
+        <item>29.3. nokti ruke, spremanje, kosa</item>
+        <item>5.4. pranje odjeće</item>
+        <item>19.4. pranje odjeće, nokti ruke</item>
+        <item>26.4. spremanje, kosa</item>
         <item>3.5. brkovi, pranje odjeće</item>
         <item>10.5. brkovi, nokti ruke</item>
         <item>17.5. brkovi, pranje odjeće</item>

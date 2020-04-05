@@ -60,6 +60,10 @@ public class NutsActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.makadamia_txt);
             }
+            if (position == 7) {
+                imageView.setImageResource(R.drawable.jpg_ph);
+                textView.setText(R.string.pinjol_txt);
+            }
         });
     }
 }
