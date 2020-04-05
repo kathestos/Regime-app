@@ -1,14 +1,15 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
 
 public class BerriesActivity extends AppCompatActivity {
 
@@ -17,25 +18,38 @@ public class BerriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_berries);
 
         final ListView listView = findViewById(R.id.fruit_list);
-
         String[] values = getResources().getStringArray(R.array.bobice);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                String itemValue = (String) listView.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(),
-                        "Position :" + position + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
-                        .show();
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            ImageView imageView = findViewById(R.id.fruit_img);
+            TextView textView = findViewById(R.id.fruit_txt);
+            if (position == 0) {
+                imageView.setImageResource(R.drawable.jpg_ph);
+                textView.setText(R.string.default_txt);
+            }
+            if (position == 1) {
+                imageView.setImageResource(R.drawable.kupine);
+                textView.setText(R.string.default_txt);
+            }
+            if (position == 2) {
+                imageView.setImageResource(R.drawable.maline);
+                textView.setText(R.string.default_txt);
+            }
+            if (position == 3) {
+                imageView.setImageResource(R.drawable.jpg_ph);
+                textView.setText(R.string.default_txt);
+            }
+            if (position == 4) {
+                imageView.setImageResource(R.drawable.jpg_ph);
+                textView.setText(R.string.default_txt);
             }
         });
     }

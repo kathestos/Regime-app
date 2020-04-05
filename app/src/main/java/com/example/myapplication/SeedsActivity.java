@@ -34,31 +34,31 @@ public class SeedsActivity extends AppCompatActivity {
             TextView textView = findViewById(R.id.fruit_txt);
             if (position == 0) {
                 imageView.setImageResource(R.drawable.chia);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.chia_txt);
             }
             if (position == 1) {
                 imageView.setImageResource(R.drawable.konoplja);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.konoplja_txt);
             }
             if (position == 2) {
                 imageView.setImageResource(R.drawable.sezam);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.sezam_txt);
             }
             if (position == 3) {
                 imageView.setImageResource(R.drawable.lan);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.lan_txt);
             }
             if (position == 4) {
                 imageView.setImageResource(R.drawable.bundeva);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.bundeva_txt);
             }
             if (position == 5) {
                 imageView.setImageResource(R.drawable.suncokret);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.suncokret_txt);
             }
             if (position == 6) {
                 imageView.setImageResource(R.drawable.goji);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.goji_txt);
             }
         });
     }

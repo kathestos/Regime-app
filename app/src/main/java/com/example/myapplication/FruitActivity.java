@@ -48,7 +48,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.narance_txt);
             }
             if (position == 4) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.mandarina);
                 textView.setText(R.string.mandarine_txt);
             }
             if (position == 5) {
@@ -60,7 +60,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.ananas_txt);
             }
             if (position == 7) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.grozde);
                 textView.setText(R.string.grozde_txt);
             }
             if (position == 8) {
@@ -68,7 +68,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.breskve_txt);
             }
             if (position == 9) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.nektarina);
                 textView.setText(R.string.nektarine_txt);
             }
             if (position == 10) {
@@ -76,7 +76,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.marelice_txt);
             }
             if (position == 11) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.sljiva);
                 textView.setText(R.string.sljive_txt);
             }
             if (position == 12) {

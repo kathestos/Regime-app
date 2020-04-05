@@ -121,11 +121,17 @@ public class LegsActivity extends AppCompatActivity {
             } else if (childPosition == 3 && groupPosition == 5) {
                 gif.setImageResource(R.drawable.muska_spaga);
                 txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 0 && groupPosition == 6) {
+            } else if (childPosition == 4 && groupPosition == 5) {
                 gif.setImageResource(R.drawable.do_dolje);
                 txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 1 && groupPosition == 6) {
+            } else if (childPosition == 5 && groupPosition == 5) {
                 gif.setImageResource(R.drawable.joga5);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 0 && groupPosition == 6) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 1 && groupPosition == 6) {
+                gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
             }
             return true;

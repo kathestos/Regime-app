@@ -57,11 +57,11 @@ public class NutsActivity extends AppCompatActivity {
                 textView.setText(R.string.lješnjak_txt);
             }
             if (position == 6) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.makadamia);
                 textView.setText(R.string.makadamia_txt);
             }
             if (position == 7) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.pinjoli);
                 textView.setText(R.string.pinjol_txt);
             }
         });

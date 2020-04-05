@@ -41,11 +41,11 @@ public class DriedActivity extends AppCompatActivity {
                 textView.setText(R.string.marelice_suhe_txt);
             }
             if (position == 2) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.suhe_sljive);
                 textView.setText(R.string.sljive_suhe_txt);
             }
             if (position == 3) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.suhe_smokve);
                 textView.setText(R.string.smokve_suhe_txt);
             }
             if (position == 4) {
