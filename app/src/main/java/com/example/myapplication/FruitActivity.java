@@ -52,7 +52,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.mandarine_txt);
             }
             if (position == 5) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.klementina);
                 textView.setText(R.string.klementine_txt);
             }
             if (position == 6) {
@@ -64,7 +64,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.grozde_txt);
             }
             if (position == 8) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.breskva);
                 textView.setText(R.string.breskve_txt);
             }
             if (position == 9) {
@@ -80,11 +80,11 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.sljive_txt);
             }
             if (position == 12) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.lubenica);
                 textView.setText(R.string.lubenice_txt);
             }
             if (position == 13) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.dinja);
                 textView.setText(R.string.dinje_txt);
             }
             if (position == 14) {
@@ -96,7 +96,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.smokve_txt);
             }
             if (position == 16) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.svjeze_datulje);
                 textView.setText(R.string.datulje_txt);
             }
             if (position == 17) {
@@ -104,7 +104,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.mango_txt);
             }
             if (position == 18) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.papaja);
                 textView.setText(R.string.papaja_txt);
             }
             if (position == 19) {
@@ -116,7 +116,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.kivi_txt);
             }
             if (position == 21) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.sipak);
                 textView.setText(R.string.sipak_txt);
             }
         });

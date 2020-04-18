@@ -64,6 +64,10 @@ public class NutsActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.pinjoli);
                 textView.setText(R.string.pinjol_txt);
             }
+            if (position == 8) {
+                imageView.setImageResource(R.drawable.indijski);
+                textView.setText(R.string.indijski_txt);
+            }
         });
     }
 }

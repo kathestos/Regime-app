@@ -56,10 +56,6 @@ public class SeedsActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.suncokret);
                 textView.setText(R.string.suncokret_txt);
             }
-            if (position == 6) {
-                imageView.setImageResource(R.drawable.goji);
-                textView.setText(R.string.goji_txt);
-            }
         });
     }
 }

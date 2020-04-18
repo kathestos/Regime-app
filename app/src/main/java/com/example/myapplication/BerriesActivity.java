@@ -32,24 +32,28 @@ public class BerriesActivity extends AppCompatActivity {
             ImageView imageView = findViewById(R.id.fruit_img);
             TextView textView = findViewById(R.id.fruit_txt);
             if (position == 0) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                imageView.setImageResource(R.drawable.borovnice);
+                textView.setText(R.string.borovnice_txt);
             }
             if (position == 1) {
                 imageView.setImageResource(R.drawable.kupine);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.kupine_txt);
             }
             if (position == 2) {
                 imageView.setImageResource(R.drawable.maline);
-                textView.setText(R.string.default_txt);
+                textView.setText(R.string.maline_txt);
             }
             if (position == 3) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                imageView.setImageResource(R.drawable.ribiz);
+                textView.setText(R.string.ribizle_txt);
             }
             if (position == 4) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.default_txt);
+                imageView.setImageResource(R.drawable.visnje);
+                textView.setText(R.string.visnje_txt);
+            }
+            if (position == 5) {
+                imageView.setImageResource(R.drawable.tresnje);
+                textView.setText(R.string.tresnje_txt);
             }
         });
     }
