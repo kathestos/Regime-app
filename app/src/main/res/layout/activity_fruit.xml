@@ -44,6 +44,6 @@
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/fruit_img"
         android:text="@string/lorem"
-        android:textSize="12sp" />
+        android:textSize="12sp"/>
 
 </RelativeLayout>

@@ -37,10 +37,10 @@ public class PushupActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
-        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
+        GifImageView gif = findViewById(R.id.gif_pushup);
+        TextView txt = findViewById(R.id.text);
 
-            GifImageView gif = findViewById(R.id.gif_pushup);
-            TextView txt = findViewById(R.id.text);
+        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
             if (childPosition == 0 && groupPosition == 0) {
                 gif.setImageResource(R.drawable.gif_zglob);
                 txt.setText(getString(R.string.text_zglobovi));

@@ -37,9 +37,10 @@ public class LegsActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
+        GifImageView gif = findViewById(R.id.gif_legs);
+        TextView txt = findViewById(R.id.text);
+
         expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
-            GifImageView gif = findViewById(R.id.gif_legs);
-            TextView txt = findViewById(R.id.text);
             if (childPosition == 0 && groupPosition == 0) {
                 gif.setImageResource(R.drawable.step);
                 txt.setText(getString(R.string.default_txt));

@@ -141,11 +141,10 @@
     <string name="zagrijavanje_trbuh">Zagrijavanje</string>
     <string name="set1_trbuh">Prvi Set</string>
     <string name="rastezanje_trbuh">Rastezanje</string>
-    <string name="plankovi">Plankovi</string>
     <string name="set2_trbuh">Drugi Set</string>
+    <string name="plankovi">Plankovi</string>
     <string name="razno_trbuh">Razno</string>
     <string name="varijacije_trbuh">Varijacije</string>
-
 
     <string-array name="zagrijavanje_trbuh">
         <item>penjač</item>
@@ -172,27 +171,31 @@
         <item>marjaryasana</item>
     </string-array>
 
-    <string-array name="plankovi">
-        <item>ravni plank</item>
-        <item>lijevi plank</item>
-        <item>desni plank</item>
-    </string-array>
-
     <string-array name="set2_trbuh">
         <item>u stranu</item>
         <item>ruka-stopalo</item>
         <item>noge gore - u stranu</item>
         <item>noge brzo gore dolje</item>
         <item>noge brzo lijevo desno</item>
-        <item>bicikl</item>
+        <item>jedna noga gore</item>
         <item>ruke ispred</item>
         <item>ispružene sklopke</item>
         <item>ruke gore</item>
     </string-array>
 
+    <string-array name="plankovi">
+        <item>ravni plank</item><!--hodanje naprijed-nazad, rotacija, izvijanje-->
+        <item>lijevi plank</item><!--gore-dolje kukovima, ruka gore, noga gore-->
+        <item>desni plank</item>
+    </string-array>
+
     <string-array name="razno_trbuh">
+        <item>dizanje kukova</item>
         <item>buba</item>
+        <item>krugovi s nogama</item>
+        <item>bicikl</item>
         <item>ukočeno tijelo</item>
+        <item>držanje sklopke</item>
     </string-array>
 
     <string-array name="varijacije_trbuh">
@@ -339,13 +342,20 @@
     <string name="tresnje_txt">Trešnja info:\n- kalorije: 63\n- uh/ms/pr: 91/3/6\n- voda: 82%</string>
 
     <string-array name="misc">
-        <!--    TODO    dodati peršin, origano (ostalo?) kad se klikne rajcica, paprika,... -->
         <item>kokos</item>
+        <item>povrće</item>
         <item>začini</item>
         <item>čajevi</item>
         <item>bilje</item>
         <item>voda</item>
     </string-array>
+
+    <string name="kokos_txt">Kokos\nKokosovo ulje\nKokosova voda</string>
+    <string name="povrce_txt">Rajčica\nPaprika\nKrastavac\nTikvica</string>
+    <string name="zacini_txt">Peršin\nOrigano</string>
+    <string name="cajevi_txt">Zeleni\nCrveni\Yerba Mate</string>
+    <string name="bilje_txt">Salate</string>
+    <string name="voda_txt">Kišnica\nPodzemna voda\nIzvori</string>
 
     <string-array name="philosophy">
         <item>minimalizam</item>
@@ -380,6 +390,7 @@
     <string name="obuca">Obuća</string>
     <string name="svecano">Svečano</string>
     <string name="razno">Razno</string>
+    <string name="odrzavanje">Održavanje</string>
 
     <string-array name="odjeca">
         <item>3 majce kratkih rukava</item>
@@ -416,6 +427,11 @@
         <item>kupaće gaće</item>
         <item>šešir za sunce</item>
         <item>ručnik, krpa</item>
+    </string-array>
+
+    <string-array name="odrzavanje">
+        <item>orasi za pranje</item>
+        <item>ocat</item>
     </string-array>
 
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, mi nec maximus pretium, justo turpis feugiat odio, pretium varius ante ex et urna. Nulla scelerisque nec felis at vulputate. Proin ornare metus at est ultrices suscipit. Vivamus tincidunt lorem a felis condimentum placerat. Duis purus ipsum, tempus id luctus ac, varius non ligula. Nulla ultricies, diam non rutrum vestibulum, lacus lacus volutpat nisi, eu posuere odio lorem eget orci. Maecenas eget eros augue. Aenean bibendum ipsum sodales erat vehicula consectetur. Fusce ut ligula nec nibh ornare efficitur at ut mi. Nunc bibendum lobortis turpis, in sodales magna dignissim ac. Aenean vehicula neque non risus blandit hendrerit. In eget bibendum eros. Mauris egestas magna lacus, ultricies mattis odio faucibus eu.</string>

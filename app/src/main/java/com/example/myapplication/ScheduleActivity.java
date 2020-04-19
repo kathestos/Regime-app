@@ -36,14 +36,14 @@ public class ScheduleActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
+        TextView txt = findViewById(R.id.sched_txt);
+
         expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
-            TextView txt = findViewById(R.id.sched_txt);
             String text = Objects.requireNonNull(listItem.get(listGroup.get(groupPosition))).get(childPosition);
             txt.setText(text);
             return true;
         });
 
-        TextView txt = findViewById(R.id.sched_txt);
         txt.setMovementMethod(new ScrollingMovementMethod());
         String[] sched = getResources().getStringArray(R.array.raspored);
         List<String> list_sched = new ArrayList<>(Arrays.asList(sched));

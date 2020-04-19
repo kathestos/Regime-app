@@ -37,9 +37,10 @@ public class SitupActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
+        GifImageView gif = findViewById(R.id.gif_situp);
+        TextView txt = findViewById(R.id.text);
+
         expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
-            GifImageView gif = findViewById(R.id.gif_situp);
-            TextView txt = findViewById(R.id.text);
             if (childPosition == 0 && groupPosition == 0) {
                 gif.setImageResource(R.drawable.penjac);
                 txt.setText(getString(R.string.default_txt));
@@ -89,40 +90,40 @@ public class SitupActivity extends AppCompatActivity {
                 gif.setImageResource(R.drawable.joga4);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 3) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.u_stranu);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 3) {
-                gif.setImageResource(R.drawable.gif_ph);
+                gif.setImageResource(R.drawable.ruka_stopalo);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 2 && groupPosition == 3) {
                 gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 3 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.noge_unakrsno);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 5 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.bicikl);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 6 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.ruke_ispred);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 7 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.ravno_skupa);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 8 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.ruke_gore);
+                txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.u_stranu);
+                gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.ruka_stopalo);
+                gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 2 && groupPosition == 4) {
                 gif.setImageResource(R.drawable.gif_ph);
-                txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 3 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.gif_ph);
-                txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 4 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.noge_unakrsno);
-                txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 5 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.bicikl);
-                txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 6 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.ruke_ispred);
-                txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 7 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.ravno_skupa);
-                txt.setText(getString(R.string.default_txt));
-            } else if (childPosition == 8 && groupPosition == 4) {
-                gif.setImageResource(R.drawable.ruke_gore);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 5) {
                 gif.setImageResource(R.drawable.gif_ph);
@@ -145,8 +146,8 @@ public class SitupActivity extends AppCompatActivity {
         listGroup.add(getString(R.string.zagrijavanje_trbuh));
         listGroup.add(getString(R.string.set1_trbuh));
         listGroup.add(getString(R.string.rastezanje_trbuh));
-        listGroup.add(getString(R.string.plankovi));
         listGroup.add(getString(R.string.set2_trbuh));
+        listGroup.add(getString(R.string.plankovi));
         listGroup.add(getString(R.string.razno_trbuh));
         listGroup.add(getString(R.string.varijacije_trbuh));
 
@@ -157,9 +158,9 @@ public class SitupActivity extends AppCompatActivity {
         List<String> list2 = new ArrayList<>(Arrays.asList(array));
         array = getResources().getStringArray(R.array.rastezanje_trbuh);
         List<String> list3 = new ArrayList<>(Arrays.asList(array));
-        array = getResources().getStringArray(R.array.plankovi);
-        List<String> list4 = new ArrayList<>(Arrays.asList(array));
         array = getResources().getStringArray(R.array.set2_trbuh);
+        List<String> list4 = new ArrayList<>(Arrays.asList(array));
+        array = getResources().getStringArray(R.array.plankovi);
         List<String> list5 = new ArrayList<>(Arrays.asList(array));
         array = getResources().getStringArray(R.array.razno_trbuh);
         List<String> list6 = new ArrayList<>(Arrays.asList(array));

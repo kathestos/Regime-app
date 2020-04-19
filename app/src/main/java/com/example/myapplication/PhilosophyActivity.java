@@ -1,12 +1,10 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +21,7 @@ public class PhilosophyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_philosophy);
 
         final ListView listView = findViewById(R.id.fruit_list);
+        TextView txt = findViewById(R.id.txt1);
 
         String[] values = getResources().getStringArray(R.array.philosophy);
 
@@ -30,15 +29,9 @@ public class PhilosophyActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                String itemValue = (String) listView.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(),
-                        "Position :" + position + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
-                        .show();
-            }
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            String itemValue = (String) listView.getItemAtPosition(position);
+            txt.setText(itemValue);
         });
     }
 }

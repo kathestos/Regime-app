@@ -1,10 +1,8 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,22 +35,18 @@ public class SkillActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
-                ImageView img = findViewById(R.id.img1);
-                TextView txt = findViewById(R.id.txt1);
-                if (childPosition == 0) {
-                    img.setImageResource(R.drawable.narrow_grip_push_ups);
-                    txt.setText(getString(R.string.zagrijavanje_ruke));
-                }
-                if (childPosition == 1) {
-                    img.setImageResource(R.drawable.new_apple);
-                    txt.setText(getString(R.string.rastezanje_ruke));
-                }
-                return true;
+        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
+            TextView txt = findViewById(R.id.txt1);
+            String text = Objects.requireNonNull(listItem.get(listGroup.get(groupPosition))).get(childPosition);
+            txt.setText(text);
+            if (childPosition == 0 && groupPosition == 0) {
+//                txt.setText(getString(R.string.text_zglobovi));
+            } else if (childPosition == 1 && groupPosition == 0) {
+//                txt.setText(getString(R.string.text_laktovi));
+            } else if (childPosition == 2 && groupPosition == 0) {
+//                txt.setText(getString(R.string.text_ramena));
             }
+            return true;
         });
     }
 

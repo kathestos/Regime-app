@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
@@ -37,29 +36,13 @@ public class ClothesActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
-        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v,
-                                        int groupPosition, int childPosition, long id) {
+        ImageView img = findViewById(R.id.img);
+        TextView txt = findViewById(R.id.text);
 
-//                ShowItem(CatList.get(childPosition).getId());
-//                String text = Integer.toString(parent.getChildAt(childPosition).get());
-
-                ImageView img = (ImageView) findViewById(R.id.img1);
-                TextView txt = (TextView) findViewById(R.id.txt1);
-                if (childPosition == 0) {
-                    img.setImageResource(R.drawable.narrow_grip_push_ups);
-                    txt.setText(getString(R.string.zagrijavanje_ruke));
-                }
-                if (childPosition == 1) {
-                    img.setImageResource(R.drawable.new_apple);
-                    txt.setText(getString(R.string.rastezanje_ruke));
-                }
-
-
-//                Toast.makeText(getApplicationContext(), getString(R.string.zagrijavanje), Toast.LENGTH_SHORT).show();
-                return true;
-            }
+        expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
+            String text = Objects.requireNonNull(listItem.get(listGroup.get(groupPosition))).get(childPosition);
+            txt.setText(text);
+            return true;
         });
     }
 
@@ -68,6 +51,7 @@ public class ClothesActivity extends AppCompatActivity {
         listGroup.add(getString(R.string.obuca));
         listGroup.add(getString(R.string.svecano));
         listGroup.add(getString(R.string.razno));
+        listGroup.add(getString(R.string.odrzavanje));
 
         String[] array;
         array = getResources().getStringArray(R.array.odjeca);
@@ -78,13 +62,15 @@ public class ClothesActivity extends AppCompatActivity {
         List<String> list3 = new ArrayList<>(Arrays.asList(array));
         array = getResources().getStringArray(R.array.razno);
         List<String> list4 = new ArrayList<>(Arrays.asList(array));
+        array = getResources().getStringArray(R.array.odrzavanje);
+        List<String> list5 = new ArrayList<>(Arrays.asList(array));
 
         listItem.put(listGroup.get(0), list1);
         listItem.put(listGroup.get(1), list2);
         listItem.put(listGroup.get(2), list3);
         listItem.put(listGroup.get(3), list4);
+        listItem.put(listGroup.get(4), list5);
         adapter.notifyDataSetChanged();
-
     }
 
 }
