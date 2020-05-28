@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.WindowManager;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
@@ -35,12 +36,14 @@ public class SkillActivity extends AppCompatActivity {
         expandableListView.setAdapter(adapter);
         initListData();
 
+        TextView txt = findViewById(R.id.txt1);
+
         expandableListView.setOnChildClickListener((parent, v, groupPosition, childPosition, id) -> {
-            TextView txt = findViewById(R.id.txt1);
+            txt.setMovementMethod(new ScrollingMovementMethod());
             String text = Objects.requireNonNull(listItem.get(listGroup.get(groupPosition))).get(childPosition);
             txt.setText(text);
             if (childPosition == 0 && groupPosition == 0) {
-//                txt.setText(getString(R.string.text_zglobovi));
+                txt.setText(getString(R.string.vid_txt));
             } else if (childPosition == 1 && groupPosition == 0) {
 //                txt.setText(getString(R.string.text_laktovi));
             } else if (childPosition == 2 && groupPosition == 0) {

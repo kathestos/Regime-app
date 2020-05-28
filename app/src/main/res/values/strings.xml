@@ -20,6 +20,8 @@
         <item>laktovi</item>
         <item>ramena</item>
         <item>ruke</item>
+        <item>dlan - stopalo</item>
+        <item>kruženje tijela</item>
     </string-array>
 
     <string-array name="set1_prsa">
@@ -27,6 +29,7 @@
         <item>stoj</item>
         <item>ruke gore</item>
         <item>dizanje ruku</item>
+        <item>kretanje</item>
     </string-array>
 
     <string-array name="set2_prsa">
@@ -34,6 +37,7 @@
         <item>uvučeni planche</item>
         <item>ruke naprijed</item>
         <item>ruke iza</item>
+        <item>nagib / ravnoteža</item>
     </string-array>
 
     <string-array name="set3_prsa">
@@ -41,6 +45,7 @@
         <item>hindu</item>
         <item>ruke iza</item>
         <item>dizanje ruku</item>
+        <item>spori</item>
     </string-array>
 
     <string-array name="rastezanje_ruke">
@@ -90,6 +95,7 @@
         <item>skokovi</item>
         <item>noge van-unutra</item>
         <item>noge naprijed-nazad</item>
+        <item>kruženje koljena</item>
     </string-array>
 
     <string-array name="razgibavanje_noge">
@@ -103,6 +109,7 @@
         <item>rudari</item>
         <item>prsti</item>
         <item>utkatasana</item>
+        <item>pokret</item>
     </string-array>
 
     <string-array name="set2_noge">
@@ -110,6 +117,7 @@
         <item>jedna noga</item>
         <item>noga gore</item>
         <item>virabhadrasana II</item>
+        <item>prebacivanje ravnoteže</item>
     </string-array>
 
     <string-array name="set3_noge">
@@ -117,6 +125,7 @@
         <item>rudari iza</item>
         <item>noga u stranu</item>
         <item>držanje noge</item>
+        <item>sporo</item>
     </string-array>
 
     <string-array name="rastezanje_noge">
@@ -150,6 +159,7 @@
         <item>penjač</item>
         <item>penjač unutra</item>
         <item>penjač sa strane</item>
+        <item>ptica-pas</item>
     </string-array>
 
     <string-array name="set1_trbuh">
@@ -172,13 +182,13 @@
     </string-array>
 
     <string-array name="set2_trbuh">
-        <item>u stranu</item>
+        <item>sa strane</item>
         <item>ruka-stopalo</item>
-        <item>noge gore - u stranu</item>
+        <item>u stranu</item>
         <item>noge brzo gore dolje</item>
         <item>noge brzo lijevo desno</item>
         <item>jedna noga gore</item>
-        <item>ruke ispred</item>
+        <item>ruke ispred</item> <!-- ili obicni trbusnjaci? -->
         <item>ispružene sklopke</item>
         <item>ruke gore</item>
     </string-array>
@@ -187,15 +197,19 @@
         <item>ravni plank</item><!--hodanje naprijed-nazad, rotacija, izvijanje-->
         <item>lijevi plank</item><!--gore-dolje kukovima, ruka gore, noga gore-->
         <item>desni plank</item>
+        <item>ležnjaci</item>
     </string-array>
 
     <string-array name="razno_trbuh">
-        <item>dizanje kukova</item>
-        <item>buba</item>
-        <item>krugovi s nogama</item>
-        <item>bicikl</item>
-        <item>ukočeno tijelo</item>
         <item>držanje sklopke</item>
+        <item>ukočeno tijelo</item>
+        <item>buba</item>
+        <item>dizanje kukova</item>
+        <item>noge gore - u stranu</item>
+        <item>krugovi s nogama</item>
+        <item>obični</item>
+        <item>dizanje ruku</item>
+        <item>bicikl</item>
     </string-array>
 
     <string-array name="varijacije_trbuh">
@@ -342,6 +356,7 @@
     <string name="tresnje_txt">Trešnja info:\n- kalorije: 63\n- uh/ms/pr: 91/3/6\n- voda: 82%</string>
 
     <string-array name="misc">
+        <item>açaí</item>
         <item>kokos</item>
         <item>povrće</item>
         <item>začini</item>
@@ -350,11 +365,12 @@
         <item>voda</item>
     </string-array>
 
+    <string name="acai_txt">Bobice u prahu</string>
     <string name="kokos_txt">Kokos\nKokosovo ulje\nKokosova voda</string>
     <string name="povrce_txt">Rajčica\nPaprika\nKrastavac\nTikvica</string>
     <string name="zacini_txt">Peršin\nOrigano</string>
-    <string name="cajevi_txt">Zeleni\nCrveni\Yerba Mate</string>
-    <string name="bilje_txt">Salate</string>
+    <string name="cajevi_txt">Zeleni\nCrveni\nYerba Mate</string>
+    <string name="bilje_txt">Blitva\nŠpinat\nKelj\nRaštika\nSalate</string>
     <string name="voda_txt">Kišnica\nPodzemna voda\nIzvori</string>
 
     <string-array name="philosophy">
@@ -500,7 +516,7 @@
         <item>vid</item>
         <item>sluh</item>
         <item>njuh</item>
-        <item>dodir</item>
+        <item>dodir</item> <!-- boso hodanje -->
         <item>okus</item>
         <item>termo</item>
         <item>propriocepcija</item>
@@ -508,6 +524,8 @@
         <item>ravnoteža</item>
         <item>interocepcija</item>
     </string-array>
+
+    <string name="vid_txt">- treptanje\n- slabije umjetno svijetlo\n- dulje izlaganje prirodnom svijetlu\n- pauze tijekom duljeg gledanja u zaslon, pogled u daljinu\n- filter plavog svijetla po noći\n- otvaranje i zatvaranje očiju\n- gore, dolje, lijevo, desno, u osmicu\n- fokus u daljinu, fokus u blizinu\n- trljanje dlanova, pa grijanje očiju\n- fokus na kažiprst koji mijenja udaljenost</string>
 
     <string-array name="meditacije">
         <item>mindfulness</item>
@@ -535,16 +553,16 @@
         <item>29.3. nokti ruke, spremanje, kosa</item>
         <item>5.4. pranje odjeće</item>
         <item>19.4. pranje odjeće, nokti ruke</item>
-        <item>26.4. spremanje, kosa</item>
-        <item>3.5. brkovi, pranje odjeće</item>
+        <item>26.4. spremanje, kosa, brkovi</item>
+        <item>3.5. pranje odjeće</item>
         <item>10.5. brkovi, nokti ruke</item>
-        <item>17.5. brkovi, pranje odjeće</item>
+        <item>17.5. pranje odjeće</item>
         <item>24.5. brkovi</item>
-        <item>31.5. brkovi, pranje odjeće, nokti ruke, spremanje, kosa</item>
+        <item>31.5. pranje odjeće, nokti ruke, spremanje, kosa</item>
         <item>7.6. brkovi</item>
-        <item>14.6. brkovi, pranje odjeće</item>
+        <item>14.6. pranje odjeće</item>
         <item>21.6. brkovi, nokti ruke, brada, nokti noge</item>
-        <item>28.6. brkovi, pranje odjeće, spremanje, kosa</item>
+        <item>28.6. pranje odjeće, spremanje, kosa</item>
     </string-array>
 
     <!--čćžđš-->

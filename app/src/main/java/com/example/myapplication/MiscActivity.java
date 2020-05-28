@@ -32,26 +32,30 @@ public class MiscActivity extends AppCompatActivity {
             ImageView imageView = findViewById(R.id.img);
             TextView textView = findViewById(R.id.txt);
             if (position == 0) {
+                imageView.setImageResource(R.drawable.jpg_ph);
+                textView.setText(R.string.acai_txt);
+            }
+            if (position == 1) {
                 imageView.setImageResource(R.drawable.kokos);
                 textView.setText(R.string.kokos_txt);
             }
-            if (position == 1) {
+            if (position == 2) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.povrce_txt);
             }
-            if (position == 2) {
+            if (position == 3) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.zacini_txt);
             }
-            if (position == 3) {
+            if (position == 4) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.cajevi_txt);
             }
-            if (position == 4) {
+            if (position == 5) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.bilje_txt);
             }
-            if (position == 5) {
+            if (position == 6) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.voda_txt);
             }

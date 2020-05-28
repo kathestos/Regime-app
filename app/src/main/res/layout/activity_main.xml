@@ -37,7 +37,7 @@
         android:contentDescription="@string/pushup_desc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:srcCompat="@drawable/new_pushup" />
+        app:srcCompat="@drawable/img2" />
 
     <ImageView
         android:id="@+id/legs"
@@ -48,7 +48,7 @@
         android:contentDescription="@string/legs_desc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pushup"
-        app:srcCompat="@drawable/new_leg" />
+        app:srcCompat="@drawable/img1" />
 
     <ImageView
         android:id="@+id/situp"
@@ -59,7 +59,7 @@
         android:contentDescription="@string/situp_desc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/legs"
-        app:srcCompat="@drawable/new_situp" />
+        app:srcCompat="@drawable/img3" />
 
     <ImageView
         android:id="@+id/apple"
