@@ -53,6 +53,12 @@ public class PushupActivity extends AppCompatActivity {
             } else if (childPosition == 3 && groupPosition == 0) {
                 gif.setImageResource(R.drawable.gif_ruka);
                 txt.setText(getString(R.string.text_ruke));
+            } else if (childPosition == 4 && groupPosition == 0) {
+                gif.setImageResource(R.drawable.ruke_stopala);
+                txt.setText(getString(R.string.text_ramena));
+            } else if (childPosition == 5 && groupPosition == 0) {
+                gif.setImageResource(R.drawable.kruzenje);
+                txt.setText(getString(R.string.text_ruke));
             } else if (childPosition == 0 && groupPosition == 1) {
                 gif.setImageResource(R.drawable.sklek);
                 txt.setText(getString(R.string.default_txt));
@@ -64,6 +70,9 @@ public class PushupActivity extends AppCompatActivity {
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 1) {
                 gif.setImageResource(R.drawable.dizanje_ruku);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 1) {
+                gif.setImageResource(R.drawable.kretanje_sklek);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 2) {
                 gif.setImageResource(R.drawable.uski_sklek);
@@ -77,6 +86,9 @@ public class PushupActivity extends AppCompatActivity {
             } else if (childPosition == 3 && groupPosition == 2) {
                 gif.setImageResource(R.drawable.ruke_iza);
                 txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 2) {
+                gif.setImageResource(R.drawable.nagib_sklek);
+                txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 3) {
                 gif.setImageResource(R.drawable.siroki_sklek);
                 txt.setText(getString(R.string.default_txt));
@@ -88,6 +100,9 @@ public class PushupActivity extends AppCompatActivity {
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 3) {
                 gif.setImageResource(R.drawable.ruke_iznad);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.spori_sklek);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 4) {
                 gif.setImageResource(R.drawable.joga);
@@ -117,6 +132,15 @@ public class PushupActivity extends AppCompatActivity {
                 gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 5) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 5) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 5 && groupPosition == 5) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 6 && groupPosition == 5) {
                 gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
             }

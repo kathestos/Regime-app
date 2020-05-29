@@ -65,6 +65,9 @@ public class LegsActivity extends AppCompatActivity {
             } else if (childPosition == 7 && groupPosition == 0) {
                 gif.setImageResource(R.drawable.naprijed_nazad);
                 txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 8 && groupPosition == 0) {
+                gif.setImageResource(R.drawable.kruzenje_koljena);
+                txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 1) {
                 gif.setImageResource(R.drawable.bokovi);
                 txt.setText(getString(R.string.default_txt));
@@ -86,6 +89,9 @@ public class LegsActivity extends AppCompatActivity {
             } else if (childPosition == 3 && groupPosition == 2) {
                 gif.setImageResource(R.drawable.joga6);
                 txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 2) {
+                gif.setImageResource(R.drawable.pokret_noge);
+                txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 3) {
                 gif.setImageResource(R.drawable.spartan);
                 txt.setText(getString(R.string.default_txt));
@@ -98,6 +104,9 @@ public class LegsActivity extends AppCompatActivity {
             } else if (childPosition == 3 && groupPosition == 3) {
                 gif.setImageResource(R.drawable.warrior);
                 txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 3) {
+                gif.setImageResource(R.drawable.nagib_noge);
+                txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 4) {
                 gif.setImageResource(R.drawable.cucanj_ruke_gore);
                 txt.setText(getString(R.string.default_txt));
@@ -109,6 +118,9 @@ public class LegsActivity extends AppCompatActivity {
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 3 && groupPosition == 4) {
                 gif.setImageResource(R.drawable.drzanje_noge);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 4 && groupPosition == 4) {
+                gif.setImageResource(R.drawable.spori_cucanj);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 0 && groupPosition == 5) {
                 gif.setImageResource(R.drawable.istezanje_strana);
@@ -132,6 +144,9 @@ public class LegsActivity extends AppCompatActivity {
                 gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 1 && groupPosition == 6) {
+                gif.setImageResource(R.drawable.gif_ph);
+                txt.setText(getString(R.string.default_txt));
+            } else if (childPosition == 2 && groupPosition == 6) {
                 gif.setImageResource(R.drawable.gif_ph);
                 txt.setText(getString(R.string.default_txt));
             }
