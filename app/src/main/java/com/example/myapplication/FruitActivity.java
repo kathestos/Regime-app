@@ -72,50 +72,62 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.nektarine_txt);
             }
             if (position == 10) {
-                imageView.setImageResource(R.drawable.jpg_ph);
-                textView.setText(R.string.marelice_txt);
+                imageView.setImageResource(R.drawable.saturn);
+                textView.setText(R.string.saturn_txt);
             }
             if (position == 11) {
+                imageView.setImageResource(R.drawable.marelica);
+                textView.setText(R.string.marelice_txt);
+            }
+            if (position == 12) {
                 imageView.setImageResource(R.drawable.sljiva);
                 textView.setText(R.string.sljive_txt);
             }
-            if (position == 12) {
+            if (position == 13) {
                 imageView.setImageResource(R.drawable.lubenica);
                 textView.setText(R.string.lubenice_txt);
             }
-            if (position == 13) {
+            if (position == 14) {
                 imageView.setImageResource(R.drawable.dinja);
                 textView.setText(R.string.dinje_txt);
             }
-            if (position == 14) {
+            if (position == 15) {
+                imageView.setImageResource(R.drawable.piel_de_sapo);
+                textView.setText(R.string.piel_txt);
+            }
+            if (position == 16) {
+                imageView.setImageResource(R.drawable.honeydew);
+                textView.setText(R.string.honeydew_txt);
+            }
+            if (position == 17) {
                 imageView.setImageResource(R.drawable.jagoda);
                 textView.setText(R.string.jagode_txt);
             }
-            if (position == 15) {
+            if (position == 18) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.smokve_txt);
             }
-            if (position == 16) {
+            if (position == 19) {
                 imageView.setImageResource(R.drawable.svjeze_datulje);
                 textView.setText(R.string.datulje_txt);
             }
-            if (position == 17) {
+            if (position == 20) {
                 imageView.setImageResource(R.drawable.mango);
                 textView.setText(R.string.mango_txt);
             }
-            if (position == 18) {
+            if (position == 21) {
                 imageView.setImageResource(R.drawable.papaja);
                 textView.setText(R.string.papaja_txt);
             }
-            if (position == 19) {
+            if (position == 22) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.kaki_txt);
             }
-            if (position == 20) {
+            if (position == 23) {
                 imageView.setImageResource(R.drawable.kivi);
                 textView.setText(R.string.kivi_txt);
             }
-            if (position == 21) {
+            if (position == 24) {
                 imageView.setImageResource(R.drawable.sipak);
                 textView.setText(R.string.sipak_txt);
             }

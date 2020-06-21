@@ -56,6 +56,10 @@ public class MiscActivity extends AppCompatActivity {
                 textView.setText(R.string.bilje_txt);
             }
             if (position == 6) {
+                imageView.setImageResource(R.drawable.kakao);
+                textView.setText(R.string.kakao_txt);
+            }
+            if (position == 7) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.voda_txt);
             }

@@ -32,7 +32,7 @@
         android:layout_below="@+id/expandableListView"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/new_leg" />
+        android:src="@drawable/img1" />
 
     <TextView
         android:id="@+id/text"
