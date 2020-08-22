@@ -458,7 +458,7 @@
         <item>ocat</item>
     </string-array>
 
-    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, mi nec maximus pretium, justo turpis feugiat odio, pretium varius ante ex et urna. Nulla scelerisque nec felis at vulputate. Proin ornare metus at est ultrices suscipit. Vivamus tincidunt lorem a felis condimentum placerat. Duis purus ipsum, tempus id luctus ac, varius non ligula. Nulla ultricies, diam non rutrum vestibulum, lacus lacus volutpat nisi, eu posuere odio lorem eget orci. Maecenas eget eros augue. Aenean bibendum ipsum sodales erat vehicula consectetur. Fusce ut ligula nec nibh ornare efficitur at ut mi. Nunc bibendum lobortis turpis, in sodales magna dignissim ac. Aenean vehicula neque non risus blandit hendrerit. In eget bibendum eros. Mauris egestas magna lacus, ultricies mattis odio faucibus eu.</string>
+    <string name="lorem" tools:ignore="Typos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, mi nec maximus pretium, justo turpis feugiat odio, pretium varius ante ex et urna. Nulla scelerisque nec felis at vulputate. Proin ornare metus at est ultrices suscipit. Vivamus tincidunt lorem a felis condimentum placerat. Duis purus ipsum, tempus id luctus ac, varius non ligula. Nulla ultricies, diam non rutrum vestibulum, lacus lacus volutpat nisi, eu posuere odio lorem eget orci. Maecenas eget eros augue. Aenean bibendum ipsum sodales erat vehicula consectetur. Fusce ut ligula nec nibh ornare efficitur at ut mi. Nunc bibendum lobortis turpis, in sodales magna dignissim ac. Aenean vehicula neque non risus blandit hendrerit. In eget bibendum eros. Mauris egestas magna lacus, ultricies mattis odio faucibus eu.</string>
 
     <string-array name="todo">
         <item>Pisanje knjige</item>
@@ -575,4 +575,3 @@
 
     <!--čćžđš-->
 </resources>
-<!--NEKI KOMENTAR ZA COMMIT-->
