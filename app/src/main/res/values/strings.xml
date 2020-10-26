@@ -16,7 +16,7 @@
     <string name="varijacije_prsa">Varijacije</string>
 
     <string-array name="zagrijavanje_ruke">
-        <item>zglobovi</item>
+        <item>zglobovi</item> <!-- plus stisak šake, ispružena šaka   -->
         <item>laktovi</item>
         <item>ramena</item>
         <item>ruke</item>
@@ -62,7 +62,7 @@
         <item>pozicija ruku</item><!--  plus jedna ruka  -->
         <item>strijelci</item><!--  prebacivanje ravnoteze  -->
         <item>kretanja</item><!--  hodanje, guster, u stranu, dodiri rukama (prsa), od uspravno skroz do kraja dolje, spartan  -->
-        <item>intenzitet</item><!--  brzi, spori  -->
+        <item>intenzitet</item><!--  brzi, spori, od skroz gore hodanje do dolje  -->
         <item>ruke</item><!--  šake, prsti, normalno, pod kutem(izvrnuta pozicija), dlanovi-pa-prsti-->
         <item>kombinacije</item>
     </string-array>
