@@ -573,5 +573,10 @@
         <item>28.6. pranje odjeće, spremanje, kosa</item>
     </string-array>
 
+    <string-array name="food_picker1">
+        <item>food1</item>
+        <item>food2</item>
+    </string-array>
+
     <!--čćžđš-->
 </resources>
