@@ -56,6 +56,14 @@ public class SeedsActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.suncokret);
                 textView.setText(R.string.suncokret_txt);
             }
+            if (position == 6) {
+                imageView.setImageResource(R.drawable.crni_kim);
+                textView.setText(R.string.crni_kim_txt);
+            }
+            if (position == 7) {
+                imageView.setImageResource(R.drawable.new_seed);
+                textView.setText(R.string.mak_txt);
+            }
         });
     }
 }

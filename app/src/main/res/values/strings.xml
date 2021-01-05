@@ -293,9 +293,6 @@
         <item>šljive</item>
         <item>smokve</item>
         <item>grožđice</item>
-        <item>brusnice</item>
-        <item>goji</item>
-        <item>aronija</item>
     </string-array>
 
     <string name="datulje_suhe_txt">Sušena datulja info:\n- kalorije: 282\n- uh/ms/pr: 98/0/2\n- voda: 21%</string>
@@ -303,9 +300,6 @@
     <string name="sljive_suhe_txt">Sušena šljiva info:\n- kalorije: 240\n- uh/ms/pr: 96/1/3\n- voda: 31%</string>
     <string name="smokve_suhe_txt">Sušena smokva info:\n- kalorije: 249\n- uh/ms/pr: 93/3/4\n- voda: 30%</string>
     <string name="grozdice_txt">Grožđice info:\n- kalorije: 299\n- uh/ms/pr: 96/1/3\n- voda: 15%</string>
-    <string name="brusnice_txt">Brusnice info:\n- kalorije: 308\n- uh/ms/pr: 96/4/0\n- voda: 16%</string>
-    <string name="goji_txt">Goji info:\n- kalorije: 349\n- uh/ms/pr: 82/1/17\n- voda: 7%</string>
-    <string name="aronija_txt">Aronija info:\n- kalorije: 288\n- uh/ms/pr: 96/2/2\n- voda: 10%</string>
 
     <string-array name="nuts">
         <item>orasi</item>
@@ -336,6 +330,8 @@
         <item>lan</item>
         <item>bundeva</item>
         <item>suncokret</item>
+        <item>crni kim</item>
+        <item>mak</item>
     </string-array>
 
     <string name="chia_txt">Chia info:\n- kalorije: 490\n- uh/ms/pr: 36/53/11\n- voda: 5%</string>
@@ -344,6 +340,8 @@
     <string name="lan_txt">Lan info:\n- kalorije: 534\n- uh/ms/pr: 22/66/12\n- voda: 7%</string>
     <string name="bundeva_txt">Bundeva info:\n- kalorije: 541\n- uh/ms/pr: 13/71/16\n- voda: 7%</string>
     <string name="suncokret_txt">Suncokret info:\n- kalorije: 584\n- uh/ms/pr: 14/74/12\n- voda: 5%</string>
+    <string name="crni_kim_txt">Crni kim info:\n- kalorije: 280\n- uh/ms/pr: 23/54/23\n- voda: 6%</string>
+    <string name="mak_txt">Mak info:\n- kalorije: 525\n- uh/ms/pr: 32/48/20\n- voda: 6%</string>
 
     <string-array name="bobice">
         <item>borovnice</item>
@@ -352,6 +350,10 @@
         <item>ribiz</item>
         <item>višnje</item>
         <item>trešnje</item>
+        <item>brusnice</item>
+        <item>goji</item>
+        <item>aronija</item>
+        <item>bijela murva</item>
     </string-array>
 
     <string name="borovnice_txt">Borovnica info:\n- kalorije: 57\n- uh/ms/pr: 91/5/4\n- voda: 84%</string>
@@ -360,25 +362,33 @@
     <string name="ribizle_txt">Ribizla info:\n- kalorije: 56\n- uh/ms/pr: 89/3/8\n- voda: 84%</string>
     <string name="visnje_txt">Višnja info:\n- kalorije: 50\n- uh/ms/pr: 88/5/7\n- voda: 86%</string>
     <string name="tresnje_txt">Trešnja info:\n- kalorije: 63\n- uh/ms/pr: 91/3/6\n- voda: 82%</string>
+    <string name="brusnice_txt">Brusnice info:\n- kalorije: 308\n- uh/ms/pr: 96/4/0\n- voda: 16%</string>
+    <string name="goji_txt">Goji info:\n- kalorije: 349\n- uh/ms/pr: 82/1/17\n- voda: 7%</string>
+    <string name="aronija_txt">Aronija info:\n- kalorije: 288\n- uh/ms/pr: 96/2/2\n- voda: 10%</string>
+    <string name="bijela_murva_txt">Bijela murva info:\n- kalorije: 333\n- uh/ms/pr: 81/8/11\n- voda: 10%</string>
 
     <string-array name="misc">
         <item>açaí</item>
+        <item>guarana</item>
         <item>kokos</item>
         <item>povrće</item>
         <item>začini</item>
         <item>čajevi</item>
         <item>bilje</item>
         <item>kakao</item>
+        <item>rogač</item>
         <item>voda</item>
     </string-array>
 
     <string name="acai_txt">Bobice u prahu</string>
+    <string name="guarana_txt">Kofein</string>
     <string name="kokos_txt">Kokos\nKokosovo ulje\nKokosova voda</string>
     <string name="povrce_txt">Rajčica\nPaprika\nKrastavac\nTikvica</string>
     <string name="zacini_txt">Peršin\nOrigano</string>
     <string name="cajevi_txt">Zeleni\nCrveni\nYerba Mate</string>
     <string name="bilje_txt">Blitva\nŠpinat\nKelj\nRaštika\nSalate\nCeler</string>
     <string name="kakao_txt">Komadići\nU prahu</string>
+    <string name="rogac_txt">Prah</string>
     <string name="voda_txt">Kišnica\nPodzemna voda\nIzvori</string>
 
     <string-array name="philosophy">

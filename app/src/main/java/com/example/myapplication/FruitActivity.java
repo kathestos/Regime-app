@@ -104,7 +104,7 @@ public class FruitActivity extends AppCompatActivity {
                 textView.setText(R.string.jagode_txt);
             }
             if (position == 18) {
-                imageView.setImageResource(R.drawable.jpg_ph);
+                imageView.setImageResource(R.drawable.smokva);
                 textView.setText(R.string.smokve_txt);
             }
             if (position == 19) {
