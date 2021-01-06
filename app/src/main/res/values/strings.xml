@@ -259,6 +259,9 @@
         <item>kaki</item>
         <item>kivi</item>
         <item>šipak</item>
+        <item>grejp</item>
+        <item>kaktus smokva</item>
+        <item>marakuja</item>
     </string-array>
 
     <string name="banane_txt">Banana info:\n- kalorije: 89\n- uh/ms/pr: 93/3/4\n- voda: 75%</string>
@@ -286,6 +289,9 @@
     <string name="kaki_txt">Kaki info:\n- kalorije: 70\n- uh/ms/pr: 95/2/3\n- voda: 80%</string>
     <string name="kivi_txt">Kivi info:\n- kalorije: 61\n- uh/ms/pr: 87/7/6\n- voda: 83%</string>
     <string name="sipak_txt">Šipak info:\n- kalorije: 83\n- uh/ms/pr: 81/12/7\n- voda: 78%</string>
+    <string name="grejp_txt">Grejp info:\n- kalorije: 42\n- uh/ms/pr: 91/2/7\n- voda: 90%</string>
+    <string name="kaktus_smokva_txt">Kaktus smokva info:\n- kalorije: 41\n- uh/ms/pr: 89/5/6\n- voda: 88%</string>
+    <string name="marakuja_txt">Marakuja info:\n- kalorije: 97\n- uh/ms/pr: 89/3/8\n- voda: 73%</string>
 
     <string-array name="dried">
         <item>datulje</item>
