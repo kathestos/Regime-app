@@ -71,6 +71,10 @@ public class BerriesActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.bijela_murva);
                 textView.setText(R.string.bijela_murva_txt);
             }
+            if (position == 10) {
+                imageView.setImageResource(R.drawable.mjehurica);
+                textView.setText(R.string.mjehurica_txt);
+            }
         });
     }
 }

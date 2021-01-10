@@ -52,6 +52,14 @@ public class DriedActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.grozdice);
                 textView.setText(R.string.grozdice_txt);
             }
+            if (position == 5) {
+                imageView.setImageResource(R.drawable.nangka);
+                textView.setText(R.string.nangka_txt);
+            }
+            if (position == 6) {
+                imageView.setImageResource(R.drawable.papaja_suha);
+                textView.setText(R.string.papaja_suha_txt);
+            }
         });
     }
 }

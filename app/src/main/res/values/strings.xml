@@ -299,6 +299,8 @@
         <item>šljive</item>
         <item>smokve</item>
         <item>grožđice</item>
+        <item>nangka</item>
+        <item>papaja</item>
     </string-array>
 
     <string name="datulje_suhe_txt">Sušena datulja info:\n- kalorije: 282\n- uh/ms/pr: 98/0/2\n- voda: 21%</string>
@@ -306,6 +308,8 @@
     <string name="sljive_suhe_txt">Sušena šljiva info:\n- kalorije: 240\n- uh/ms/pr: 96/1/3\n- voda: 31%</string>
     <string name="smokve_suhe_txt">Sušena smokva info:\n- kalorije: 249\n- uh/ms/pr: 93/3/4\n- voda: 30%</string>
     <string name="grozdice_txt">Grožđice info:\n- kalorije: 299\n- uh/ms/pr: 96/1/3\n- voda: 15%</string>
+    <string name="nangka_txt">Nangka info:\n- kalorije: 330\n- uh/ms/pr: 88/5/7\n- voda: 15%</string>
+    <string name="papaja_suha_txt">Papaja info:\n- kalorije: 350\n- uh/ms/pr: 92/3/5\n- voda: 15%</string>
 
     <string-array name="nuts">
         <item>orasi</item>
@@ -360,6 +364,7 @@
         <item>goji</item>
         <item>aronija</item>
         <item>bijela murva</item>
+        <item>mjehurica</item>
     </string-array>
 
     <string name="borovnice_txt">Borovnica info:\n- kalorije: 57\n- uh/ms/pr: 91/5/4\n- voda: 84%</string>
@@ -372,10 +377,13 @@
     <string name="goji_txt">Goji info:\n- kalorije: 349\n- uh/ms/pr: 82/1/17\n- voda: 7%</string>
     <string name="aronija_txt">Aronija info:\n- kalorije: 288\n- uh/ms/pr: 96/2/2\n- voda: 10%</string>
     <string name="bijela_murva_txt">Bijela murva info:\n- kalorije: 333\n- uh/ms/pr: 81/8/11\n- voda: 10%</string>
+    <string name="mjehurica_txt">Mjehurica info:\n- kalorije: 286\n- uh/ms/pr: 88/2/10\n- voda: 10%</string>
 
     <string-array name="misc">
         <item>açaí</item>
         <item>guarana</item>
+        <item>chlorella</item>
+        <item>spirulina</item>
         <item>kokos</item>
         <item>povrće</item>
         <item>začini</item>
@@ -388,6 +396,8 @@
 
     <string name="acai_txt">Bobice u prahu</string>
     <string name="guarana_txt">Kofein</string>
+    <string name="chlorella_txt">B12</string>
+    <string name="spirulina_txt">Željezo</string>
     <string name="kokos_txt">Kokos\nKokosovo ulje\nKokosova voda</string>
     <string name="povrce_txt">Rajčica\nPaprika\nKrastavac\nTikvica</string>
     <string name="zacini_txt">Peršin\nOrigano</string>

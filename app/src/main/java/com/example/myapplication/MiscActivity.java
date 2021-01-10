@@ -40,34 +40,42 @@ public class MiscActivity extends AppCompatActivity {
                 textView.setText(R.string.guarana_txt);
             }
             if (position == 2) {
+                imageView.setImageResource(R.drawable.chlorella);
+                textView.setText(R.string.chlorella_txt);
+            }
+            if (position == 3) {
+                imageView.setImageResource(R.drawable.spirulina);
+                textView.setText(R.string.spirulina_txt);
+            }
+            if (position == 4) {
                 imageView.setImageResource(R.drawable.kokos);
                 textView.setText(R.string.kokos_txt);
             }
-            if (position == 3) {
+            if (position == 5) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.povrce_txt);
             }
-            if (position == 4) {
+            if (position == 6) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.zacini_txt);
             }
-            if (position == 5) {
+            if (position == 7) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.cajevi_txt);
             }
-            if (position == 6) {
+            if (position == 8) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.bilje_txt);
             }
-            if (position == 7) {
+            if (position == 9) {
                 imageView.setImageResource(R.drawable.kakao);
                 textView.setText(R.string.kakao_txt);
             }
-            if (position == 8) {
+            if (position == 10) {
                 imageView.setImageResource(R.drawable.rogac);
                 textView.setText(R.string.rogac_txt);
             }
-            if (position == 9) {
+            if (position == 11) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.voda_txt);
             }
