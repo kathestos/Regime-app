@@ -74,6 +74,24 @@
 
     <string name="default_txt">Default Text</string>
 
+    <string-array name="prsa_novo">
+        <item>sklekovi</item>
+        <item>stoj</item>
+        <item>ruke gore</item>
+        <item>dizanje ruku</item>
+        <item>kretanje</item>
+        <item>uski sklekovi</item>
+        <item>uvučeni planche</item>
+        <item>ruke naprijed</item>
+        <item>ruke iza</item>
+        <item>nagib / ravnoteža</item>
+        <item>široki sklekovi</item>
+        <item>hindu</item>
+        <item>ruke iza</item>
+        <item>dizanje ruku</item>
+        <item>spori</item> <!--  DODAVATI SVE NOVE  -->
+    </string-array>
+
     <!-- ******^^^^****** PRSA ******^^^^****** -->
 
     <!-- ******VVVV****** NOGE ******VVVV****** -->

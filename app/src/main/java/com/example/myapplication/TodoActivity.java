@@ -2,20 +2,26 @@ package com.example.myapplication;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class TodoActivity extends AppCompatActivity {
 
     SharedPreferences sp;
+
+    ArrayList<Integer> playlist = new ArrayList<>();
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,5 +106,42 @@ public class TodoActivity extends AppCompatActivity {
         String savedSuho = suho[suhoNum];
         suhoText.setText(savedSuho);
         suhoPick.setValue(suhoNum);
+
+//        SOUNDS EXPERIMENT
+
+        Button generate = findViewById(R.id.generateMp3);
+        Button play = findViewById(R.id.playMp3);
+        Button pause = findViewById(R.id.pauseMp3);
+
+        playlist.add(R.raw.norm_sklek);
+        playlist.add(R.raw.prvi);
+        playlist.add(R.raw.drugi);
+        playlist.add(R.raw.treci);
+        playlist.add(R.raw.norm_sklek);
+
+        play.setOnClickListener(v -> playNext(pause));
+
     }
+
+    void playNext(Button pause) {
+        if (i < playlist.size()) {
+            MediaPlayer mp = MediaPlayer.create(this, playlist.get(i++));
+            mp.start();
+            mp.setOnCompletionListener(vv -> playNext(pause));
+            pausePlay(pause, mp);
+        }
+    }
+
+    void pausePlay(Button pause, MediaPlayer mp) {
+        pause.setOnClickListener(vv -> {
+            mp.pause();
+            pause.setText("cont");
+            pause.setOnClickListener(vvv -> {
+                mp.start();
+                pause.setText("pause");
+                pausePlay(pause, mp);
+            });
+        });
+    }
+
 }

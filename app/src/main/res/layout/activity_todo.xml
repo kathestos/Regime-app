@@ -105,4 +105,33 @@
         android:layout_toEndOf="@+id/pickerSjemenke"
         android:textSize="10sp" />
 
+    <Button
+        android:id="@+id/generateMp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickerOrah"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Generate" />
+
+    <Button
+        android:id="@+id/playMp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickerOrah"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/pickerOrah"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/pauseMp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickerOrah"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/pickerSjemenke"
+        android:text="Pause" />
+
 </RelativeLayout>
