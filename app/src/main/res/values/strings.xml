@@ -54,6 +54,7 @@
         <item>laktovi</item>
         <item>ramena</item>
         <item>u stranu</item>
+        <item>skroz dolje/gore</item>
         <item>vrat</item>
     </string-array>
 
@@ -74,22 +75,52 @@
 
     <string name="default_txt">Default Text</string>
 
-    <string-array name="prsa_novo">
-        <item>sklekovi</item>
+    <!--  SKLEKOVI NOVO ***** DODAVATI SVE NOVE  -->
+
+    <string-array name="sklekovi">
+        <item>normalni</item>
+        <item>uski</item>
+        <item>široki</item>
+        <item>križ</item>
+        <item>ispred</item>
+        <item>pike</item>
+    </string-array>
+
+    <string-array name="sklek_stabilnost">
+        <item>ruka gore</item>
+        <item>ruka ispred</item>
+        <item>ruka iza</item>
+        <item>dizanje rameni prstima</item>
+    </string-array>
+
+    <string-array name="sklek_vještine">
         <item>stoj</item>
-        <item>ruke gore</item>
-        <item>dizanje ruku</item>
-        <item>kretanje</item>
-        <item>uski sklekovi</item>
         <item>uvučeni planche</item>
-        <item>ruke naprijed</item>
-        <item>ruke iza</item>
-        <item>nagib / ravnoteža</item>
-        <item>široki sklekovi</item>
         <item>hindu</item>
-        <item>ruke iza</item>
-        <item>dizanje ruku</item>
-        <item>spori</item> <!--  DODAVATI SVE NOVE  -->
+        <item>jedna ruka</item>
+        <item>nagib</item>
+    </string-array>
+
+    <string-array name="ruke">
+        <item>dizanje sa strane</item>
+        <item>iza</item>
+        <item>iza, tijelo dolje</item>
+        <item>dizanje ispred</item>
+        <item>jedna ruka iza</item>
+    </string-array>
+
+    <string-array name="sklek_kretanje">
+        <item>u stranu</item>
+        <item>od gore prema dolje</item>
+        <item>gušter</item>
+        <item>spori</item>
+    </string-array>
+
+    <string-array name="štanga_ruke">
+        <item>široko_90</item>
+        <item>usko</item>
+        <item>široko_80</item>
+        <item>obje ruke</item>
     </string-array>
 
     <!-- ******^^^^****** PRSA ******^^^^****** -->
@@ -153,6 +184,7 @@
         <item>muška špaga</item>
         <item>dodir stopala</item>
         <item>malasana</item>
+        <!--<item>vježbe za lotus</item>-->
     </string-array>
 
     <string-array name="varijacije_noge">
@@ -161,7 +193,51 @@
         <item>kretanja</item>
     </string-array>
 
-    <!-- ******^^^^****** NOGE ******^^^^****** -->
+    <!--  NOGE NOVO ***** DODAVATI SVE NOVE  -->
+
+    <string-array name="čučnjevi">
+        <item>ruke ispred</item>
+        <item>ruke iznad</item>
+        <item>noge usko</item>
+        <item>noge široko</item>
+    </string-array>
+
+    <string-array name="rudari">
+        <item>naprijed</item>
+        <item>nazad</item>
+        <item>u stranu</item>
+        <item>dodatni item</item>
+    </string-array>
+
+    <string-array name="stabilnost_noge">
+        <item>utkatasana</item>
+        <item>virabhadrasana II</item>
+        <item>držanje noge u zraku</item>
+        <item>dodatni item</item>
+    </string-array>
+
+    <string-array name="razno_noge">
+        <item>spartan</item>
+        <item>jedna noga</item>
+        <item>noga gore</item>
+        <item>prsti</item>
+    </string-array>
+
+    <string-array name="noge">
+        <item>u stranu</item>
+        <item>ispred, iza</item>
+        <item>s poda sa strane</item>
+        <item>s poda ispred</item>
+    </string-array>
+
+    <string-array name="kretanje_noge">
+        <item>čučanj u stranu</item>
+        <item>spori</item>
+        <item>dodatni item</item>
+        <item>dodatni item</item>
+    </string-array>
+
+    <!-- ******^^^^****** NOGE  ******^^^^****** -->
 
     <!-- ******VVVV****** TRBUH ******VVVV****** -->
 
@@ -178,6 +254,7 @@
         <item>penjač unutra</item>
         <item>penjač sa strane</item>
         <item>ptica-pas</item>
+        <item>bicikl</item>
     </string-array>
 
     <string-array name="set1_trbuh">
@@ -190,13 +267,6 @@
         <item>sklopke</item>
         <item>pune sklopke</item>
         <item>noge gore</item>
-    </string-array>
-
-    <string-array name="rastezanje_trbuh">
-        <item>bhujangasana</item>
-        <item>balasana</item>
-        <item>bitilasana</item>
-        <item>marjaryasana</item>
     </string-array>
 
     <string-array name="set2_trbuh">
@@ -233,6 +303,66 @@
     <string-array name="varijacije_trbuh">
         <item>intenzitet</item>
         <item>kombinacije</item>
+    </string-array>
+
+    <string-array name="rastezanje_trbuh">
+        <item>bhujangasana</item>
+        <item>balasana</item>
+        <item>bitilasana</item>
+        <item>marjaryasana</item>
+    </string-array>
+
+    <!--  TRBUH NOVO ***** DODAVATI SVE NOVE  -->
+
+    <string-array name="trbuh_strana">
+        <item>dodir pete</item>
+        <item>lakat koljeno</item>
+        <item>ruke sa strane</item>
+        <item>sa strane</item>
+        <item>ruka stopalo</item>
+        <item>u stranu</item>
+    </string-array>
+
+    <string-array name="trbuh_dolje">
+        <item>noge na prsa</item>
+        <item>obje noge gore</item>
+        <item>naizmjenično noga gore</item>
+        <item>noge brzo gore dolje</item>
+        <item>noge brzo lijevo desno</item>
+        <item>jedna noga gore</item>
+    </string-array>
+
+    <string-array name="trbuh_gore">
+        <item>sklopka</item>
+        <item>puna sklopka</item>
+        <item>noge gore</item>
+        <item>ruke ispred</item>
+        <item>ispružene sklopke</item>
+        <item>ruke gore</item>
+        <item>obični</item>
+        <item>dizanje ruku</item>
+    </string-array>
+
+    <string-array name="plank">
+        <item>ravni</item>
+        <item>u stranu</item>
+        <item>držanje sklopke</item>
+        <item>ukočeno tijelo</item>
+    </string-array>
+
+    <string-array name="trbuh_razno">
+        <item>ležnjak</item>
+        <item>dizanje kukova</item>
+        <item>noge gore pa u stranu</item>
+        <item>krugovi s nogama</item>
+        <item>buba</item>
+    </string-array>
+
+    <string-array name="trbuh_štanga">
+        <item>usko dizanje</item>
+        <item>široko dizanje</item>
+        <item>dodatni item</item>
+        <item>dodatni item</item>
     </string-array>
 
     <!-- ******^^^^****** TRBUH ******^^^^****** -->
@@ -557,7 +687,7 @@
         <item>optimizacija imovine</item>
     </string-array>
 
-<!--    SKILLZ   -->
+    <!--    SKILLZ   -->
     <string name="osjetila">Osjetila</string>
     <string name="meditacije">Meditacije</string>
     <string name="sjedenje_na_podu">Sjedenje na podu</string>

@@ -70,8 +70,8 @@
         android:layout_below="@+id/fruit_list"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:contentDescription="@string/todo_desc"
         android:layout_toEndOf="@+id/pickerOrah"
+        android:contentDescription="@string/todo_desc"
         android:text="Sjemenke" />
 
     <NumberPicker
@@ -91,8 +91,8 @@
         android:layout_below="@+id/fruit_list"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:contentDescription="@string/todo_desc"
         android:layout_toEndOf="@+id/pickerSjemenke"
+        android:contentDescription="@string/todo_desc"
         android:text="Sušeno" />
 
     <NumberPicker
@@ -133,5 +133,24 @@
         android:layout_marginTop="40dp"
         android:layout_toEndOf="@+id/pickerSjemenke"
         android:text="Pause" />
+
+    <Button
+        android:id="@+id/foodActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generateMp3"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Food" />
+
+    <Button
+        android:id="@+id/workoutActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generateMp3"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/pickerOrah"
+        android:text="Workout" />
 
 </RelativeLayout>

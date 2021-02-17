@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -120,6 +121,12 @@ public class TodoActivity extends AppCompatActivity {
         playlist.add(R.raw.norm_sklek);
 
         play.setOnClickListener(v -> playNext(pause));
+
+        Button workoutSchedule = findViewById(R.id.workoutActivityButton);
+        workoutSchedule.setOnClickListener(v -> {
+            Intent startIntent = new Intent(getApplicationContext(), WorkoutSchedule.class);
+            startActivity(startIntent);
+        });
 
     }
 
