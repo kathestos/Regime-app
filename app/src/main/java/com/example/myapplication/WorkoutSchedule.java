@@ -1,5 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -9,9 +12,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.common.util.ArrayUtils;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class WorkoutSchedule extends AppCompatActivity {
+
+    ArrayList<Integer> playlist = new ArrayList<>();
+    ArrayList<String> lista = new ArrayList<>();
+    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +28,9 @@ public class WorkoutSchedule extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_workout_schedule);
+
+        sp = getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
 
         NumberPicker zagrijavanjePrsa = findViewById(R.id.zagrijavanje_prsa);
         String[] zagrijavanjePrsaList = getResources().getStringArray(R.array.zagrijavanje_ruke);
@@ -77,6 +88,14 @@ public class WorkoutSchedule extends AppCompatActivity {
             ruke.setValue(ruke.getValue() + 1);
             sklekKretanje.setValue(sklekKretanje.getValue() + 1);
             stangaPrsa.setValue(stangaPrsa.getValue() + 1);
+
+            editor.putInt("sklekoviNumber", sklekovi.getValue());
+            editor.putInt("prsaStabilnostNumber", prsaStabilnost.getValue());
+            editor.putInt("prsaVjestineNumber", prsaVjestine.getValue());
+            editor.putInt("rukeNumber", ruke.getValue());
+            editor.putInt("sklekKretanjeNumber", sklekKretanje.getValue());
+            editor.putInt("stangaPrsaNumber", stangaPrsa.getValue());
+            editor.apply();
         });
 
         NumberPicker zagrijavanjeNoge = findViewById(R.id.zagrijavanje_noge);
@@ -137,6 +156,14 @@ public class WorkoutSchedule extends AppCompatActivity {
             raznoNoge.setValue(raznoNoge.getValue() + 1);
             noge.setValue(noge.getValue() + 1);
             kretanjeNoge.setValue(kretanjeNoge.getValue() + 1);
+
+            editor.putInt("cucnjeviNumber", cucnjevi.getValue());
+            editor.putInt("rudariNumber", rudari.getValue());
+            editor.putInt("stabilnostNogeNumber", stabilnostNoge.getValue());
+            editor.putInt("raznoNogeNumber", raznoNoge.getValue());
+            editor.putInt("nogeNumber", noge.getValue());
+            editor.putInt("kretanjeNogeNumber", kretanjeNoge.getValue());
+            editor.apply();
         });
 
         NumberPicker zagrijavanjeTrbuh = findViewById(R.id.zagrijavanje_trbuh);
@@ -195,6 +222,160 @@ public class WorkoutSchedule extends AppCompatActivity {
             plank.setValue(plank.getValue() + 1);
             trbuhRazno.setValue(trbuhRazno.getValue() + 1);
             trbuhStanga.setValue(trbuhStanga.getValue() + 1);
+
+            editor.putInt("trbuhStranaNumber", trbuhStrana.getValue());
+            editor.putInt("trbuhDoljeNumber", trbuhDolje.getValue());
+            editor.putInt("trbuhGoreNumber", trbuhGore.getValue());
+            editor.putInt("plankNumber", plank.getValue());
+            editor.putInt("trbuhRaznoNumber", trbuhRazno.getValue());
+            editor.putInt("trbuhStangaNumber", trbuhStanga.getValue());
+            editor.apply();
+        });
+
+        sklekovi.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("sklekoviNumber", sklekovi.getValue());
+            editor.apply();
+        });
+        prsaStabilnost.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("prsaStabilnostNumber", prsaStabilnost.getValue());
+            editor.apply();
+        });
+        prsaVjestine.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("prsaVjestineNumber", prsaVjestine.getValue());
+            editor.apply();
+        });
+        ruke.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("rukeNumber", ruke.getValue());
+            editor.apply();
+        });
+        sklekKretanje.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("sklekKretanjeNumber", sklekKretanje.getValue());
+            editor.apply();
+        });
+        stangaPrsa.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("stangaPrsaNumber", stangaPrsa.getValue());
+            editor.apply();
+        });
+
+        cucnjevi.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("cucnjeviNumber", cucnjevi.getValue());
+            editor.apply();
+        });
+        rudari.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("rudariNumber", rudari.getValue());
+            editor.apply();
+        });
+        stabilnostNoge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("stabilnostNogeNumber", stabilnostNoge.getValue());
+            editor.apply();
+        });
+        raznoNoge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("raznoNogeNumber", raznoNoge.getValue());
+            editor.apply();
+        });
+        noge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("nogeNumber", noge.getValue());
+            editor.apply();
+        });
+        kretanjeNoge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("kretanjeNogeNumber", kretanjeNoge.getValue());
+            editor.apply();
+        });
+
+        trbuhStrana.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("trbuhStranaNumber", trbuhStrana.getValue());
+            editor.apply();
+        });
+        trbuhDolje.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("trbuhDoljeNumber", trbuhDolje.getValue());
+            editor.apply();
+        });
+        trbuhGore.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("trbuhGoreNumber", trbuhGore.getValue());
+            editor.apply();
+        });
+        plank.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("plankNumber", plank.getValue());
+            editor.apply();
+        });
+        trbuhRazno.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("trbuhRaznoNumber", trbuhRazno.getValue());
+            editor.apply();
+        });
+        trbuhStanga.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("trbuhStangaNumber", trbuhStanga.getValue());
+            editor.apply();
+        });
+
+        SharedPreferences sp2 = getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
+
+        sklekovi.setValue(sp2.getInt("sklekoviNumber", 0));
+        prsaStabilnost.setValue(sp2.getInt("prsaStabilnostNumber", 0));
+        prsaVjestine.setValue(sp2.getInt("prsaVjestineNumber", 0));
+        ruke.setValue(sp2.getInt("rukeNumber", 0));
+        sklekKretanje.setValue(sp2.getInt("sklekKretanjeNumber", 0));
+        stangaPrsa.setValue(sp2.getInt("stangaPrsaNumber", 0));
+
+        cucnjevi.setValue(sp2.getInt("cucnjeviNumber", 0));
+        rudari.setValue(sp2.getInt("rudariNumber", 0));
+        stabilnostNoge.setValue(sp2.getInt("stabilnostNogeNumber", 0));
+        raznoNoge.setValue(sp2.getInt("raznoNogeNumber", 0));
+        noge.setValue(sp2.getInt("nogeNumber", 0));
+        kretanjeNoge.setValue(sp2.getInt("kretanjeNogeNumber", 0));
+
+        trbuhStrana.setValue(sp2.getInt("trbuhStranaNumber", 0));
+        trbuhDolje.setValue(sp2.getInt("trbuhDoljeNumber", 0));
+        trbuhGore.setValue(sp2.getInt("trbuhGoreNumber", 0));
+        plank.setValue(sp2.getInt("plankNumber", 0));
+        trbuhRazno.setValue(sp2.getInt("trbuhRaznoNumber", 0));
+        trbuhStanga.setValue(sp2.getInt("trbuhStangaNumber", 0));
+
+        Button generatePrsa = findViewById(R.id.generatePrsa);
+        generatePrsa.setOnClickListener(v -> {
+            lista.clear();
+            lista.add(sklekoviList[sklekovi.getValue()]);
+            lista.add(stangaPrsaList[stangaPrsa.getValue()]);
+            lista.add(prsaVjestineList[prsaVjestine.getValue()]);
+            lista.add(prsaStabilnostList[prsaStabilnost.getValue()]);
+            lista.add(rukeList[ruke.getValue()]);
+            lista.add(sklekKretanjeList[sklekKretanje.getValue()]);
+        });
+
+        Button generateNoge = findViewById(R.id.generateNoge);
+        generateNoge.setOnClickListener(v -> {
+            lista.clear();
+            lista.add(cucnjeviList[cucnjevi.getValue()]);
+            lista.add(rudariList[rudari.getValue()]);
+            lista.add(raznoNogeList[raznoNoge.getValue()]);
+            lista.add(stabilnostNogeList[stabilnostNoge.getValue()]);
+            lista.add(nogeList[noge.getValue()]);
+            lista.add(kretanjeNogeList[kretanjeNoge.getValue()]);
+        });
+
+        Button generateTrbuh = findViewById(R.id.generateTrbuh);
+        generateTrbuh.setOnClickListener(v -> {
+            lista.clear();
+            lista.add(trbuhStranaList[trbuhStrana.getValue()]);
+            lista.add(trbuhDoljeList[trbuhDolje.getValue()]);
+            lista.add(trbuhGoreList[trbuhGore.getValue()]);
+            lista.add(plankList[plank.getValue()]);
+            lista.add(trbuhStangaList[trbuhStanga.getValue()]);
+            lista.add(trbuhRaznoList[trbuhRazno.getValue()]);
+        });
+
+        Button start = findViewById(R.id.start);
+        start.setOnClickListener(v -> {
+            playlist.add(R.raw.norm_sklek);
+            playlist.add(R.raw.prvi);
+            playlist.add(R.raw.drugi);
+            playlist.add(R.raw.treci);
+            playlist.add(R.raw.norm_sklek);
+
+
+            Intent startIntent = new Intent(getApplicationContext(), WorkoutDisplay.class);
+            startIntent.putStringArrayListExtra("lista", lista);
+            startActivity(startIntent);
+
         });
 
     }

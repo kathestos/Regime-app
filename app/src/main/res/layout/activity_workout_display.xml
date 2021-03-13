@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutDisplay">
+
+    <TextView
+        android:id="@+id/naziv_vjezbe"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        android:text="Naziv vježbe"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="32sp"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/naziv_vjezbe"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bicikl" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/gif"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/vrijeme"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:text="Lista: "
+        android:layout_below="@+id/progressBar2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

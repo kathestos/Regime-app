@@ -24,7 +24,7 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/prsa_stabilnost"
+        android:id="@+id/prsa_štanga"
         android:layout_width="123dp"
         android:layout_height="80dp"
         android:layout_below="@+id/sklekovi"
@@ -36,7 +36,16 @@
         android:id="@+id/prsa_vještine"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/prsa_stabilnost"
+        android:layout_below="@+id/prsa_štanga"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:solidColor="@color/silver" />
+
+    <NumberPicker
+        android:id="@+id/prsa_stabilnost"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/prsa_vještine"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:solidColor="@color/silver" />
@@ -45,7 +54,7 @@
         android:id="@+id/ruke"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/prsa_vještine"
+        android:layout_below="@+id/prsa_stabilnost"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:solidColor="@color/silver" />
@@ -60,19 +69,10 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/prsa_štanga"
-        android:layout_width="123dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/prsa_kretanje"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:solidColor="@color/silver" />
-
-    <NumberPicker
         android:id="@+id/prsa_rastezanje"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/prsa_štanga"
+        android:layout_below="@+id/prsa_kretanje"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:solidColor="@color/darker" />
@@ -131,7 +131,7 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/stabilnost_noge"
+        android:id="@+id/razno_noge"
         android:layout_width="123dp"
         android:layout_height="80dp"
         android:layout_below="@+id/rudari"
@@ -141,10 +141,10 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/razno_noge"
+        android:id="@+id/stabilnost_noge"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/stabilnost_noge"
+        android:layout_below="@+id/razno_noge"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/zagrijavanje_prsa"
@@ -154,7 +154,7 @@
         android:id="@+id/noge"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/razno_noge"
+        android:layout_below="@+id/stabilnost_noge"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/zagrijavanje_prsa"
@@ -228,7 +228,7 @@
         android:id="@+id/trbuh_dolje"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/čučnjevi"
+        android:layout_below="@+id/trbuh_strana"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/zagrijavanje_noge"
@@ -255,7 +255,7 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/trbuh_razno"
+        android:id="@+id/trbuh_štanga"
         android:layout_width="123dp"
         android:layout_height="80dp"
         android:layout_below="@+id/plank"
@@ -265,10 +265,10 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/trbuh_štanga"
+        android:id="@+id/trbuh_razno"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/trbuh_razno"
+        android:layout_below="@+id/trbuh_štanga"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/zagrijavanje_noge"
@@ -278,7 +278,7 @@
         android:id="@+id/rastezanje_trbuh"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/trbuh_štanga"
+        android:layout_below="@+id/trbuh_razno"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/zagrijavanje_noge"

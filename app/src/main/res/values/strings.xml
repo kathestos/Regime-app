@@ -15,6 +15,9 @@
     <string name="rastezanje_ruke">Rastezanje</string>
     <string name="varijacije_prsa">Varijacije</string>
 
+    <!--    zglobovi gore dolje, lijevo desno, rotacija, kružno prema van, prema unutra, šaka stisnuta, ispružena, laktovi kružno vanjski, unutarnji-->
+    <!--    ramena kružno, ruke usko prema cijelim krugovima, ruke natrag, dlan prema stopalu, kruženje tijela udesno, ulijevo-->
+
     <string-array name="zagrijavanje_ruke">
         <item>zglobovi</item> <!-- plus stisak šake, ispružena šaka   -->
         <item>laktovi</item>
@@ -48,11 +51,13 @@
         <item>spori</item>
     </string-array>
 
+    <!--ado muka svanasana, desni zglob gore, dolje, naprijed, lijevi zglob gore, dolje, naprijed, ramena ispred, laktovi iza, u stranu, skroz dolje gore, vrat naprijed nazad, ustranu, nagib, krugovi udesno, ulijevo-->
+
     <string-array name="rastezanje_ruke">
         <item>adho mukha svanasana</item>
         <item>zglobovi</item>
-        <item>laktovi</item>
         <item>ramena</item>
+        <item>laktovi</item>
         <item>u stranu</item>
         <item>skroz dolje/gore</item>
         <item>vrat</item>
@@ -90,7 +95,7 @@
         <item>ruka gore</item>
         <item>ruka ispred</item>
         <item>ruka iza</item>
-        <item>dizanje rameni prstima</item>
+        <item>dizanje ramena prstima</item>
     </string-array>
 
     <string-array name="sklek_vještine">
@@ -102,24 +107,29 @@
     </string-array>
 
     <string-array name="ruke">
-        <item>dizanje sa strane</item>
-        <item>iza</item>
-        <item>iza, tijelo dolje</item>
+        <item>dizanje ruke sa strane</item>
+        <item>ruke iza</item>
+        <item>ruke iza, tijelo dolje</item>
         <item>dizanje ispred</item>
         <item>jedna ruka iza</item>
     </string-array>
 
     <string-array name="sklek_kretanje">
-        <item>u stranu</item>
-        <item>od gore prema dolje</item>
+        <item>sklek u stranu</item>
+        <item>od gore prema dolje sklek</item>
         <item>gušter</item>
-        <item>spori</item>
+        <item>spori sklek</item>
     </string-array>
 
     <string-array name="štanga_ruke">
-        <item>široko_90</item>
-        <item>usko</item>
-        <item>široko_80</item>
+        <item>široko 100</item>
+        <item>široko 90</item>
+        <item>široko 80</item>
+        <item>široko 70</item>
+        <item>usko 50</item>
+        <item>usko 60</item>
+        <item>usko 70</item>
+        <item>usko 80</item>
         <item>obje ruke</item>
     </string-array>
 

@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".WorkoutDisplay"></activity>
         <activity android:name=".WorkoutSchedule" />
         <activity android:name=".SkillActivity" />
         <activity android:name=".ScheduleActivity" />
