@@ -20,11 +20,18 @@ public class WorkoutDisplay extends AppCompatActivity {
         setContentView(R.layout.activity_workout_display);
 
         ArrayList<String> lista = getIntent().getExtras().getStringArrayList("lista");
+        ArrayList<Integer> playlist = new ArrayList<>();
 
         TextView vrijeme = findViewById(R.id.vrijeme);
         for (String temp : lista) {
             vrijeme.append(temp);
             vrijeme.append(", ");
+
+            if (temp == "prsa_zagrijavanje") playlist.add(R.raw.prsa_zagrijavanje);
+
         }
+
+
+
     }
 }

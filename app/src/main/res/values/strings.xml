@@ -216,14 +216,16 @@
         <item>naprijed</item>
         <item>nazad</item>
         <item>u stranu</item>
-        <item>dodatni item</item>
+        <item>noga iza ustranu</item>
     </string-array>
 
     <string-array name="stabilnost_noge">
         <item>utkatasana</item>
         <item>virabhadrasana II</item>
-        <item>držanje noge u zraku</item>
-        <item>dodatni item</item>
+        <item>držanje noge u zraku</item> <!--Utthita Hasta Padangustasana-->
+        <item>Utthita Parsvakonasana</item>
+        <item>Virabhadrasana III</item>
+        <item>Natarajasana</item>
     </string-array>
 
     <string-array name="razno_noge">

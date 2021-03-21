@@ -333,49 +333,47 @@ public class WorkoutSchedule extends AppCompatActivity {
         Button generatePrsa = findViewById(R.id.generatePrsa);
         generatePrsa.setOnClickListener(v -> {
             lista.clear();
+            lista.add("prsa_zagrijavanje");
             lista.add(sklekoviList[sklekovi.getValue()]);
             lista.add(stangaPrsaList[stangaPrsa.getValue()]);
             lista.add(prsaVjestineList[prsaVjestine.getValue()]);
             lista.add(prsaStabilnostList[prsaStabilnost.getValue()]);
             lista.add(rukeList[ruke.getValue()]);
             lista.add(sklekKretanjeList[sklekKretanje.getValue()]);
+            lista.add("prsa_rastezanje");
         });
 
         Button generateNoge = findViewById(R.id.generateNoge);
         generateNoge.setOnClickListener(v -> {
             lista.clear();
+            lista.add("noge_zagrijavanje");
             lista.add(cucnjeviList[cucnjevi.getValue()]);
             lista.add(rudariList[rudari.getValue()]);
             lista.add(raznoNogeList[raznoNoge.getValue()]);
             lista.add(stabilnostNogeList[stabilnostNoge.getValue()]);
             lista.add(nogeList[noge.getValue()]);
             lista.add(kretanjeNogeList[kretanjeNoge.getValue()]);
+            lista.add("noge_rastezanje");
         });
 
         Button generateTrbuh = findViewById(R.id.generateTrbuh);
         generateTrbuh.setOnClickListener(v -> {
             lista.clear();
+            lista.add("trbuh_zagrijavanje");
             lista.add(trbuhStranaList[trbuhStrana.getValue()]);
             lista.add(trbuhDoljeList[trbuhDolje.getValue()]);
             lista.add(trbuhGoreList[trbuhGore.getValue()]);
             lista.add(plankList[plank.getValue()]);
             lista.add(trbuhStangaList[trbuhStanga.getValue()]);
             lista.add(trbuhRaznoList[trbuhRazno.getValue()]);
+            lista.add("trbuh_rastezanje");
         });
 
         Button start = findViewById(R.id.start);
         start.setOnClickListener(v -> {
-            playlist.add(R.raw.norm_sklek);
-            playlist.add(R.raw.prvi);
-            playlist.add(R.raw.drugi);
-            playlist.add(R.raw.treci);
-            playlist.add(R.raw.norm_sklek);
-
-
             Intent startIntent = new Intent(getApplicationContext(), WorkoutDisplay.class);
             startIntent.putStringArrayListExtra("lista", lista);
             startActivity(startIntent);
-
         });
 
     }
