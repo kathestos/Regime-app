@@ -24,7 +24,7 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/prsa_štanga"
+        android:id="@+id/prsa_stanga"
         android:layout_width="123dp"
         android:layout_height="80dp"
         android:layout_below="@+id/sklekovi"
@@ -33,10 +33,10 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/prsa_vještine"
+        android:id="@+id/prsa_vjestine"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/prsa_štanga"
+        android:layout_below="@+id/prsa_stanga"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:solidColor="@color/silver" />
@@ -45,9 +45,9 @@
         android:id="@+id/prsa_stabilnost"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/prsa_vještine"
+        android:layout_below="@+id/prsa_vjestine"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="9dp"
         android:solidColor="@color/silver" />
 
     <NumberPicker

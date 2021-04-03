@@ -91,14 +91,19 @@
         <item>pike</item>
     </string-array>
 
-    <string-array name="sklek_stabilnost">
-        <item>ruka gore</item>
-        <item>ruka ispred</item>
-        <item>ruka iza</item>
-        <item>dizanje ramena prstima</item>
+    <string-array name="stanga_ruke">
+        <item>široko 100</item>
+        <item>usko 80</item>
+        <item>široko 90</item>
+        <item>usko 70</item>
+        <item>široko 80</item>
+        <item>usko 60</item>
+        <item>široko 70</item>
+        <item>usko 50</item>
+        <item>obje ruke</item>
     </string-array>
 
-    <string-array name="sklek_vještine">
+    <string-array name="sklek_vjestine">
         <item>stoj</item>
         <item>uvučeni planche</item>
         <item>hindu</item>
@@ -106,31 +111,26 @@
         <item>nagib</item>
     </string-array>
 
+    <string-array name="sklek_stabilnost">
+        <item>ruka gore</item>
+        <item>ruka ispred</item>
+        <item>ruka iza</item>
+        <item>ramena prstima</item>
+    </string-array>
+
     <string-array name="ruke">
-        <item>dizanje ruke sa strane</item>
+        <item>ruke sa strane</item>
         <item>ruke iza</item>
-        <item>ruke iza, tijelo dolje</item>
+        <item>tijelo dolje</item>
         <item>dizanje ispred</item>
-        <item>jedna ruka iza</item>
+        <item>ruka iza</item>
     </string-array>
 
     <string-array name="sklek_kretanje">
         <item>sklek u stranu</item>
-        <item>od gore prema dolje sklek</item>
+        <item>od gore dolje</item>
         <item>gušter</item>
         <item>spori sklek</item>
-    </string-array>
-
-    <string-array name="štanga_ruke">
-        <item>široko 100</item>
-        <item>široko 90</item>
-        <item>široko 80</item>
-        <item>široko 70</item>
-        <item>usko 50</item>
-        <item>usko 60</item>
-        <item>usko 70</item>
-        <item>usko 80</item>
-        <item>obje ruke</item>
     </string-array>
 
     <!-- ******^^^^****** PRSA ******^^^^****** -->
@@ -188,8 +188,8 @@
     </string-array>
 
     <string-array name="rastezanje_noge">
-        <item>sastrane</item>
         <item>ispred</item>
+        <item>sastrane</item>
         <item>ženska špaga</item>
         <item>muška špaga</item>
         <item>dodir stopala</item>
@@ -245,8 +245,8 @@
     <string-array name="kretanje_noge">
         <item>čučanj u stranu</item>
         <item>spori</item>
-        <item>dodatni item</item>
-        <item>dodatni item</item>
+        <item>naprijed nazad</item>
+        <item>čučanj udarac</item>
     </string-array>
 
     <!-- ******^^^^****** NOGE  ******^^^^****** -->

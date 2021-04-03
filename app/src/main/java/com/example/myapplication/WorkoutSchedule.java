@@ -50,8 +50,8 @@ public class WorkoutSchedule extends AppCompatActivity {
         prsaStabilnost.setMaxValue(prsaStabilnostList.length - 1);
         prsaStabilnost.setDisplayedValues(prsaStabilnostList);
 
-        NumberPicker prsaVjestine = findViewById(R.id.prsa_vještine);
-        String[] prsaVjestineList = getResources().getStringArray(R.array.sklek_vještine);
+        NumberPicker prsaVjestine = findViewById(R.id.prsa_vjestine);
+        String[] prsaVjestineList = getResources().getStringArray(R.array.sklek_vjestine);
         prsaVjestine.setMinValue(0);
         prsaVjestine.setMaxValue(prsaVjestineList.length - 1);
         prsaVjestine.setDisplayedValues(prsaVjestineList);
@@ -68,8 +68,8 @@ public class WorkoutSchedule extends AppCompatActivity {
         sklekKretanje.setMaxValue(sklekKretanjeList.length - 1);
         sklekKretanje.setDisplayedValues(sklekKretanjeList);
 
-        NumberPicker stangaPrsa = findViewById(R.id.prsa_štanga);
-        String[] stangaPrsaList = getResources().getStringArray(R.array.štanga_ruke);
+        NumberPicker stangaPrsa = findViewById(R.id.prsa_stanga);
+        String[] stangaPrsaList = getResources().getStringArray(R.array.stanga_ruke);
         stangaPrsa.setMinValue(0);
         stangaPrsa.setMaxValue(stangaPrsaList.length - 1);
         stangaPrsa.setDisplayedValues(stangaPrsaList);

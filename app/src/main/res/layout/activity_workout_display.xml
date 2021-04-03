@@ -7,39 +7,96 @@
 
     <TextView
         android:id="@+id/naziv_vjezbe"
-        android:layout_width="300dp"
-        android:layout_height="105dp"
-        android:text="Naziv vježbe"
-        android:layout_marginStart="50dp"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:textSize="32sp"/>
+        android:gravity="center"
+        android:text="Naziv vježbe"
+        android:textSize="32sp" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gif"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="390dp"
+        android:layout_height="390dp"
         android:layout_below="@+id/naziv_vjezbe"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/bicikl" />
 
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="300dp"
-        android:layout_height="26dp"
-        android:layout_below="@+id/gif"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="10dp"/>
-
     <TextView
-        android:id="@+id/vrijeme"
+        android:id="@+id/lista_vjezbi"
         android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:text="Lista: "
-        android:layout_below="@+id/progressBar2"
+        android:layout_height="200dp"
+        android:layout_below="@+id/pauseMp3"
         android:layout_marginStart="50dp"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+        android:text="Lista: "
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/playMp3"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/mSeekBar"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/play"/>
+
+    <ImageView
+        android:id="@+id/pauseMp3"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/mSeekBar"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pause"
+        android:visibility="invisible"/>
+
+    <SeekBar
+        android:id="@+id/mSeekBar"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:thumbTint="@color/black"
+        android:progressTint="@color/black" />
+
+    <TextView
+        android:id="@+id/curTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_below="@+id/gif"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05:00"
+        android:layout_below="@+id/gif"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/prevIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/mSeekBar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/previous_song" />
+
+    <ImageView
+        android:id="@+id/nextIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/mSeekBar"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/next_song" />
 
 </RelativeLayout>
