@@ -106,8 +106,8 @@ public class WorkoutSchedule extends AppCompatActivity {
         zagrijavanjeNoge.setMaxValue(objeNoge.length - 1);
         zagrijavanjeNoge.setDisplayedValues(objeNoge);
 
-        NumberPicker cucnjevi = findViewById(R.id.čučnjevi);
-        String[] cucnjeviList = getResources().getStringArray(R.array.čučnjevi);
+        NumberPicker cucnjevi = findViewById(R.id.cucnjevi);
+        String[] cucnjeviList = getResources().getStringArray(R.array.cucnjevi);
         cucnjevi.setMinValue(0);
         cucnjevi.setMaxValue(cucnjeviList.length - 1);
         cucnjevi.setDisplayedValues(cucnjeviList);

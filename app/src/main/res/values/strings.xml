@@ -205,7 +205,7 @@
 
     <!--  NOGE NOVO ***** DODAVATI SVE NOVE  -->
 
-    <string-array name="čučnjevi">
+    <string-array name="cucnjevi">
         <item>ruke ispred</item>
         <item>ruke iznad</item>
         <item>noge usko</item>
@@ -219,20 +219,21 @@
         <item>noga iza ustranu</item>
     </string-array>
 
-    <string-array name="stabilnost_noge">
-        <item>utkatasana</item>
-        <item>virabhadrasana II</item>
-        <item>držanje noge u zraku</item> <!--Utthita Hasta Padangustasana-->
-        <item>Utthita Parsvakonasana</item>
-        <item>Virabhadrasana III</item>
-        <item>Natarajasana</item>
-    </string-array>
-
     <string-array name="razno_noge">
         <item>spartan</item>
         <item>jedna noga</item>
         <item>noga gore</item>
         <item>prsti</item>
+    </string-array>
+
+    <string-array name="stabilnost_noge">
+        <item>utkatasana</item>
+        <item>virabhadrasana I</item>
+        <item>virabhadrasana II</item>
+        <item>virabhadrasana III</item>
+        <item>utthita hasta padangusthasana</item> <!--držanje noge u zraku-->
+        <item>utthita parsvakonasana</item>
+        <item>natarajasana</item>
     </string-array>
 
     <string-array name="noge">

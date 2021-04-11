@@ -111,7 +111,7 @@
         android:textSize="12sp" />
 
     <NumberPicker
-        android:id="@+id/čučnjevi"
+        android:id="@+id/cucnjevi"
         android:layout_width="123dp"
         android:layout_height="80dp"
         android:layout_below="@+id/zagrijavanje_noge"
@@ -124,7 +124,7 @@
         android:id="@+id/rudari"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/čučnjevi"
+        android:layout_below="@+id/cucnjevi"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/zagrijavanje_prsa"
