@@ -60,6 +60,10 @@ public class DriedActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.papaja_suha);
                 textView.setText(R.string.papaja_suha_txt);
             }
+            if (position == 7) {
+                imageView.setImageResource(R.drawable.mango_suhi);
+                textView.setText(R.string.mango_suhi_txt);
+            }
         });
     }
 }

@@ -423,6 +423,10 @@
         <item>grejp</item>
         <item>kaktus smokva</item>
         <item>marakuja</item>
+        <item>cherimoya</item>
+        <item>limeta</item>
+        <item>limun</item>
+        <item>pomelo</item>
     </string-array>
 
     <string name="banane_txt">Banana info:\n- kalorije: 89\n- uh/ms/pr: 93/3/4\n- voda: 75%</string>
@@ -453,6 +457,10 @@
     <string name="grejp_txt">Grejp info:\n- kalorije: 42\n- uh/ms/pr: 91/2/7\n- voda: 90%</string>
     <string name="kaktus_smokva_txt">Kaktus smokva info:\n- kalorije: 41\n- uh/ms/pr: 89/5/6\n- voda: 88%</string>
     <string name="marakuja_txt">Marakuja info:\n- kalorije: 97\n- uh/ms/pr: 89/3/8\n- voda: 73%</string>
+    <string name="cherimoya_txt">Cherimoya info:\n- kalorije: 74\n- uh/ms/pr: 86/7/7\n- voda: 79%</string>
+    <string name="limeta_txt">Limeta info:\n- kalorije: 30\n- uh/ms/pr: 86/6/8\n- voda: 88%</string>
+    <string name="limun_txt">Limun info:\n- kalorije: 29\n- uh/ms/pr: 78/9/13\n- voda: 89%</string>
+    <string name="pomelo_txt">Pomelo info:\n- kalorije: 38\n- uh/ms/pr: 92/1/7\n- voda: 89%</string>
 
     <string-array name="dried">
         <item>datulje</item>
@@ -462,6 +470,7 @@
         <item>grožđice</item>
         <item>nangka</item>
         <item>papaja</item>
+        <item>mango</item>
     </string-array>
 
     <string name="datulje_suhe_txt">Sušena datulja info:\n- kalorije: 282\n- uh/ms/pr: 98/0/2\n- voda: 21%</string>
@@ -469,8 +478,9 @@
     <string name="sljive_suhe_txt">Sušena šljiva info:\n- kalorije: 240\n- uh/ms/pr: 96/1/3\n- voda: 31%</string>
     <string name="smokve_suhe_txt">Sušena smokva info:\n- kalorije: 249\n- uh/ms/pr: 93/3/4\n- voda: 30%</string>
     <string name="grozdice_txt">Grožđice info:\n- kalorije: 299\n- uh/ms/pr: 96/1/3\n- voda: 15%</string>
-    <string name="nangka_txt">Nangka info:\n- kalorije: 330\n- uh/ms/pr: 88/5/7\n- voda: 15%</string>
-    <string name="papaja_suha_txt">Papaja info:\n- kalorije: 350\n- uh/ms/pr: 92/3/5\n- voda: 15%</string>
+    <string name="nangka_txt">Sušena nangka info:\n- kalorije: 330\n- uh/ms/pr: 88/5/7\n- voda: 15%</string>
+    <string name="papaja_suha_txt">Sušena papaja info:\n- kalorije: 350\n- uh/ms/pr: 92/3/5\n- voda: 15%</string>
+    <string name="mango_suhi_txt">Sušeni mango info:\n- kalorije: 319\n- uh/ms/pr: 94/3/3\n- voda: 17%</string>
 
     <string-array name="nuts">
         <item>orasi</item>
@@ -512,7 +522,7 @@
     <string name="bundeva_txt">Bundeva info:\n- kalorije: 541\n- uh/ms/pr: 13/71/16\n- voda: 7%</string>
     <string name="suncokret_txt">Suncokret info:\n- kalorije: 584\n- uh/ms/pr: 14/74/12\n- voda: 5%</string>
     <string name="crni_kim_txt">Crni kim info:\n- kalorije: 280\n- uh/ms/pr: 23/54/23\n- voda: 6%</string>
-    <string name="mak_txt">Mak info:\n- kalorije: 525\n- uh/ms/pr: 32/48/20\n- voda: 6%</string>
+    <string name="mak_txt">Mak info:\n- kalorije: 525\n- uh/ms/pr: 22/66/12\n- voda: 6%</string>
 
     <string-array name="bobice">
         <item>borovnice</item>
@@ -552,6 +562,8 @@
         <item>bilje</item>
         <item>kakao</item>
         <item>rogač</item>
+        <item>nori</item>
+        <item>wakame</item>
         <item>voda</item>
     </string-array>
 
@@ -566,6 +578,8 @@
     <string name="bilje_txt">Blitva\nŠpinat\nKelj\nRaštika\nSalate\nCeler</string>
     <string name="kakao_txt">Komadići\nU prahu</string>
     <string name="rogac_txt">Prah</string>
+    <string name="nori_txt">Morska trava</string>
+    <string name="wakame_txt">Morska trava</string>
     <string name="voda_txt">Kišnica\nPodzemna voda\nIzvori</string>
 
     <string-array name="philosophy">

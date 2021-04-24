@@ -143,6 +143,22 @@ public class FruitActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.marakuja);
                 textView.setText(R.string.marakuja_txt);
             }
+            if (position == 28) {
+                imageView.setImageResource(R.drawable.cherimoya);
+                textView.setText(R.string.cherimoya_txt);
+            }
+            if (position == 29) {
+                imageView.setImageResource(R.drawable.limeta);
+                textView.setText(R.string.limeta_txt);
+            }
+            if (position == 30) {
+                imageView.setImageResource(R.drawable.limun);
+                textView.setText(R.string.limun_txt);
+            }
+            if (position == 31) {
+                imageView.setImageResource(R.drawable.pomelo);
+                textView.setText(R.string.pomelo_txt);
+            }
         });
     }
 }

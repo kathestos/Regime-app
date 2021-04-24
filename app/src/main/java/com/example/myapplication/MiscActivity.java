@@ -76,6 +76,14 @@ public class MiscActivity extends AppCompatActivity {
                 textView.setText(R.string.rogac_txt);
             }
             if (position == 11) {
+                imageView.setImageResource(R.drawable.nori);
+                textView.setText(R.string.nori_txt);
+            }
+            if (position == 12) {
+                imageView.setImageResource(R.drawable.wakame);
+                textView.setText(R.string.wakame_txt);
+            }
+            if (position == 13) {
                 imageView.setImageResource(R.drawable.jpg_ph);
                 textView.setText(R.string.voda_txt);
             }

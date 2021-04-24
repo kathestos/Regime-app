@@ -61,7 +61,7 @@ public class SeedsActivity extends AppCompatActivity {
                 textView.setText(R.string.crni_kim_txt);
             }
             if (position == 7) {
-                imageView.setImageResource(R.drawable.new_seed);
+                imageView.setImageResource(R.drawable.mak);
                 textView.setText(R.string.mak_txt);
             }
         });
