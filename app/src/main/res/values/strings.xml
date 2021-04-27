@@ -330,7 +330,7 @@
     <string-array name="trbuh_strana">
         <item>dodir pete</item>
         <item>lakat koljeno</item>
-        <item>ruke sa strane</item>
+        <item>rotacija ruku</item>
         <item>sa strane</item>
         <item>ruka stopalo</item>
         <item>u stranu</item>
@@ -363,19 +363,21 @@
         <item>ukočeno tijelo</item>
     </string-array>
 
+    <string-array name="trbuh_stanga">
+        <item>usko skvrčene</item>
+        <item>usko ispružene</item>
+        <item>široko skvrčene</item>
+        <item>široko ispružene</item>
+        <item>obje skvrčene</item>
+        <item>obje ispružene</item>
+    </string-array>
+
     <string-array name="trbuh_razno">
         <item>ležnjak</item>
         <item>dizanje kukova</item>
-        <item>noge gore pa u stranu</item>
+        <item>noge gore u stranu</item>
         <item>krugovi s nogama</item>
         <item>buba</item>
-    </string-array>
-
-    <string-array name="trbuh_štanga">
-        <item>usko dizanje</item>
-        <item>široko dizanje</item>
-        <item>dodatni item</item>
-        <item>dodatni item</item>
     </string-array>
 
     <!-- ******^^^^****** TRBUH ******^^^^****** -->

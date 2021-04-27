@@ -255,7 +255,7 @@
         android:solidColor="@color/silver" />
 
     <NumberPicker
-        android:id="@+id/trbuh_štanga"
+        android:id="@+id/trbuh_stanga"
         android:layout_width="123dp"
         android:layout_height="80dp"
         android:layout_below="@+id/plank"
@@ -268,7 +268,7 @@
         android:id="@+id/trbuh_razno"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:layout_below="@+id/trbuh_štanga"
+        android:layout_below="@+id/trbuh_stanga"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/zagrijavanje_noge"

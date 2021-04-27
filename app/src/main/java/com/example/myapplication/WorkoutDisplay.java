@@ -54,6 +54,13 @@ public class WorkoutDisplay extends AppCompatActivity {
         String[] noge = getResources().getStringArray(R.array.noge);
         String[] kretanje_noge = getResources().getStringArray(R.array.kretanje_noge);
 
+        String[] trbuh_strana = getResources().getStringArray(R.array.trbuh_strana);
+        String[] trbuh_dolje = getResources().getStringArray(R.array.trbuh_dolje);
+        String[] trbuh_gore = getResources().getStringArray(R.array.trbuh_gore);
+        String[] plank = getResources().getStringArray(R.array.plank);
+        String[] trbuh_stanga = getResources().getStringArray(R.array.trbuh_stanga);
+        String[] trbuh_razno = getResources().getStringArray(R.array.trbuh_razno);
+
         curTime = findViewById(R.id.curTime);
         nextIcon = findViewById(R.id.nextIcon);
         prevIcon = findViewById(R.id.prevIcon);
@@ -317,6 +324,154 @@ public class WorkoutDisplay extends AppCompatActivity {
             }
 
             if (temp.equals("noge_rastezanje")) playlist.add(R.raw.rastezanje_noge);
+
+            if (temp.equals("trbuh_zagrijavanje")) playlist.add(R.raw.zagrijavanje_trbuh);
+
+            if (temp.equals(trbuh_strana[0])) {
+                playlist.add(R.raw.dodir_pete);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_strana[1])) {
+                playlist.add(R.raw.lakat_koljeno);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_strana[2])) {
+                playlist.add(R.raw.rotacija_ruku);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_strana[3])) {
+                playlist.add(R.raw.sa_strane);
+            }
+            if (temp.equals(trbuh_strana[4])) {
+                playlist.add(R.raw.ruka_stopalo);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_strana[5])) {
+                playlist.add(R.raw.ustranu);
+                playlist.add(R.raw.sec20);
+            }
+
+            if (temp.equals(trbuh_dolje[0])) {
+                playlist.add(R.raw.noge_prsa);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_dolje[1])) {
+                playlist.add(R.raw.obje_noge_gore);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_dolje[2])) {
+                playlist.add(R.raw.naizmjenicno_noga_gore);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_dolje[3])) {
+                playlist.add(R.raw.noge_gore_dolje);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_dolje[4])) {
+                playlist.add(R.raw.noge_lijevo_desno);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_dolje[5])) {
+                playlist.add(R.raw.jedna_noga_gore);
+                playlist.add(R.raw.sec20);
+            }
+
+            if (temp.equals(trbuh_gore[0])) {
+                playlist.add(R.raw.sklopka);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_gore[1])) {
+                playlist.add(R.raw.puna_sklopka);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_gore[2])) {
+                playlist.add(R.raw.noge_gore);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_gore[3])) {
+                playlist.add(R.raw.ruke_ispred_trbusnjak);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_gore[4])) {
+                playlist.add(R.raw.ispruzene_sklopke);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_gore[5])) {
+                playlist.add(R.raw.ruke_gore);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_gore[6])) {
+                playlist.add(R.raw.obicni);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_gore[7])) {
+                playlist.add(R.raw.dizanje_ruku);
+                playlist.add(R.raw.sec20);
+            }
+
+            if (temp.equals(plank[0])) {
+                playlist.add(R.raw.ravni_plank);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(plank[1])) {
+                playlist.add(R.raw.ustranu_plank);
+            }
+            if (temp.equals(plank[2])) {
+                playlist.add(R.raw.drzanje_sklopke);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(plank[3])) {
+                playlist.add(R.raw.ukoceno_tijelo);
+                playlist.add(R.raw.sec20);
+            }
+
+            if (temp.equals(trbuh_stanga[0])) {
+                playlist.add(R.raw.skvrcene_usko);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_stanga[1])) {
+                playlist.add(R.raw.ispruzene_usko);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_stanga[2])) {
+                playlist.add(R.raw.skvrcene_siroko);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_stanga[3])) {
+                playlist.add(R.raw.ispruzene_siroko);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_stanga[4])) {
+                playlist.add(R.raw.skvrcene_obje);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_stanga[5])) {
+                playlist.add(R.raw.ispruzene_obje);
+                playlist.add(R.raw.sec20);
+            }
+
+            if (temp.equals(trbuh_razno[0])) {
+                playlist.add(R.raw.leznjak);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_razno[1])) {
+                playlist.add(R.raw.dizanje_kukova);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_razno[2])) {
+                playlist.add(R.raw.noge_gore_ustranu);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_razno[3])) {
+                playlist.add(R.raw.krugovi_nogama);
+                playlist.add(R.raw.sec20);
+            }
+            if (temp.equals(trbuh_razno[4])) {
+                playlist.add(R.raw.buba);
+                playlist.add(R.raw.sec20);
+            }
+
+            if (temp.equals("trbuh_rastezanje")) playlist.add(R.raw.rastezanje_trbuh);
         }
 
         play = findViewById(R.id.playMp3);
@@ -343,6 +498,13 @@ public class WorkoutDisplay extends AppCompatActivity {
         String[] stabilnost_noge = getResources().getStringArray(R.array.stabilnost_noge);
         String[] noge = getResources().getStringArray(R.array.noge);
         String[] kretanje_noge = getResources().getStringArray(R.array.kretanje_noge);
+
+        String[] trbuh_strana = getResources().getStringArray(R.array.trbuh_strana);
+        String[] trbuh_dolje = getResources().getStringArray(R.array.trbuh_dolje);
+        String[] trbuh_gore = getResources().getStringArray(R.array.trbuh_gore);
+        String[] plank = getResources().getStringArray(R.array.plank);
+        String[] trbuh_stanga = getResources().getStringArray(R.array.trbuh_stanga);
+        String[] trbuh_razno = getResources().getStringArray(R.array.trbuh_razno);
 
         mSeekBar = findViewById(R.id.mSeekBar);
         totTime = findViewById(R.id.totalTime);
@@ -630,6 +792,162 @@ public class WorkoutDisplay extends AppCompatActivity {
 
                 if (playlist.get(i - 1).equals(R.raw.rastezanje_noge)) {
                     nazivVjezbe.setText("noge rastezanje");
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.zagrijavanje_trbuh)) {
+                    nazivVjezbe.setText("trbuh zagrijavanje");
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.dodir_pete)) {
+                    nazivVjezbe.setText(trbuh_strana[0]);
+                    gif.setImageResource(R.drawable.stopala);
+                }
+                if (playlist.get(i - 1).equals(R.raw.lakat_koljeno)) {
+                    nazivVjezbe.setText(trbuh_strana[1]);
+                    gif.setImageResource(R.drawable.lakat_koljeno);
+                }
+                if (playlist.get(i - 1).equals(R.raw.rotacija_ruku)) {
+                    nazivVjezbe.setText(trbuh_strana[2]);
+                    gif.setImageResource(R.drawable.ruke_strana);
+                }
+                if (playlist.get(i - 1).equals(R.raw.sa_strane)) {
+                    nazivVjezbe.setText(trbuh_strana[3]);
+                    gif.setImageResource(R.drawable.u_stranu);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ruka_stopalo)) {
+                    nazivVjezbe.setText(trbuh_strana[4]);
+                    gif.setImageResource(R.drawable.ruka_stopalo);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ustranu)) {
+                    nazivVjezbe.setText(trbuh_strana[5]);
+                    gif.setImageResource(R.drawable.okret_ustranu);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.noge_prsa)) {
+                    nazivVjezbe.setText(trbuh_dolje[0]);
+                    gif.setImageResource(R.drawable.noge_prsa);
+                }
+                if (playlist.get(i - 1).equals(R.raw.obje_noge_gore)) {
+                    nazivVjezbe.setText(trbuh_dolje[1]);
+                    gif.setImageResource(R.drawable.obje_noge);
+                }
+                if (playlist.get(i - 1).equals(R.raw.naizmjenicno_noga_gore)) {
+                    nazivVjezbe.setText(trbuh_dolje[2]);
+                    gif.setImageResource(R.drawable.noge_izmjenicno);
+                }
+                if (playlist.get(i - 1).equals(R.raw.noge_gore_dolje)) {
+                    nazivVjezbe.setText(trbuh_dolje[3]);
+                    gif.setImageResource(R.drawable.noge_gore_dolje);
+                }
+                if (playlist.get(i - 1).equals(R.raw.noge_lijevo_desno)) {
+                    nazivVjezbe.setText(trbuh_dolje[4]);
+                    gif.setImageResource(R.drawable.noge_unakrsno);
+                }
+                if (playlist.get(i - 1).equals(R.raw.jedna_noga_gore)) {
+                    nazivVjezbe.setText(trbuh_dolje[5]);
+                    gif.setImageResource(R.drawable.jedna_pojedna_noga);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.sklopka)) {
+                    nazivVjezbe.setText(trbuh_gore[0]);
+                    gif.setImageResource(R.drawable.sklopka);
+                }
+                if (playlist.get(i - 1).equals(R.raw.puna_sklopka)) {
+                    nazivVjezbe.setText(trbuh_gore[1]);
+                    gif.setImageResource(R.drawable.puna_sklopka);
+                }
+                if (playlist.get(i - 1).equals(R.raw.noge_gore)) {
+                    nazivVjezbe.setText(trbuh_gore[2]);
+                    gif.setImageResource(R.drawable.noge_gore);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ruke_ispred_trbusnjak)) {
+                    nazivVjezbe.setText(trbuh_gore[3]);
+                    gif.setImageResource(R.drawable.ruke_ispred);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ispruzene_sklopke)) {
+                    nazivVjezbe.setText(trbuh_gore[4]);
+                    gif.setImageResource(R.drawable.ravno_skupa);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ruke_gore)) {
+                    nazivVjezbe.setText(trbuh_gore[5]);
+                    gif.setImageResource(R.drawable.ruke_gore);
+                }
+                if (playlist.get(i - 1).equals(R.raw.obicni)) {
+                    nazivVjezbe.setText(trbuh_gore[6]);
+                    gif.setImageResource(R.drawable.trbusnjak);
+                }
+                if (playlist.get(i - 1).equals(R.raw.dizanje_ruku)) {
+                    nazivVjezbe.setText(trbuh_gore[7]);
+                    gif.setImageResource(R.drawable.ruke_gore_trbuh);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.ravni_plank)) {
+                    nazivVjezbe.setText(plank[0]);
+                    gif.setImageResource(R.drawable.plank);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ustranu_plank)) {
+                    nazivVjezbe.setText(plank[1]);
+                    gif.setImageResource(R.drawable.lijevi_plank);
+                }
+                if (playlist.get(i - 1).equals(R.raw.drzanje_sklopke)) {
+                    nazivVjezbe.setText(plank[2]);
+                    gif.setImageResource(R.drawable.v_drzanje);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ukoceno_tijelo)) {
+                    nazivVjezbe.setText(plank[3]);
+                    gif.setImageResource(R.drawable.valjanje);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.skvrcene_usko)) {
+                    nazivVjezbe.setText(trbuh_stanga[0]);
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ispruzene_usko)) {
+                    nazivVjezbe.setText(trbuh_stanga[1]);
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+                if (playlist.get(i - 1).equals(R.raw.skvrcene_siroko)) {
+                    nazivVjezbe.setText(trbuh_stanga[2]);
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ispruzene_siroko)) {
+                    nazivVjezbe.setText(trbuh_stanga[3]);
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+                if (playlist.get(i - 1).equals(R.raw.skvrcene_obje)) {
+                    nazivVjezbe.setText(trbuh_stanga[4]);
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+                if (playlist.get(i - 1).equals(R.raw.ispruzene_obje)) {
+                    nazivVjezbe.setText(trbuh_stanga[5]);
+                    gif.setImageResource(R.drawable.gif_ph);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.leznjak)) {
+                    nazivVjezbe.setText(trbuh_razno[0]);
+                    gif.setImageResource(R.drawable.leznjak);
+                }
+                if (playlist.get(i - 1).equals(R.raw.dizanje_kukova)) {
+                    nazivVjezbe.setText(trbuh_razno[1]);
+                    gif.setImageResource(R.drawable.dizanje_kukova);
+                }
+                if (playlist.get(i - 1).equals(R.raw.noge_gore_ustranu)) {
+                    nazivVjezbe.setText(trbuh_razno[2]);
+                    gif.setImageResource(R.drawable.noge_ustranu);
+                }
+                if (playlist.get(i - 1).equals(R.raw.krugovi_nogama)) {
+                    nazivVjezbe.setText(trbuh_razno[3]);
+                    gif.setImageResource(R.drawable.kruzenje_nogu);
+                }
+                if (playlist.get(i - 1).equals(R.raw.buba)) {
+                    nazivVjezbe.setText(trbuh_razno[4]);
+                    gif.setImageResource(R.drawable.buba);
+                }
+
+                if (playlist.get(i - 1).equals(R.raw.rastezanje_trbuh)) {
+                    nazivVjezbe.setText("trbuh rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
                 }
             });

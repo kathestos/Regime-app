@@ -44,17 +44,23 @@ public class WorkoutSchedule extends AppCompatActivity {
         sklekovi.setMaxValue(sklekoviList.length - 1);
         sklekovi.setDisplayedValues(sklekoviList);
 
-        NumberPicker prsaStabilnost = findViewById(R.id.prsa_stabilnost);
-        String[] prsaStabilnostList = getResources().getStringArray(R.array.sklek_stabilnost);
-        prsaStabilnost.setMinValue(0);
-        prsaStabilnost.setMaxValue(prsaStabilnostList.length - 1);
-        prsaStabilnost.setDisplayedValues(prsaStabilnostList);
+        NumberPicker stangaPrsa = findViewById(R.id.prsa_stanga);
+        String[] stangaPrsaList = getResources().getStringArray(R.array.stanga_ruke);
+        stangaPrsa.setMinValue(0);
+        stangaPrsa.setMaxValue(stangaPrsaList.length - 1);
+        stangaPrsa.setDisplayedValues(stangaPrsaList);
 
         NumberPicker prsaVjestine = findViewById(R.id.prsa_vjestine);
         String[] prsaVjestineList = getResources().getStringArray(R.array.sklek_vjestine);
         prsaVjestine.setMinValue(0);
         prsaVjestine.setMaxValue(prsaVjestineList.length - 1);
         prsaVjestine.setDisplayedValues(prsaVjestineList);
+
+        NumberPicker prsaStabilnost = findViewById(R.id.prsa_stabilnost);
+        String[] prsaStabilnostList = getResources().getStringArray(R.array.sklek_stabilnost);
+        prsaStabilnost.setMinValue(0);
+        prsaStabilnost.setMaxValue(prsaStabilnostList.length - 1);
+        prsaStabilnost.setDisplayedValues(prsaStabilnostList);
 
         NumberPicker ruke = findViewById(R.id.ruke);
         String[] rukeList = getResources().getStringArray(R.array.ruke);
@@ -68,12 +74,6 @@ public class WorkoutSchedule extends AppCompatActivity {
         sklekKretanje.setMaxValue(sklekKretanjeList.length - 1);
         sklekKretanje.setDisplayedValues(sklekKretanjeList);
 
-        NumberPicker stangaPrsa = findViewById(R.id.prsa_stanga);
-        String[] stangaPrsaList = getResources().getStringArray(R.array.stanga_ruke);
-        stangaPrsa.setMinValue(0);
-        stangaPrsa.setMaxValue(stangaPrsaList.length - 1);
-        stangaPrsa.setDisplayedValues(stangaPrsaList);
-
         NumberPicker prsaRastezanje = findViewById(R.id.prsa_rastezanje);
         String[] prsaRastezanjeList = getResources().getStringArray(R.array.rastezanje_ruke);
         prsaRastezanje.setMinValue(0);
@@ -83,18 +83,18 @@ public class WorkoutSchedule extends AppCompatActivity {
         Button prsaPlusOne = findViewById(R.id.prsaPlusOne);
         prsaPlusOne.setOnClickListener(v -> {
             sklekovi.setValue(sklekovi.getValue() + 1);
-            prsaStabilnost.setValue(prsaStabilnost.getValue() + 1);
+            stangaPrsa.setValue(stangaPrsa.getValue() + 1);
             prsaVjestine.setValue(prsaVjestine.getValue() + 1);
+            prsaStabilnost.setValue(prsaStabilnost.getValue() + 1);
             ruke.setValue(ruke.getValue() + 1);
             sklekKretanje.setValue(sklekKretanje.getValue() + 1);
-            stangaPrsa.setValue(stangaPrsa.getValue() + 1);
 
             editor.putInt("sklekoviNumber", sklekovi.getValue());
-            editor.putInt("prsaStabilnostNumber", prsaStabilnost.getValue());
+            editor.putInt("stangaPrsaNumber", stangaPrsa.getValue());
             editor.putInt("prsaVjestineNumber", prsaVjestine.getValue());
+            editor.putInt("prsaStabilnostNumber", prsaStabilnost.getValue());
             editor.putInt("rukeNumber", ruke.getValue());
             editor.putInt("sklekKretanjeNumber", sklekKretanje.getValue());
-            editor.putInt("stangaPrsaNumber", stangaPrsa.getValue());
             editor.apply();
         });
 
@@ -118,17 +118,17 @@ public class WorkoutSchedule extends AppCompatActivity {
         rudari.setMaxValue(rudariList.length - 1);
         rudari.setDisplayedValues(rudariList);
 
-        NumberPicker stabilnostNoge = findViewById(R.id.stabilnost_noge);
-        String[] stabilnostNogeList = getResources().getStringArray(R.array.stabilnost_noge);
-        stabilnostNoge.setMinValue(0);
-        stabilnostNoge.setMaxValue(stabilnostNogeList.length - 1);
-        stabilnostNoge.setDisplayedValues(stabilnostNogeList);
-
         NumberPicker raznoNoge = findViewById(R.id.razno_noge);
         String[] raznoNogeList = getResources().getStringArray(R.array.razno_noge);
         raznoNoge.setMinValue(0);
         raznoNoge.setMaxValue(raznoNogeList.length - 1);
         raznoNoge.setDisplayedValues(raznoNogeList);
+
+        NumberPicker stabilnostNoge = findViewById(R.id.stabilnost_noge);
+        String[] stabilnostNogeList = getResources().getStringArray(R.array.stabilnost_noge);
+        stabilnostNoge.setMinValue(0);
+        stabilnostNoge.setMaxValue(stabilnostNogeList.length - 1);
+        stabilnostNoge.setDisplayedValues(stabilnostNogeList);
 
         NumberPicker noge = findViewById(R.id.noge);
         String[] nogeList = getResources().getStringArray(R.array.noge);
@@ -152,15 +152,15 @@ public class WorkoutSchedule extends AppCompatActivity {
         nogePlusOne.setOnClickListener(v -> {
             cucnjevi.setValue(cucnjevi.getValue() + 1);
             rudari.setValue(rudari.getValue() + 1);
-            stabilnostNoge.setValue(stabilnostNoge.getValue() + 1);
             raznoNoge.setValue(raznoNoge.getValue() + 1);
+            stabilnostNoge.setValue(stabilnostNoge.getValue() + 1);
             noge.setValue(noge.getValue() + 1);
             kretanjeNoge.setValue(kretanjeNoge.getValue() + 1);
 
             editor.putInt("cucnjeviNumber", cucnjevi.getValue());
             editor.putInt("rudariNumber", rudari.getValue());
-            editor.putInt("stabilnostNogeNumber", stabilnostNoge.getValue());
             editor.putInt("raznoNogeNumber", raznoNoge.getValue());
+            editor.putInt("stabilnostNogeNumber", stabilnostNoge.getValue());
             editor.putInt("nogeNumber", noge.getValue());
             editor.putInt("kretanjeNogeNumber", kretanjeNoge.getValue());
             editor.apply();
@@ -196,17 +196,17 @@ public class WorkoutSchedule extends AppCompatActivity {
         plank.setMaxValue(plankList.length - 1);
         plank.setDisplayedValues(plankList);
 
+        NumberPicker trbuhStanga = findViewById(R.id.trbuh_stanga);
+        String[] trbuhStangaList = getResources().getStringArray(R.array.trbuh_stanga);
+        trbuhStanga.setMinValue(0);
+        trbuhStanga.setMaxValue(trbuhStangaList.length - 1);
+        trbuhStanga.setDisplayedValues(trbuhStangaList);
+
         NumberPicker trbuhRazno = findViewById(R.id.trbuh_razno);
         String[] trbuhRaznoList = getResources().getStringArray(R.array.trbuh_razno);
         trbuhRazno.setMinValue(0);
         trbuhRazno.setMaxValue(trbuhRaznoList.length - 1);
         trbuhRazno.setDisplayedValues(trbuhRaznoList);
-
-        NumberPicker trbuhStanga = findViewById(R.id.trbuh_štanga);
-        String[] trbuhStangaList = getResources().getStringArray(R.array.trbuh_štanga);
-        trbuhStanga.setMinValue(0);
-        trbuhStanga.setMaxValue(trbuhStangaList.length - 1);
-        trbuhStanga.setDisplayedValues(trbuhStangaList);
 
         NumberPicker rastezanjeTrbuh = findViewById(R.id.rastezanje_trbuh);
         String[] rastezanjeTrbuhList = getResources().getStringArray(R.array.rastezanje_trbuh);
@@ -220,15 +220,15 @@ public class WorkoutSchedule extends AppCompatActivity {
             trbuhDolje.setValue(trbuhDolje.getValue() + 1);
             trbuhGore.setValue(trbuhGore.getValue() + 1);
             plank.setValue(plank.getValue() + 1);
-            trbuhRazno.setValue(trbuhRazno.getValue() + 1);
             trbuhStanga.setValue(trbuhStanga.getValue() + 1);
+            trbuhRazno.setValue(trbuhRazno.getValue() + 1);
 
             editor.putInt("trbuhStranaNumber", trbuhStrana.getValue());
             editor.putInt("trbuhDoljeNumber", trbuhDolje.getValue());
             editor.putInt("trbuhGoreNumber", trbuhGore.getValue());
             editor.putInt("plankNumber", plank.getValue());
-            editor.putInt("trbuhRaznoNumber", trbuhRazno.getValue());
             editor.putInt("trbuhStangaNumber", trbuhStanga.getValue());
+            editor.putInt("trbuhRaznoNumber", trbuhRazno.getValue());
             editor.apply();
         });
 
@@ -236,12 +236,16 @@ public class WorkoutSchedule extends AppCompatActivity {
             editor.putInt("sklekoviNumber", sklekovi.getValue());
             editor.apply();
         });
-        prsaStabilnost.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
-            editor.putInt("prsaStabilnostNumber", prsaStabilnost.getValue());
+        stangaPrsa.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("stangaPrsaNumber", stangaPrsa.getValue());
             editor.apply();
         });
         prsaVjestine.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
             editor.putInt("prsaVjestineNumber", prsaVjestine.getValue());
+            editor.apply();
+        });
+        prsaStabilnost.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("prsaStabilnostNumber", prsaStabilnost.getValue());
             editor.apply();
         });
         ruke.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
@@ -250,10 +254,6 @@ public class WorkoutSchedule extends AppCompatActivity {
         });
         sklekKretanje.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
             editor.putInt("sklekKretanjeNumber", sklekKretanje.getValue());
-            editor.apply();
-        });
-        stangaPrsa.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
-            editor.putInt("stangaPrsaNumber", stangaPrsa.getValue());
             editor.apply();
         });
 
@@ -265,12 +265,12 @@ public class WorkoutSchedule extends AppCompatActivity {
             editor.putInt("rudariNumber", rudari.getValue());
             editor.apply();
         });
-        stabilnostNoge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
-            editor.putInt("stabilnostNogeNumber", stabilnostNoge.getValue());
-            editor.apply();
-        });
         raznoNoge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
             editor.putInt("raznoNogeNumber", raznoNoge.getValue());
+            editor.apply();
+        });
+        stabilnostNoge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("stabilnostNogeNumber", stabilnostNoge.getValue());
             editor.apply();
         });
         noge.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
@@ -298,28 +298,28 @@ public class WorkoutSchedule extends AppCompatActivity {
             editor.putInt("plankNumber", plank.getValue());
             editor.apply();
         });
-        trbuhRazno.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
-            editor.putInt("trbuhRaznoNumber", trbuhRazno.getValue());
-            editor.apply();
-        });
         trbuhStanga.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
             editor.putInt("trbuhStangaNumber", trbuhStanga.getValue());
+            editor.apply();
+        });
+        trbuhRazno.setOnValueChangedListener((numberPicker, oldValue, newValue) -> {
+            editor.putInt("trbuhRaznoNumber", trbuhRazno.getValue());
             editor.apply();
         });
 
         SharedPreferences sp2 = getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
 
         sklekovi.setValue(sp2.getInt("sklekoviNumber", 0));
-        prsaStabilnost.setValue(sp2.getInt("prsaStabilnostNumber", 0));
+        stangaPrsa.setValue(sp2.getInt("stangaPrsaNumber", 0));
         prsaVjestine.setValue(sp2.getInt("prsaVjestineNumber", 0));
+        prsaStabilnost.setValue(sp2.getInt("prsaStabilnostNumber", 0));
         ruke.setValue(sp2.getInt("rukeNumber", 0));
         sklekKretanje.setValue(sp2.getInt("sklekKretanjeNumber", 0));
-        stangaPrsa.setValue(sp2.getInt("stangaPrsaNumber", 0));
 
         cucnjevi.setValue(sp2.getInt("cucnjeviNumber", 0));
         rudari.setValue(sp2.getInt("rudariNumber", 0));
-        stabilnostNoge.setValue(sp2.getInt("stabilnostNogeNumber", 0));
         raznoNoge.setValue(sp2.getInt("raznoNogeNumber", 0));
+        stabilnostNoge.setValue(sp2.getInt("stabilnostNogeNumber", 0));
         noge.setValue(sp2.getInt("nogeNumber", 0));
         kretanjeNoge.setValue(sp2.getInt("kretanjeNogeNumber", 0));
 
@@ -327,8 +327,8 @@ public class WorkoutSchedule extends AppCompatActivity {
         trbuhDolje.setValue(sp2.getInt("trbuhDoljeNumber", 0));
         trbuhGore.setValue(sp2.getInt("trbuhGoreNumber", 0));
         plank.setValue(sp2.getInt("plankNumber", 0));
-        trbuhRazno.setValue(sp2.getInt("trbuhRaznoNumber", 0));
         trbuhStanga.setValue(sp2.getInt("trbuhStangaNumber", 0));
+        trbuhRazno.setValue(sp2.getInt("trbuhRaznoNumber", 0));
 
         Button generatePrsa = findViewById(R.id.generatePrsa);
         generatePrsa.setOnClickListener(v -> {
