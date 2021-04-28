@@ -215,7 +215,7 @@
     <string-array name="rudari">
         <item>naprijed</item>
         <item>nazad</item>
-        <item>u stranu</item>
+        <item>noge u stranu</item>
         <item>noga iza ustranu</item>
     </string-array>
 
@@ -237,7 +237,7 @@
     </string-array>
 
     <string-array name="noge">
-        <item>u stranu</item>
+        <item>noga u stranu</item>
         <item>ispred, iza</item>
         <item>s poda sa strane</item>
         <item>s poda ispred</item>
@@ -333,7 +333,7 @@
         <item>rotacija ruku</item>
         <item>sa strane</item>
         <item>ruka stopalo</item>
-        <item>u stranu</item>
+        <item>okret u stranu</item>
     </string-array>
 
     <string-array name="trbuh_dolje">
@@ -357,8 +357,8 @@
     </string-array>
 
     <string-array name="plank">
-        <item>ravni</item>
-        <item>u stranu</item>
+        <item>ravni plank</item>
+        <item>plank u stranu</item>
         <item>držanje sklopke</item>
         <item>ukočeno tijelo</item>
     </string-array>
