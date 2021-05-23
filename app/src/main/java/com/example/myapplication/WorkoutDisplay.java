@@ -981,8 +981,6 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
             });
 
-            // TEST commit
-
             mp.setOnCompletionListener(vv -> playNext(pause));
 
             mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
