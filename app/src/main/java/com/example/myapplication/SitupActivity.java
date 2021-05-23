@@ -111,7 +111,7 @@ public class SitupActivity extends AppCompatActivity {
                 gif.setImageResource(R.drawable.jedna_pojedna_noga);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 6 && groupPosition == 3) {
-                gif.setImageResource(R.drawable.ruke_ispred);
+                gif.setImageResource(R.drawable.ruke_ispred_trbuh);
                 txt.setText(getString(R.string.default_txt));
             } else if (childPosition == 7 && groupPosition == 3) {
                 gif.setImageResource(R.drawable.ravno_skupa);

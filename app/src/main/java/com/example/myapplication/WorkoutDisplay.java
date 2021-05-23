@@ -40,6 +40,9 @@ public class WorkoutDisplay extends AppCompatActivity {
 
         ArrayList<String> lista = getIntent().getExtras().getStringArrayList("lista");
 
+        TextView nazivVjezbe = findViewById(R.id.naziv_vjezbe);
+        GifImageView gif = findViewById(R.id.gif);
+
         String[] sklekovi = getResources().getStringArray(R.array.sklekovi);
         String[] stanga_ruke = getResources().getStringArray(R.array.stanga_ruke);
         String[] sklek_vjestine = getResources().getStringArray(R.array.sklek_vjestine);
@@ -70,7 +73,11 @@ public class WorkoutDisplay extends AppCompatActivity {
             listaVjezbi.append(temp);
             listaVjezbi.append("\n");
 
-            if (temp.equals("prsa_zagrijavanje")) playlist.add(R.raw.prsa_zagrijavanje);
+            if (temp.equals("prsa_zagrijavanje")) {
+                playlist.add(R.raw.prsa_zagrijavanje);
+                nazivVjezbe.setText("PRSA");
+                gif.setImageResource(R.drawable.img2);
+            }
 
             if (temp.equals(sklekovi[0])) {
                 playlist.add(R.raw.norm_sklek);
@@ -98,7 +105,7 @@ public class WorkoutDisplay extends AppCompatActivity {
             }
 
             if (temp.equals(stanga_ruke[0])) {
-                playlist.add(R.raw.siroko_100);
+                playlist.add(R.raw.siroko_90);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[1])) {
@@ -106,7 +113,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[2])) {
-                playlist.add(R.raw.siroko_90);
+                playlist.add(R.raw.siroko_80);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[3])) {
@@ -114,7 +121,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[4])) {
-                playlist.add(R.raw.siroko_80);
+                playlist.add(R.raw.siroko_70);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[5])) {
@@ -122,7 +129,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[6])) {
-                playlist.add(R.raw.siroko_70);
+                playlist.add(R.raw.siroko_60);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[7])) {
@@ -212,7 +219,11 @@ public class WorkoutDisplay extends AppCompatActivity {
 
             if (temp.equals("prsa_rastezanje")) playlist.add(R.raw.prsa_rastezanje);
 
-            if (temp.equals("noge_zagrijavanje")) playlist.add(R.raw.noge_zagrijavanje);
+            if (temp.equals("noge_zagrijavanje")) {
+                playlist.add(R.raw.noge_zagrijavanje);
+                nazivVjezbe.setText("NOGE");
+                gif.setImageResource(R.drawable.img1);
+            }
 
             if (temp.equals(cucnjevi[0])) {
                 playlist.add(R.raw.cucanj);
@@ -325,7 +336,11 @@ public class WorkoutDisplay extends AppCompatActivity {
 
             if (temp.equals("noge_rastezanje")) playlist.add(R.raw.rastezanje_noge);
 
-            if (temp.equals("trbuh_zagrijavanje")) playlist.add(R.raw.zagrijavanje_trbuh);
+            if (temp.equals("trbuh_zagrijavanje")) {
+                playlist.add(R.raw.zagrijavanje_trbuh);
+                nazivVjezbe.setText("TRBUH");
+                gif.setImageResource(R.drawable.img3);
+            }
 
             if (temp.equals(trbuh_strana[0])) {
                 playlist.add(R.raw.dodir_pete);
@@ -424,6 +439,10 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.ukoceno_tijelo);
                 playlist.add(R.raw.sec20);
             }
+            if (temp.equals(plank[4])) {
+                playlist.add(R.raw.ukoceno_tijelo); //TODO dodati
+                playlist.add(R.raw.sec20);
+            }
 
             if (temp.equals(trbuh_stanga[0])) {
                 playlist.add(R.raw.skvrcene_usko);
@@ -509,7 +528,7 @@ public class WorkoutDisplay extends AppCompatActivity {
         mSeekBar = findViewById(R.id.mSeekBar);
         totTime = findViewById(R.id.totalTime);
 
-        if (i == 1) {
+        if (i == 0) {
             play.setVisibility(View.INVISIBLE);
             pause.setVisibility(View.VISIBLE);
         }
@@ -526,6 +545,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 if (playlist.get(i - 1).equals(R.raw.prsa_zagrijavanje)) {
                     nazivVjezbe.setText("prsa zagrijavanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    setPrsaZagrijavanjeGifs(gif);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.norm_sklek)) {
@@ -542,52 +562,52 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.krizni_sklek)) {
                     nazivVjezbe.setText(sklekovi[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.krizni_sklek);
                 }
                 if (playlist.get(i - 1).equals(R.raw.prednji_sklek)) {
                     nazivVjezbe.setText(sklekovi[4]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.prednji_sklek);
                 }
                 if (playlist.get(i - 1).equals(R.raw.nagnuti_sklek)) {
                     nazivVjezbe.setText(sklekovi[5]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.pike_sklek);
                 }
 
-                if (playlist.get(i - 1).equals(R.raw.siroko_100)) {
+                if (playlist.get(i - 1).equals(R.raw.siroko_90)) {
                     nazivVjezbe.setText(stanga_ruke[0]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.siroko_90);
                 }
                 if (playlist.get(i - 1).equals(R.raw.usko_80)) {
                     nazivVjezbe.setText(stanga_ruke[1]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.usko_80);
                 }
-                if (playlist.get(i - 1).equals(R.raw.siroko_90)) {
+                if (playlist.get(i - 1).equals(R.raw.siroko_80)) {
                     nazivVjezbe.setText(stanga_ruke[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.siroko_80);
                 }
                 if (playlist.get(i - 1).equals(R.raw.usko_70)) {
                     nazivVjezbe.setText(stanga_ruke[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.usko_70);
                 }
-                if (playlist.get(i - 1).equals(R.raw.siroko_80)) {
+                if (playlist.get(i - 1).equals(R.raw.siroko_70)) {
                     nazivVjezbe.setText(stanga_ruke[4]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.siroko_70);
                 }
                 if (playlist.get(i - 1).equals(R.raw.usko_60)) {
                     nazivVjezbe.setText(stanga_ruke[5]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.usko_60);
                 }
-                if (playlist.get(i - 1).equals(R.raw.siroko_70)) {
+                if (playlist.get(i - 1).equals(R.raw.siroko_60)) {
                     nazivVjezbe.setText(stanga_ruke[6]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.siroko_60);
                 }
                 if (playlist.get(i - 1).equals(R.raw.usko_50)) {
                     nazivVjezbe.setText(stanga_ruke[7]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.usko_50);
                 }
                 if (playlist.get(i - 1).equals(R.raw.obje_ruke)) {
                     nazivVjezbe.setText(stanga_ruke[8]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.obje_stange);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.stoj)) {
@@ -604,7 +624,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.jedna_ruka)) {
                     nazivVjezbe.setText(sklek_vjestine[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.sklek_jedna_ruka);
                 }
                 if (playlist.get(i - 1).equals(R.raw.nagib)) {
                     nazivVjezbe.setText(sklek_vjestine[4]);
@@ -613,19 +633,19 @@ public class WorkoutDisplay extends AppCompatActivity {
 
                 if (playlist.get(i - 1).equals(R.raw.ruka_gore)) {
                     nazivVjezbe.setText(sklek_stabilnost[0]);
-                    gif.setImageResource(R.drawable.dizanje_ruku);
+                    gif.setImageResource(R.drawable.ruka_gore);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ruka_ispred)) {
                     nazivVjezbe.setText(sklek_stabilnost[1]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.ruka_ispred);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ruka_iza)) {
                     nazivVjezbe.setText(sklek_stabilnost[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.ruka_iza);
                 }
                 if (playlist.get(i - 1).equals(R.raw.dizanje_ramena)) {
                     nazivVjezbe.setText(sklek_stabilnost[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.sklek_ramena_prsti);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.ruke_sastrane)) {
@@ -634,19 +654,19 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.ruke_iza)) {
                     nazivVjezbe.setText(ruke[1]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.ruke_iza);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ruke_iza_tijelo)) {
                     nazivVjezbe.setText(ruke[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.ruke_iznad);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ruke_ispred)) {
                     nazivVjezbe.setText(ruke[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.ruke_ispred);
                 }
-                if (playlist.get(i - 1).equals(R.raw.ruka_iza)) {
+                if (playlist.get(i - 1).equals(R.raw.jedna_ruka_iza)) {
                     nazivVjezbe.setText(ruke[4]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.jedna_ruka_iza);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.sklek_ustranu)) {
@@ -655,11 +675,11 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.gore_dolje_sklek)) {
                     nazivVjezbe.setText(sklek_kretanje[1]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.sklek_dolje_gore);
                 }
                 if (playlist.get(i - 1).equals(R.raw.guster)) {
                     nazivVjezbe.setText(sklek_kretanje[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.guster);
                 }
                 if (playlist.get(i - 1).equals(R.raw.spori_sklek)) {
                     nazivVjezbe.setText(sklek_kretanje[3]);
@@ -669,11 +689,13 @@ public class WorkoutDisplay extends AppCompatActivity {
                 if (playlist.get(i - 1).equals(R.raw.prsa_rastezanje)) {
                     nazivVjezbe.setText("prsa rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    setPrsaRastezanjeGifs(gif);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.noge_zagrijavanje)) {
                     nazivVjezbe.setText("noge zagrijavanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    setNogeZagrijavanjeGifs(gif);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.cucanj)) {
@@ -686,11 +708,11 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.cucanj_noge_usko)) {
                     nazivVjezbe.setText(cucnjevi[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.uski_cucanj);
                 }
                 if (playlist.get(i - 1).equals(R.raw.cucanj_noge_siroko)) {
                     nazivVjezbe.setText(cucnjevi[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.siroki_cucanj);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.rudar_naprijed)) {
@@ -707,7 +729,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.rudar_noga_iza)) {
                     nazivVjezbe.setText(rudari[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.rudar_iza_ustranu);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.spartan)) {
@@ -733,15 +755,15 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.virabhadrasana)) {
                     nazivVjezbe.setText(stabilnost_noge[1]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.virabhadrasana_1);
                 }
                 if (playlist.get(i - 1).equals(R.raw.virabhadrasana_2)) {
                     nazivVjezbe.setText(stabilnost_noge[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.warrior);
                 }
                 if (playlist.get(i - 1).equals(R.raw.virabhadrasana_3)) {
                     nazivVjezbe.setText(stabilnost_noge[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.virabhadrasana_3);
                 }
                 if (playlist.get(i - 1).equals(R.raw.utthita_padangusthasana)) {
                     nazivVjezbe.setText(stabilnost_noge[4]);
@@ -749,11 +771,11 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.utthita_parsvakonasana)) {
                     nazivVjezbe.setText(stabilnost_noge[5]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.utthita_parsvakonasana);
                 }
                 if (playlist.get(i - 1).equals(R.raw.natarajasana)) {
                     nazivVjezbe.setText(stabilnost_noge[6]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.natarajasana);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.noge_ustranu)) {
@@ -762,15 +784,15 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.noge_ispred_iza)) {
                     nazivVjezbe.setText(noge[1]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.noga_ispred_iza);
                 }
                 if (playlist.get(i - 1).equals(R.raw.spoda_sastrane)) {
                     nazivVjezbe.setText(noge[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.noga_ustranu_spoda);
                 }
                 if (playlist.get(i - 1).equals(R.raw.spoda_ispred)) {
                     nazivVjezbe.setText(noge[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.noga_ispred_spoda);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.cucanj_ustranu)) {
@@ -783,21 +805,23 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.naprijed_nazad)) {
                     nazivVjezbe.setText(kretanje_noge[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.cucanj_naprijed_nazad);
                 }
                 if (playlist.get(i - 1).equals(R.raw.cucanj_udarac)) {
                     nazivVjezbe.setText(kretanje_noge[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.cucanj_udarac);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.rastezanje_noge)) {
                     nazivVjezbe.setText("noge rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    setNogeRastezanjeGifs(gif);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.zagrijavanje_trbuh)) {
                     nazivVjezbe.setText("trbuh zagrijavanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    setTrbuhZagrijavanjeGifs(gif);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.dodir_pete)) {
@@ -864,7 +888,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (playlist.get(i - 1).equals(R.raw.ruke_ispred_trbusnjak)) {
                     nazivVjezbe.setText(trbuh_gore[3]);
-                    gif.setImageResource(R.drawable.ruke_ispred);
+                    gif.setImageResource(R.drawable.ruke_ispred_trbuh);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ispruzene_sklopke)) {
                     nazivVjezbe.setText(trbuh_gore[4]);
@@ -899,30 +923,34 @@ public class WorkoutDisplay extends AppCompatActivity {
                     nazivVjezbe.setText(plank[3]);
                     gif.setImageResource(R.drawable.valjanje);
                 }
+                if (playlist.get(i - 1).equals(R.raw.ukoceno_tijelo)) { //TODO dodati
+                    nazivVjezbe.setText(plank[4]);
+                    gif.setImageResource(R.drawable.plank_iza);
+                }
 
                 if (playlist.get(i - 1).equals(R.raw.skvrcene_usko)) {
                     nazivVjezbe.setText(trbuh_stanga[0]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.usko_skvrcene);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ispruzene_usko)) {
                     nazivVjezbe.setText(trbuh_stanga[1]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.usko_ispruzene);
                 }
                 if (playlist.get(i - 1).equals(R.raw.skvrcene_siroko)) {
                     nazivVjezbe.setText(trbuh_stanga[2]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.siroko_skvrcene);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ispruzene_siroko)) {
                     nazivVjezbe.setText(trbuh_stanga[3]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.siroko_ispruzene);
                 }
                 if (playlist.get(i - 1).equals(R.raw.skvrcene_obje)) {
                     nazivVjezbe.setText(trbuh_stanga[4]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.obje_skvrcene);
                 }
                 if (playlist.get(i - 1).equals(R.raw.ispruzene_obje)) {
                     nazivVjezbe.setText(trbuh_stanga[5]);
-                    gif.setImageResource(R.drawable.gif_ph);
+                    gif.setImageResource(R.drawable.obje_ispruzene);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.leznjak)) {
@@ -949,6 +977,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 if (playlist.get(i - 1).equals(R.raw.rastezanje_trbuh)) {
                     nazivVjezbe.setText("trbuh rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    setTrbuhRastezanjeGifs(gif);
                 }
             });
 
@@ -1036,5 +1065,148 @@ public class WorkoutDisplay extends AppCompatActivity {
             curTime.setText(cTime);
         }
     };
+
+    void setPrsaZagrijavanjeGifs(GifImageView gif) {
+        new Thread(() -> {
+            try {
+                gif.setImageResource(R.drawable.gif_zglob);
+                Thread.sleep(31576);
+                gif.setImageResource(R.drawable.gif_ph); // TODO saka ispruzena stisnuta
+                Thread.sleep(7321);
+                gif.setImageResource(R.drawable.gif_lakat);
+                Thread.sleep(44989);
+                gif.setImageResource(R.drawable.gif_rame);
+                Thread.sleep(22613);
+                gif.setImageResource(R.drawable.gif_ruka);
+                Thread.sleep(23848);
+                gif.setImageResource(R.drawable.ruke_stopala);
+                Thread.sleep(11439);
+                gif.setImageResource(R.drawable.kruzenje);
+            } catch (Exception e) {
+                System.out.println("Error with thread");
+                System.out.println(e);
+            }
+        }).start();
+    }
+
+    void setPrsaRastezanjeGifs(GifImageView gif) {
+        new Thread(() -> {
+            try {
+                gif.setImageResource(R.drawable.joga);
+                Thread.sleep(11693);
+                gif.setImageResource(R.drawable.istezanje_zglob);
+                Thread.sleep(34942);
+                gif.setImageResource(R.drawable.istezanje_rame);
+                Thread.sleep(11858);
+                gif.setImageResource(R.drawable.istezanje_lakat);
+                Thread.sleep(12475);
+                gif.setImageResource(R.drawable.istezanje_ustranu);
+                Thread.sleep(12084);
+                gif.setImageResource(R.drawable.gif_ph); //TODO skroz dolje gore
+                Thread.sleep(11449);
+                gif.setImageResource(R.drawable.vrat);
+            } catch (Exception e) {
+                System.out.println("Error with thread");
+                System.out.println(e);
+            }
+        }).start();
+    }
+
+    void setNogeZagrijavanjeGifs(GifImageView gif) {
+        new Thread(() -> {
+            try {
+                gif.setImageResource(R.drawable.step);
+                Thread.sleep(20612);
+                gif.setImageResource(R.drawable.noge_iza);
+                Thread.sleep(20999);
+                gif.setImageResource(R.drawable.noge_strana);
+                Thread.sleep(21262);
+                gif.setImageResource(R.drawable.noge_ispred);
+                Thread.sleep(21013);
+                gif.setImageResource(R.drawable.visoki_step);
+                Thread.sleep(11053);
+                gif.setImageResource(R.drawable.skok);
+                Thread.sleep(10820);
+                gif.setImageResource(R.drawable.van_unutra);
+                Thread.sleep(11318);
+                gif.setImageResource(R.drawable.naprijed_nazad);
+                Thread.sleep(11378);
+                gif.setImageResource(R.drawable.kruzenje_koljena);
+                Thread.sleep(11238);
+                gif.setImageResource(R.drawable.bokovi);
+                Thread.sleep(45493);
+                gif.setImageResource(R.drawable.koljena);
+                Thread.sleep(45100);
+                gif.setImageResource(R.drawable.zglob_noga);
+            } catch (Exception e) {
+                System.out.println("Error with thread");
+                System.out.println(e);
+            }
+        }).start();
+    }
+
+    void setNogeRastezanjeGifs(GifImageView gif) {
+        new Thread(() -> {
+            try {
+                gif.setImageResource(R.drawable.istezanje_naprijed);
+                Thread.sleep(37713);
+                gif.setImageResource(R.drawable.istezanje_strana);
+                Thread.sleep(37454);
+                gif.setImageResource(R.drawable.zenska_spaga);
+                Thread.sleep(22547);
+                gif.setImageResource(R.drawable.muska_spaga);
+                Thread.sleep(40597);
+                gif.setImageResource(R.drawable.joga5);
+            } catch (Exception e) {
+                System.out.println("Error with thread");
+                System.out.println(e);
+            }
+        }).start();
+    }
+
+    void setTrbuhZagrijavanjeGifs(GifImageView gif) {
+        new Thread(() -> {
+            try {
+                gif.setImageResource(R.drawable.penjac);
+                Thread.sleep(20623);
+                gif.setImageResource(R.drawable.penjac_unutra);
+                Thread.sleep(20992);
+                gif.setImageResource(R.drawable.penjac_strana);
+                Thread.sleep(21086);
+                gif.setImageResource(R.drawable.ptica_pas);
+                Thread.sleep(20948);
+                gif.setImageResource(R.drawable.bicikl);
+            } catch (Exception e) {
+                System.out.println("Error with thread");
+                System.out.println(e);
+            }
+        }).start();
+    }
+
+    void setTrbuhRastezanjeGifs(GifImageView gif) {
+        new Thread(() -> {
+            try {
+                gif.setImageResource(R.drawable.joga1);
+                Thread.sleep(10997);
+                gif.setImageResource(R.drawable.joga2);
+                Thread.sleep(10839);
+                gif.setImageResource(R.drawable.joga1);
+                Thread.sleep(10997);
+                gif.setImageResource(R.drawable.joga2);
+                Thread.sleep(10839);
+                gif.setImageResource(R.drawable.joga3);
+                Thread.sleep(2000);
+                gif.setImageResource(R.drawable.joga4);
+                Thread.sleep(2000);
+                gif.setImageResource(R.drawable.joga3);
+                Thread.sleep(2000);
+                gif.setImageResource(R.drawable.joga4);
+                Thread.sleep(2000);
+            } catch (Exception e) {
+                System.out.println("Error with thread");
+                System.out.println(e);
+            }
+        }).start();
+    }
 
 }

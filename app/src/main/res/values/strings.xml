@@ -92,13 +92,13 @@
     </string-array>
 
     <string-array name="stanga_ruke">
-        <item>široko 100</item>
-        <item>usko 80</item>
         <item>široko 90</item>
-        <item>usko 70</item>
+        <item>usko 80</item>
         <item>široko 80</item>
-        <item>usko 60</item>
+        <item>usko 70</item>
         <item>široko 70</item>
+        <item>usko 60</item>
+        <item>široko 60</item>
         <item>usko 50</item>
         <item>obje ruke</item>
     </string-array>
@@ -299,6 +299,7 @@
         <item>lijevi plank</item><!--gore-dolje kukovima, ruka gore, noga gore-->
         <item>desni plank</item>
         <item>ležnjaci</item>
+        <item>plank iza</item>
     </string-array>
 
     <string-array name="razno_trbuh">
@@ -361,6 +362,7 @@
         <item>plank u stranu</item>
         <item>držanje sklopke</item>
         <item>ukočeno tijelo</item>
+        <item>plank iza</item>
     </string-array>
 
     <string-array name="trbuh_stanga">
