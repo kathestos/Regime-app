@@ -81,139 +81,172 @@ public class WorkoutDisplay extends AppCompatActivity {
 
             if (temp.equals(sklekovi[0])) {
                 playlist.add(R.raw.norm_sklek);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklekovi[1])) {
                 playlist.add(R.raw.uski_sklek);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklekovi[2])) {
                 playlist.add(R.raw.siroki_sklek);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklekovi[3])) {
                 playlist.add(R.raw.krizni_sklek);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklekovi[4])) {
                 playlist.add(R.raw.prednji_sklek);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklekovi[5])) {
                 playlist.add(R.raw.nagnuti_sklek);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(stanga_ruke[0])) {
                 playlist.add(R.raw.siroko_90);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[1])) {
                 playlist.add(R.raw.usko_80);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[2])) {
                 playlist.add(R.raw.siroko_80);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[3])) {
                 playlist.add(R.raw.usko_70);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[4])) {
                 playlist.add(R.raw.siroko_70);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[5])) {
                 playlist.add(R.raw.usko_60);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[6])) {
                 playlist.add(R.raw.siroko_60);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[7])) {
                 playlist.add(R.raw.usko_50);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stanga_ruke[8])) {
                 playlist.add(R.raw.obje_ruke);
+                playlist.add(R.raw.pauza_10s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(sklek_vjestine[0])) {
                 playlist.add(R.raw.stoj);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_10s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(sklek_vjestine[1])) {
                 playlist.add(R.raw.uvuceni_planche);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklek_vjestine[2])) {
                 playlist.add(R.raw.hindu);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklek_vjestine[3])) {
                 playlist.add(R.raw.jedna_ruka);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklek_vjestine[4])) {
                 playlist.add(R.raw.nagib);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(sklek_stabilnost[0])) {
                 playlist.add(R.raw.ruka_gore);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(sklek_stabilnost[1])) {
                 playlist.add(R.raw.ruka_ispred);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(sklek_stabilnost[2])) {
                 playlist.add(R.raw.ruka_iza);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(sklek_stabilnost[3])) {
                 playlist.add(R.raw.dizanje_ramena);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(ruke[0])) {
                 playlist.add(R.raw.ruke_sastrane);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(ruke[1])) {
                 playlist.add(R.raw.ruke_iza);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(ruke[2])) {
                 playlist.add(R.raw.ruke_iza_tijelo);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(ruke[3])) {
                 playlist.add(R.raw.ruke_ispred);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(ruke[4])) {
                 playlist.add(R.raw.jedna_ruka_iza);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
 
             if (temp.equals(sklek_kretanje[0])) {
                 playlist.add(R.raw.sklek_ustranu);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklek_kretanje[1])) {
                 playlist.add(R.raw.gore_dolje_sklek);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(sklek_kretanje[2])) {
                 playlist.add(R.raw.guster);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(sklek_kretanje[3])) {
                 playlist.add(R.raw.spori_sklek);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
@@ -227,44 +260,54 @@ public class WorkoutDisplay extends AppCompatActivity {
 
             if (temp.equals(cucnjevi[0])) {
                 playlist.add(R.raw.cucanj);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(cucnjevi[1])) {
                 playlist.add(R.raw.cucanj_ruke_iznad);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(cucnjevi[2])) {
                 playlist.add(R.raw.cucanj_noge_usko);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(cucnjevi[3])) {
                 playlist.add(R.raw.cucanj_noge_siroko);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
 
             if (temp.equals(rudari[0])) {
                 playlist.add(R.raw.rudar_naprijed);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(rudari[1])) {
                 playlist.add(R.raw.rudar_nazad);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(rudari[2])) {
                 playlist.add(R.raw.rudar_ustranu);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(rudari[3])) {
                 playlist.add(R.raw.rudar_noga_iza);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
 
             if (temp.equals(razno_noge[0])) {
                 playlist.add(R.raw.spartan);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(razno_noge[1])) {
                 playlist.add(R.raw.jedna_noga);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(razno_noge[2])) {
@@ -276,30 +319,37 @@ public class WorkoutDisplay extends AppCompatActivity {
 
             if (temp.equals(stabilnost_noge[0])) {
                 playlist.add(R.raw.utkatasana);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stabilnost_noge[1])) {
                 playlist.add(R.raw.virabhadrasana);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[2])) {
                 playlist.add(R.raw.virabhadrasana_2);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[3])) {
                 playlist.add(R.raw.virabhadrasana_3);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[4])) {
                 playlist.add(R.raw.utthita_padangusthasana);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(stabilnost_noge[5])) {
                 playlist.add(R.raw.utthita_parsvakonasana);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[6])) {
                 playlist.add(R.raw.natarajasana);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
@@ -314,23 +364,28 @@ public class WorkoutDisplay extends AppCompatActivity {
             }
             if (temp.equals(noge[3])) {
                 playlist.add(R.raw.spoda_ispred);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(kretanje_noge[0])) {
                 playlist.add(R.raw.cucanj_ustranu);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(kretanje_noge[1])) {
                 playlist.add(R.raw.spori_cucanj);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(kretanje_noge[2])) {
                 playlist.add(R.raw.naprijed_nazad);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(kretanje_noge[3])) {
                 playlist.add(R.raw.cucanj_udarac);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
@@ -344,14 +399,17 @@ public class WorkoutDisplay extends AppCompatActivity {
 
             if (temp.equals(trbuh_strana[0])) {
                 playlist.add(R.raw.dodir_pete);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_strana[1])) {
                 playlist.add(R.raw.lakat_koljeno);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_strana[2])) {
                 playlist.add(R.raw.rotacija_ruku);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_strana[3])) {
@@ -359,134 +417,165 @@ public class WorkoutDisplay extends AppCompatActivity {
             }
             if (temp.equals(trbuh_strana[4])) {
                 playlist.add(R.raw.ruka_stopalo);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_strana[5])) {
                 playlist.add(R.raw.ustranu);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(trbuh_dolje[0])) {
                 playlist.add(R.raw.noge_prsa);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(trbuh_dolje[1])) {
                 playlist.add(R.raw.obje_noge_gore);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_dolje[2])) {
                 playlist.add(R.raw.naizmjenicno_noga_gore);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_dolje[3])) {
                 playlist.add(R.raw.noge_gore_dolje);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_dolje[4])) {
                 playlist.add(R.raw.noge_lijevo_desno);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_dolje[5])) {
                 playlist.add(R.raw.jedna_noga_gore);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(trbuh_gore[0])) {
                 playlist.add(R.raw.sklopka);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_gore[1])) {
                 playlist.add(R.raw.puna_sklopka);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_gore[2])) {
                 playlist.add(R.raw.noge_gore);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_gore[3])) {
                 playlist.add(R.raw.ruke_ispred_trbusnjak);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_gore[4])) {
                 playlist.add(R.raw.ispruzene_sklopke);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_gore[5])) {
                 playlist.add(R.raw.ruke_gore);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_gore[6])) {
                 playlist.add(R.raw.obicni);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_gore[7])) {
                 playlist.add(R.raw.dizanje_ruku);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(plank[0])) {
                 playlist.add(R.raw.ravni_plank);
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
             if (temp.equals(plank[1])) {
                 playlist.add(R.raw.ustranu_plank);
             }
             if (temp.equals(plank[2])) {
                 playlist.add(R.raw.drzanje_sklopke);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(plank[3])) {
                 playlist.add(R.raw.ukoceno_tijelo);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(plank[4])) {
-                playlist.add(R.raw.ukoceno_tijelo); //TODO dodati
-                playlist.add(R.raw.sec20);
+                playlist.add(R.raw.ukoceno_tijelo); //TODO dodati plank iza
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec30);
             }
 
             if (temp.equals(trbuh_stanga[0])) {
                 playlist.add(R.raw.skvrcene_usko);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_stanga[1])) {
                 playlist.add(R.raw.ispruzene_usko);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_stanga[2])) {
                 playlist.add(R.raw.skvrcene_siroko);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_stanga[3])) {
                 playlist.add(R.raw.ispruzene_siroko);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_stanga[4])) {
                 playlist.add(R.raw.skvrcene_obje);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_stanga[5])) {
                 playlist.add(R.raw.ispruzene_obje);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(trbuh_razno[0])) {
                 playlist.add(R.raw.leznjak);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_razno[1])) {
                 playlist.add(R.raw.dizanje_kukova);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_razno[2])) {
                 playlist.add(R.raw.noge_gore_ustranu);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_razno[3])) {
                 playlist.add(R.raw.krugovi_nogama);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(trbuh_razno[4])) {
                 playlist.add(R.raw.buba);
+                playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec20);
             }
 
