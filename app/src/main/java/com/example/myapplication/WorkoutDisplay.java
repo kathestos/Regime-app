@@ -29,6 +29,7 @@ public class WorkoutDisplay extends AppCompatActivity {
     ImageView prevIcon;
     ImageView play;
     ImageView pause;
+    boolean stopGifs = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_workout_display);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         ArrayList<String> lista = getIntent().getExtras().getStringArrayList("lista");
 
@@ -634,6 +636,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 if (playlist.get(i - 1).equals(R.raw.prsa_zagrijavanje)) {
                     nazivVjezbe.setText("prsa zagrijavanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    stopGifs = false;
                     setPrsaZagrijavanjeGifs(gif);
                 }
 
@@ -778,12 +781,14 @@ public class WorkoutDisplay extends AppCompatActivity {
                 if (playlist.get(i - 1).equals(R.raw.prsa_rastezanje)) {
                     nazivVjezbe.setText("prsa rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    stopGifs = false;
                     setPrsaRastezanjeGifs(gif);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.noge_zagrijavanje)) {
                     nazivVjezbe.setText("noge zagrijavanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    stopGifs = false;
                     setNogeZagrijavanjeGifs(gif);
                 }
 
@@ -904,12 +909,14 @@ public class WorkoutDisplay extends AppCompatActivity {
                 if (playlist.get(i - 1).equals(R.raw.rastezanje_noge)) {
                     nazivVjezbe.setText("noge rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    stopGifs = false;
                     setNogeRastezanjeGifs(gif);
                 }
 
                 if (playlist.get(i - 1).equals(R.raw.zagrijavanje_trbuh)) {
                     nazivVjezbe.setText("trbuh zagrijavanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    stopGifs = false;
                     setTrbuhZagrijavanjeGifs(gif);
                 }
 
@@ -1066,6 +1073,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 if (playlist.get(i - 1).equals(R.raw.rastezanje_trbuh)) {
                     nazivVjezbe.setText("trbuh rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
+                    stopGifs = false;
                     setTrbuhRastezanjeGifs(gif);
                 }
             });
@@ -1110,6 +1118,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                     mp.stop();
                     playNext(pause);
                 }
+                setStopGifs();
             });
 
             prevIcon.setOnClickListener(v -> {
@@ -1131,6 +1140,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 pause.setImageResource(R.drawable.pause);
                 pausePlay(pause, mp);
             });
+            setStopGifs();
         });
     }
 
@@ -1160,17 +1170,29 @@ public class WorkoutDisplay extends AppCompatActivity {
             try {
                 gif.setImageResource(R.drawable.gif_zglob);
                 Thread.sleep(31576);
-                gif.setImageResource(R.drawable.gif_ph); // TODO saka ispruzena stisnuta
-                Thread.sleep(7321);
-                gif.setImageResource(R.drawable.gif_lakat);
-                Thread.sleep(44989);
-                gif.setImageResource(R.drawable.gif_rame);
-                Thread.sleep(22613);
-                gif.setImageResource(R.drawable.gif_ruka);
-                Thread.sleep(23848);
-                gif.setImageResource(R.drawable.ruke_stopala);
-                Thread.sleep(11439);
-                gif.setImageResource(R.drawable.kruzenje);
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.gif_ph); // TODO saka ispruzena stisnuta
+                    Thread.sleep(7321);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.gif_lakat);
+                    Thread.sleep(44989);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.gif_rame);
+                    Thread.sleep(22613);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.gif_ruka);
+                    Thread.sleep(23848);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.ruke_stopala);
+                    Thread.sleep(11439);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.kruzenje);
+                }
             } catch (Exception e) {
                 System.out.println("Error with thread");
                 System.out.println(e);
@@ -1183,17 +1205,29 @@ public class WorkoutDisplay extends AppCompatActivity {
             try {
                 gif.setImageResource(R.drawable.joga);
                 Thread.sleep(11693);
-                gif.setImageResource(R.drawable.istezanje_zglob);
-                Thread.sleep(34942);
-                gif.setImageResource(R.drawable.istezanje_rame);
-                Thread.sleep(11858);
-                gif.setImageResource(R.drawable.istezanje_lakat);
-                Thread.sleep(12475);
-                gif.setImageResource(R.drawable.istezanje_ustranu);
-                Thread.sleep(12084);
-                gif.setImageResource(R.drawable.gif_ph); //TODO skroz dolje gore
-                Thread.sleep(11449);
-                gif.setImageResource(R.drawable.vrat);
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.istezanje_zglob);
+                    Thread.sleep(34942);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.istezanje_rame);
+                    Thread.sleep(11858);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.istezanje_lakat);
+                    Thread.sleep(12475);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.istezanje_ustranu);
+                    Thread.sleep(12084);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.gif_ph); //TODO skroz dolje gore
+                    Thread.sleep(11449);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.vrat);
+                }
             } catch (Exception e) {
                 System.out.println("Error with thread");
                 System.out.println(e);
@@ -1206,27 +1240,49 @@ public class WorkoutDisplay extends AppCompatActivity {
             try {
                 gif.setImageResource(R.drawable.step);
                 Thread.sleep(20612);
-                gif.setImageResource(R.drawable.noge_iza);
-                Thread.sleep(20999);
-                gif.setImageResource(R.drawable.noge_strana);
-                Thread.sleep(21262);
-                gif.setImageResource(R.drawable.noge_ispred);
-                Thread.sleep(21013);
-                gif.setImageResource(R.drawable.visoki_step);
-                Thread.sleep(11053);
-                gif.setImageResource(R.drawable.skok);
-                Thread.sleep(10820);
-                gif.setImageResource(R.drawable.van_unutra);
-                Thread.sleep(11318);
-                gif.setImageResource(R.drawable.naprijed_nazad);
-                Thread.sleep(11378);
-                gif.setImageResource(R.drawable.kruzenje_koljena);
-                Thread.sleep(11238);
-                gif.setImageResource(R.drawable.bokovi);
-                Thread.sleep(45493);
-                gif.setImageResource(R.drawable.koljena);
-                Thread.sleep(45100);
-                gif.setImageResource(R.drawable.zglob_noga);
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.noge_iza);
+                    Thread.sleep(20999);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.noge_strana);
+                    Thread.sleep(21262);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.noge_ispred);
+                    Thread.sleep(21013);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.visoki_step);
+                    Thread.sleep(11053);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.skok);
+                    Thread.sleep(10820);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.van_unutra);
+                    Thread.sleep(11318);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.naprijed_nazad);
+                    Thread.sleep(11378);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.kruzenje_koljena);
+                    Thread.sleep(11238);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.bokovi);
+                    Thread.sleep(45493);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.koljena);
+                    Thread.sleep(45100);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.zglob_noga);
+                }
             } catch (Exception e) {
                 System.out.println("Error with thread");
                 System.out.println(e);
@@ -1239,13 +1295,21 @@ public class WorkoutDisplay extends AppCompatActivity {
             try {
                 gif.setImageResource(R.drawable.istezanje_naprijed);
                 Thread.sleep(37713);
-                gif.setImageResource(R.drawable.istezanje_strana);
-                Thread.sleep(37454);
-                gif.setImageResource(R.drawable.zenska_spaga);
-                Thread.sleep(22547);
-                gif.setImageResource(R.drawable.muska_spaga);
-                Thread.sleep(40597);
-                gif.setImageResource(R.drawable.joga5);
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.istezanje_strana);
+                    Thread.sleep(37454);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.zenska_spaga);
+                    Thread.sleep(22547);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.muska_spaga);
+                    Thread.sleep(40597);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga5);
+                }
             } catch (Exception e) {
                 System.out.println("Error with thread");
                 System.out.println(e);
@@ -1258,13 +1322,21 @@ public class WorkoutDisplay extends AppCompatActivity {
             try {
                 gif.setImageResource(R.drawable.penjac);
                 Thread.sleep(20623);
-                gif.setImageResource(R.drawable.penjac_unutra);
-                Thread.sleep(20992);
-                gif.setImageResource(R.drawable.penjac_strana);
-                Thread.sleep(21086);
-                gif.setImageResource(R.drawable.ptica_pas);
-                Thread.sleep(20948);
-                gif.setImageResource(R.drawable.bicikl);
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.penjac_unutra);
+                    Thread.sleep(20992);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.penjac_strana);
+                    Thread.sleep(21086);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.ptica_pas);
+                    Thread.sleep(20948);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.bicikl);
+                }
             } catch (Exception e) {
                 System.out.println("Error with thread");
                 System.out.println(e);
@@ -1277,25 +1349,43 @@ public class WorkoutDisplay extends AppCompatActivity {
             try {
                 gif.setImageResource(R.drawable.joga1);
                 Thread.sleep(10997);
-                gif.setImageResource(R.drawable.joga2);
-                Thread.sleep(10839);
-                gif.setImageResource(R.drawable.joga1);
-                Thread.sleep(10997);
-                gif.setImageResource(R.drawable.joga2);
-                Thread.sleep(10839);
-                gif.setImageResource(R.drawable.joga3);
-                Thread.sleep(2000);
-                gif.setImageResource(R.drawable.joga4);
-                Thread.sleep(2000);
-                gif.setImageResource(R.drawable.joga3);
-                Thread.sleep(2000);
-                gif.setImageResource(R.drawable.joga4);
-                Thread.sleep(2000);
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga2);
+                    Thread.sleep(10839);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga1);
+                    Thread.sleep(10997);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga2);
+                    Thread.sleep(10839);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga3);
+                    Thread.sleep(2000);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga4);
+                    Thread.sleep(2000);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga3);
+                    Thread.sleep(2000);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.joga4);
+                    Thread.sleep(2000);
+                }
             } catch (Exception e) {
                 System.out.println("Error with thread");
                 System.out.println(e);
             }
         }).start();
+    }
+
+    void setStopGifs() {
+        stopGifs = true;
     }
 
 }
