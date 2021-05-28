@@ -36,13 +36,36 @@
     <TextView
         android:id="@+id/opis_vjezbi"
         android:layout_width="190dp"
-        android:layout_height="230dp"
+        android:layout_height="180dp"
         android:layout_below="@+id/pauseMp3"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/lista_vjezbi"
         android:text=""
         android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/trajanje"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/opis_vjezbi"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/lista_vjezbi"
+        android:text=""
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progres"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:minHeight="20dip"
+        android:maxHeight="20dip"
+        android:layout_below="@+id/trajanje"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/lista_vjezbi"
+        android:progressTint="@color/black" />
 
     <ImageView
         android:id="@+id/playMp3"

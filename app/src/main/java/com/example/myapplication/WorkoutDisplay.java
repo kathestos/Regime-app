@@ -8,6 +8,7 @@ import android.os.Message;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -15,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import pl.droidsonroids.gif.GifImageView;
 
@@ -30,6 +33,9 @@ public class WorkoutDisplay extends AppCompatActivity {
     ImageView play;
     ImageView pause;
     boolean stopGifs = false;
+    int totalDuration = 0;
+    boolean stopProgress = false;
+    int startDuration = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +81,7 @@ public class WorkoutDisplay extends AppCompatActivity {
             listaVjezbi.append(temp);
             listaVjezbi.append("\n");
 
-            if (temp.equals("prsa_zagrijavanje")) {
+            if (temp.equals("prsa zagrijavanje")) {
                 playlist.add(R.raw.prsa_zagrijavanje);
                 nazivVjezbe.setText("PRSA");
                 gif.setImageResource(R.drawable.img2);
@@ -252,9 +258,15 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.sec20);
             }
 
-            if (temp.equals("prsa_rastezanje")) playlist.add(R.raw.prsa_rastezanje);
+            if (temp.equals("dodatni sklek")) {
+                playlist.add(R.raw.dodatni_sklek);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec20);
+            }
 
-            if (temp.equals("noge_zagrijavanje")) {
+            if (temp.equals("prsa rastezanje")) playlist.add(R.raw.prsa_rastezanje);
+
+            if (temp.equals("noge zagrijavanje")) {
                 playlist.add(R.raw.noge_zagrijavanje);
                 nazivVjezbe.setText("NOGE");
                 gif.setImageResource(R.drawable.img1);
@@ -391,9 +403,15 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.sec20);
             }
 
-            if (temp.equals("noge_rastezanje")) playlist.add(R.raw.rastezanje_noge);
+            if (temp.equals("dodatni cucanj")) {
+                playlist.add(R.raw.dodatni_cucanj);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec20);
+            }
 
-            if (temp.equals("trbuh_zagrijavanje")) {
+            if (temp.equals("noge rastezanje")) playlist.add(R.raw.rastezanje_noge);
+
+            if (temp.equals("trbuh zagrijavanje")) {
                 playlist.add(R.raw.zagrijavanje_trbuh);
                 nazivVjezbe.setText("TRBUH");
                 gif.setImageResource(R.drawable.img3);
@@ -519,7 +537,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.sec20);
             }
             if (temp.equals(plank[4])) {
-                playlist.add(R.raw.ukoceno_tijelo); //TODO dodati plank iza
+                playlist.add(R.raw.plank_iza);
                 playlist.add(R.raw.pauza_5s);
                 playlist.add(R.raw.sec30);
             }
@@ -581,17 +599,38 @@ public class WorkoutDisplay extends AppCompatActivity {
                 playlist.add(R.raw.sec20);
             }
 
-            if (temp.equals("trbuh_rastezanje")) playlist.add(R.raw.rastezanje_trbuh);
+            if (temp.equals("dodatni trbusnjak")) {
+                playlist.add(R.raw.dodatni_trbusnjak);
+                playlist.add(R.raw.pauza_5s);
+                playlist.add(R.raw.sec20);
+            }
+
+            if (temp.equals("trbuh rastezanje")) playlist.add(R.raw.rastezanje_trbuh);
         }
+
+        TextView trajanje = findViewById(R.id.trajanje);
+        for (int i = 0; i < playlist.size(); i++) {
+            MediaPlayer mp = MediaPlayer.create(this, playlist.get(i));
+            totalDuration += mp.getDuration();
+        }
+        int trajanjeMinute = totalDuration / 60000;
+        int trajanjeSekunde = (totalDuration / 1000) % 60;
+        trajanje.setText(trajanjeMinute + " min " + trajanjeSekunde + " sek");
 
         play = findViewById(R.id.playMp3);
         pause = findViewById(R.id.pauseMp3);
 
-        play.setOnClickListener(v -> playNext(pause));
+        play.setOnClickListener(v -> {
+            ProgressBar pb = findViewById(R.id.progres);
+            pb.setMax(totalDuration);
+            startDuration = totalDuration;
+            stopProgress = false;
+            setProgressBar();
+            playNext(pause);
+        });
     }
 
     void playNext(ImageView pause) {
-
         TextView nazivVjezbe = findViewById(R.id.naziv_vjezbe);
         GifImageView gif = findViewById(R.id.gif);
 
@@ -778,6 +817,11 @@ public class WorkoutDisplay extends AppCompatActivity {
                     gif.setImageResource(R.drawable.spori_sklek);
                 }
 
+                if (playlist.get(i - 1).equals(R.raw.dodatni_sklek)) {
+                    nazivVjezbe.setText("dodatni sklek");
+                    gif.setImageResource(R.drawable.sklek);
+                }
+
                 if (playlist.get(i - 1).equals(R.raw.prsa_rastezanje)) {
                     nazivVjezbe.setText("prsa rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
@@ -906,6 +950,11 @@ public class WorkoutDisplay extends AppCompatActivity {
                     gif.setImageResource(R.drawable.cucanj_udarac);
                 }
 
+                if (playlist.get(i - 1).equals(R.raw.dodatni_cucanj)) {
+                    nazivVjezbe.setText("dodatni čučanj");
+                    gif.setImageResource(R.drawable.cucanj);
+                }
+
                 if (playlist.get(i - 1).equals(R.raw.rastezanje_noge)) {
                     nazivVjezbe.setText("noge rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
@@ -1019,7 +1068,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                     nazivVjezbe.setText(plank[3]);
                     gif.setImageResource(R.drawable.valjanje);
                 }
-                if (playlist.get(i - 1).equals(R.raw.ukoceno_tijelo)) { //TODO dodati
+                if (playlist.get(i - 1).equals(R.raw.plank_iza)) {
                     nazivVjezbe.setText(plank[4]);
                     gif.setImageResource(R.drawable.plank_iza);
                 }
@@ -1070,6 +1119,11 @@ public class WorkoutDisplay extends AppCompatActivity {
                     gif.setImageResource(R.drawable.buba);
                 }
 
+                if (playlist.get(i - 1).equals(R.raw.dodatni_trbusnjak)) {
+                    nazivVjezbe.setText("dodatni trbušnjak");
+                    gif.setImageResource(R.drawable.ruke_gore);
+                }
+
                 if (playlist.get(i - 1).equals(R.raw.rastezanje_trbuh)) {
                     nazivVjezbe.setText("trbuh rastezanje");
                     gif.setImageResource(R.drawable.gif_ph);
@@ -1116,6 +1170,10 @@ public class WorkoutDisplay extends AppCompatActivity {
             nextIcon.setOnClickListener(v -> {
                 if (i < playlist.size()) {
                     mp.stop();
+                    int dur = mp.getDuration();
+                    int curr = mp.getCurrentPosition();
+                    int left = dur - curr;
+                    totalDuration -= left;
                     playNext(pause);
                 }
                 setStopGifs();
@@ -1138,9 +1196,11 @@ public class WorkoutDisplay extends AppCompatActivity {
             pause.setOnClickListener(vvv -> {
                 mp.start();
                 pause.setImageResource(R.drawable.pause);
+                stopProgress = false;
                 pausePlay(pause, mp);
             });
             setStopGifs();
+            stopProgress = true;
         });
     }
 
@@ -1171,7 +1231,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 gif.setImageResource(R.drawable.gif_zglob);
                 Thread.sleep(31576);
                 if (!stopGifs) {
-                    gif.setImageResource(R.drawable.gif_ph); // TODO saka ispruzena stisnuta
+                    gif.setImageResource(R.drawable.saka_ispruzena_stisnuta);
                     Thread.sleep(7321);
                 }
                 if (!stopGifs) {
@@ -1222,7 +1282,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                     Thread.sleep(12084);
                 }
                 if (!stopGifs) {
-                    gif.setImageResource(R.drawable.gif_ph); //TODO skroz dolje gore
+                    gif.setImageResource(R.drawable.skroz_gore_dolje);
                     Thread.sleep(11449);
                 }
                 if (!stopGifs) {
@@ -1386,6 +1446,29 @@ public class WorkoutDisplay extends AppCompatActivity {
 
     void setStopGifs() {
         stopGifs = true;
+    }
+
+    void setProgressBar() {
+        ProgressBar pb = findViewById(R.id.progres);
+        TextView trajanje = findViewById(R.id.trajanje);
+        pb.setScaleY(3f);
+        final Timer t = new Timer();
+        TimerTask tt = new TimerTask() {
+            @Override
+            public void run() {
+                if (!stopProgress) {
+                    totalDuration -= 1000;
+                }
+                pb.setProgress(totalDuration);
+                int trajanjeMinuteStart = startDuration / 60000;
+                int trajanjeSekundeStart = (startDuration / 1000) % 60;
+                int trajanjeMinute = totalDuration / 60000;
+                int trajanjeSekunde = (totalDuration / 1000) % 60;
+                trajanje.setText(trajanjeMinute + " m " + trajanjeSekunde + " s / "
+                        + trajanjeMinuteStart + " m " + trajanjeSekundeStart + " s");
+            }
+        };
+        t.schedule(tt, 0, 1000);
     }
 
 }
