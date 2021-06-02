@@ -338,33 +338,21 @@ public class WorkoutDisplay extends AppCompatActivity {
             }
             if (temp.equals(stabilnost_noge[1])) {
                 playlist.add(R.raw.virabhadrasana);
-                playlist.add(R.raw.pauza_5s);
-                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[2])) {
                 playlist.add(R.raw.virabhadrasana_2);
-                playlist.add(R.raw.pauza_5s);
-                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[3])) {
                 playlist.add(R.raw.virabhadrasana_3);
-                playlist.add(R.raw.pauza_5s);
-                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[4])) {
                 playlist.add(R.raw.utthita_padangusthasana);
-                playlist.add(R.raw.pauza_5s);
-                playlist.add(R.raw.sec20);
             }
             if (temp.equals(stabilnost_noge[5])) {
                 playlist.add(R.raw.utthita_parsvakonasana);
-                playlist.add(R.raw.pauza_5s);
-                playlist.add(R.raw.sec30);
             }
             if (temp.equals(stabilnost_noge[6])) {
                 playlist.add(R.raw.natarajasana);
-                playlist.add(R.raw.pauza_5s);
-                playlist.add(R.raw.sec20);
             }
 
             if (temp.equals(noge[0])) {
@@ -1334,7 +1322,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.bokovi);
-                    Thread.sleep(45493);
+                    Thread.sleep(35493);
                 }
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.koljena);
