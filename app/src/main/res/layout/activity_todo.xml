@@ -20,7 +20,7 @@
     <ListView
         android:id="@+id/fruit_list"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="380dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp" />
@@ -44,113 +44,113 @@
         android:text="@string/lorem"
         android:textSize="12sp" />
 
-    <TextView
-        android:id="@+id/textOrah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fruit_list"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/todo_desc"
-        android:text="Orašasto" />
+<!--    <TextView-->
+<!--        android:id="@+id/textOrah"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fruit_list"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:contentDescription="@string/todo_desc"-->
+<!--        android:text="Orašasto" />-->
 
-    <NumberPicker
-        android:id="@+id/pickerOrah"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/textOrah"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
-        android:textSize="10sp" />
+<!--    <NumberPicker-->
+<!--        android:id="@+id/pickerOrah"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_below="@+id/textOrah"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:textSize="10sp" />-->
 
-    <TextView
-        android:id="@+id/textSjemenke"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fruit_list"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/pickerOrah"
-        android:contentDescription="@string/todo_desc"
-        android:text="Sjemenke" />
+<!--    <TextView-->
+<!--        android:id="@+id/textSjemenke"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fruit_list"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_toEndOf="@+id/pickerOrah"-->
+<!--        android:contentDescription="@string/todo_desc"-->
+<!--        android:text="Sjemenke" />-->
 
-    <NumberPicker
-        android:id="@+id/pickerSjemenke"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/textOrah"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="24dp"
-        android:layout_toEndOf="@+id/pickerOrah"
-        android:textSize="10sp" />
+<!--    <NumberPicker-->
+<!--        android:id="@+id/pickerSjemenke"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_below="@+id/textOrah"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_toEndOf="@+id/pickerOrah"-->
+<!--        android:textSize="10sp" />-->
 
-    <TextView
-        android:id="@+id/textSuho"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fruit_list"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/pickerSjemenke"
-        android:contentDescription="@string/todo_desc"
-        android:text="Sušeno" />
+<!--    <TextView-->
+<!--        android:id="@+id/textSuho"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/fruit_list"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_toEndOf="@+id/pickerSjemenke"-->
+<!--        android:contentDescription="@string/todo_desc"-->
+<!--        android:text="Sušeno" />-->
 
-    <NumberPicker
-        android:id="@+id/pickerSuho"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/textOrah"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="24dp"
-        android:layout_toEndOf="@+id/pickerSjemenke"
-        android:textSize="10sp" />
+<!--    <NumberPicker-->
+<!--        android:id="@+id/pickerSuho"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_below="@+id/textOrah"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_toEndOf="@+id/pickerSjemenke"-->
+<!--        android:textSize="10sp" />-->
 
-    <Button
-        android:id="@+id/generateMp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pickerOrah"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Generate" />
+<!--    <Button-->
+<!--        android:id="@+id/generateMp3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/pickerOrah"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="Generate" />-->
 
-    <Button
-        android:id="@+id/playMp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pickerOrah"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_toEndOf="@+id/pickerOrah"
-        android:text="Play" />
+<!--    <Button-->
+<!--        android:id="@+id/playMp3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/pickerOrah"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_toEndOf="@+id/pickerOrah"-->
+<!--        android:text="Play" />-->
 
-    <Button
-        android:id="@+id/pauseMp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pickerOrah"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_toEndOf="@+id/pickerSjemenke"
-        android:text="Pause" />
+<!--    <Button-->
+<!--        android:id="@+id/pauseMp3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/pickerOrah"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_toEndOf="@+id/pickerSjemenke"-->
+<!--        android:text="Pause" />-->
 
     <Button
         android:id="@+id/foodActivityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/generateMp3"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/fruit_list"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
         android:text="Food" />
 
     <Button
         android:id="@+id/workoutActivityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/generateMp3"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
-        android:layout_toEndOf="@+id/pickerOrah"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/fruit_list"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/foodActivityButton"
         android:text="Workout" />
 
 </RelativeLayout>

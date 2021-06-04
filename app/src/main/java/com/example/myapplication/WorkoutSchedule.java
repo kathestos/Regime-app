@@ -17,7 +17,6 @@ import java.util.Objects;
 
 public class WorkoutSchedule extends AppCompatActivity {
 
-    ArrayList<Integer> playlist = new ArrayList<>();
     ArrayList<String> lista = new ArrayList<>();
     SharedPreferences sp;
 

@@ -601,9 +601,7 @@ public class WorkoutDisplay extends AppCompatActivity {
             MediaPlayer mp = MediaPlayer.create(this, playlist.get(i));
             totalDuration += mp.getDuration();
         }
-        int trajanjeMinute = totalDuration / 60000;
-        int trajanjeSekunde = (totalDuration / 1000) % 60;
-        trajanje.setText(trajanjeMinute + " min " + trajanjeSekunde + " sek");
+        trajanje.setText(setTrajanjeText(totalDuration, 0));
 
         play = findViewById(R.id.playMp3);
         pause = findViewById(R.id.pauseMp3);
@@ -1147,7 +1145,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                             Message msg = new Message();
                             msg.what = mp.getCurrentPosition();
                             handler.sendMessage(msg);
-                            Thread.sleep(100);
+                            Thread.sleep(2000);
                         }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -1217,10 +1215,10 @@ public class WorkoutDisplay extends AppCompatActivity {
         new Thread(() -> {
             try {
                 gif.setImageResource(R.drawable.gif_zglob);
-                Thread.sleep(31576);
+                Thread.sleep(56576);
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.saka_ispruzena_stisnuta);
-                    Thread.sleep(7321);
+                    Thread.sleep(12321);
                 }
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.gif_lakat);
@@ -1252,7 +1250,7 @@ public class WorkoutDisplay extends AppCompatActivity {
         new Thread(() -> {
             try {
                 gif.setImageResource(R.drawable.joga);
-                Thread.sleep(11693);
+                Thread.sleep(18204);
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.istezanje_zglob);
                     Thread.sleep(34942);
@@ -1349,11 +1347,15 @@ public class WorkoutDisplay extends AppCompatActivity {
                 }
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.zenska_spaga);
-                    Thread.sleep(22547);
+                    Thread.sleep(43771);
                 }
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.muska_spaga);
-                    Thread.sleep(40597);
+                    Thread.sleep(34603);
+                }
+                if (!stopGifs) {
+                    gif.setImageResource(R.drawable.muska_spaga); // TODO dolje ruke do stopala
+                    Thread.sleep(10994);
                 }
                 if (!stopGifs) {
                     gif.setImageResource(R.drawable.joga5);
@@ -1445,18 +1447,22 @@ public class WorkoutDisplay extends AppCompatActivity {
             @Override
             public void run() {
                 if (!stopProgress) {
-                    totalDuration -= 1000;
+                    totalDuration -= 5000;
                 }
                 pb.setProgress(totalDuration);
-                int trajanjeMinuteStart = startDuration / 60000;
-                int trajanjeSekundeStart = (startDuration / 1000) % 60;
-                int trajanjeMinute = totalDuration / 60000;
-                int trajanjeSekunde = (totalDuration / 1000) % 60;
-                trajanje.setText(trajanjeMinute + " m " + trajanjeSekunde + " s / "
-                        + trajanjeMinuteStart + " m " + trajanjeSekundeStart + " s");
+                trajanje.setText(setTrajanjeText(startDuration, totalDuration));
             }
         };
-        t.schedule(tt, 0, 1000);
+        t.schedule(tt, 0, 5000);
+    }
+
+    String setTrajanjeText(int startDuration, int totalDuration) {
+        int trajanjeMinuteStart = startDuration / 60000;
+        int trajanjeSekundeStart = (startDuration / 1000) % 60;
+        int trajanjeMinute = totalDuration / 60000;
+        int trajanjeSekunde = (totalDuration / 1000) % 60;
+        return trajanjeMinute + " m " + trajanjeSekunde + " s / "
+                + trajanjeMinuteStart + " m " + trajanjeSekundeStart + " s";
     }
 
 }
