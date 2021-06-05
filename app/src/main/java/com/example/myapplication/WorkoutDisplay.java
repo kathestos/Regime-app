@@ -1354,7 +1354,7 @@ public class WorkoutDisplay extends AppCompatActivity {
                     Thread.sleep(34603);
                 }
                 if (!stopGifs) {
-                    gif.setImageResource(R.drawable.muska_spaga); // TODO dolje ruke do stopala
+                    gif.setImageResource(R.drawable.ruke_do_stopala);
                     Thread.sleep(10994);
                 }
                 if (!stopGifs) {

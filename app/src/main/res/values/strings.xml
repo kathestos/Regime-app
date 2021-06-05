@@ -431,6 +431,7 @@
         <item>limeta</item>
         <item>limun</item>
         <item>pomelo</item>
+        <item>mušmula</item>
     </string-array>
 
     <string name="banane_txt">Banana info:\n- kalorije: 89\n- uh/ms/pr: 93/3/4\n- voda: 75%</string>
@@ -465,6 +466,7 @@
     <string name="limeta_txt">Limeta info:\n- kalorije: 30\n- uh/ms/pr: 86/6/8\n- voda: 88%</string>
     <string name="limun_txt">Limun info:\n- kalorije: 29\n- uh/ms/pr: 78/9/13\n- voda: 89%</string>
     <string name="pomelo_txt">Pomelo info:\n- kalorije: 38\n- uh/ms/pr: 92/1/7\n- voda: 89%</string>
+    <string name="musmula_txt">Mušmula info:\n- kalorije: 47\n- uh/ms/pr: 93/4/3\n- voda: 87%</string>
 
     <string-array name="dried">
         <item>datulje</item>
@@ -517,6 +519,7 @@
         <item>suncokret</item>
         <item>crni kim</item>
         <item>mak</item>
+        <item>psyllium</item>
     </string-array>
 
     <string name="chia_txt">Chia info:\n- kalorije: 490\n- uh/ms/pr: 36/53/11\n- voda: 5%</string>
@@ -527,6 +530,7 @@
     <string name="suncokret_txt">Suncokret info:\n- kalorije: 584\n- uh/ms/pr: 14/74/12\n- voda: 5%</string>
     <string name="crni_kim_txt">Crni kim info:\n- kalorije: 280\n- uh/ms/pr: 23/54/23\n- voda: 6%</string>
     <string name="mak_txt">Mak info:\n- kalorije: 525\n- uh/ms/pr: 22/66/12\n- voda: 6%</string>
+    <string name="psyllium_txt">Psyllium info:\n- kalorije: 292\n- uh/ms/pr: 100/0/0\n- voda: 5%</string>
 
     <string-array name="bobice">
         <item>borovnice</item>

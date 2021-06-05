@@ -159,6 +159,10 @@ public class FruitActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.pomelo);
                 textView.setText(R.string.pomelo_txt);
             }
+            if (position == 32) {
+                imageView.setImageResource(R.drawable.musmula);
+                textView.setText(R.string.musmula_txt);
+            }
         });
     }
 }

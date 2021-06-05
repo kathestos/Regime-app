@@ -64,6 +64,10 @@ public class SeedsActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.mak);
                 textView.setText(R.string.mak_txt);
             }
+            if (position == 8) {
+                imageView.setImageResource(R.drawable.psyllium);
+                textView.setText(R.string.psyllium_txt);
+            }
         });
     }
 }
